@@ -1,0 +1,10 @@
+categories:
+  - id: navigation
+    label: Navigation
+    description: Arrows, menus, pagination
+  - id: action
+    label: Actions
+    description: Edit, delete, save, share
+  - id: status
+    label: Status & Feedback
+    description: Check, warning, error, info

@@ -1,0 +1,50 @@
+{
+  "name": "tk-icons",
+  "version": "0.0.1",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "packageManager": "pnpm@9.0.0",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "optimize": "tsx scripts/optimize.ts",
+    "validate": "tsx scripts/validate.ts",
+    "generate:metadata": "tsx scripts/generate-metadata.ts",
+    "generate:core": "tsx scripts/generate-core.ts",
+    "generate:react": "tsx scripts/generate-react.ts",
+    "generate:vue": "tsx scripts/generate-vue.ts",
+    "generate:sprite": "tsx scripts/generate-sprite.ts",
+    "generate:font": "tsx scripts/generate-font.ts",
+    "generate": "pnpm optimize && pnpm validate && pnpm generate:metadata && pnpm generate:core && pnpm generate:react && pnpm generate:vue && pnpm generate:sprite && pnpm generate:font",
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "test": "turbo run test",
+    "clean": "turbo run clean && rimraf node_modules",
+    "prepublish": "pnpm generate && pnpm build",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^20.4.1",
+    "@commitlint/config-conventional": "^20.4.1",
+    "@types/node": "^22.10.7",
+    "change-case": "^5.4.4",
+    "fantasticon": "^3.0.0",
+    "glob": "^11.0.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
+    "prettier": "^3.8.1",
+    "prettier-plugin-tailwindcss": "^0.7.2",
+    "rimraf": "^6.0.1",
+    "svgo": "^3.3.2",
+    "svgson": "^5.3.1",
+    "tsx": "^4.19.2",
+    "turbo": "^2.3.3",
+    "typescript": "^5.7.3",
+    "yaml": "^2.6.1"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,css,html,json,md,yaml,yml,svg}": "prettier --write"
+  }
+}

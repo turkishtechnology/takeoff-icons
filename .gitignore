@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.turbo/
+.stencil/
+*.tsbuildinfo
+
+# Auto-generated files
+packages/icons-core/src/icons/
+packages/icons-core/src/metadata.ts
+packages/icons-core/src/alias-map.ts
+packages/icons-core/src/search-index.ts
+packages/icons-react/src/
+packages/icons-vue/src/
+packages/icons-sprite/dist/
+packages/icons-font/dist/

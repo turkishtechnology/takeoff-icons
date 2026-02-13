@@ -1,0 +1,26 @@
+{
+  "name": "@tk-icons/web",
+  "version": "0.0.1",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.js",
+  "collection": "dist/collection/collection-manifest.json",
+  "types": "dist/types/components.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "stencil build",
+    "dev": "stencil build --dev --watch",
+    "test": "stencil test --spec --e2e",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "@tk-icons/core": "workspace:*"
+  },
+  "devDependencies": {
+    "@stencil/core": "^4.20.0"
+  },
+  "sideEffects": false
+}

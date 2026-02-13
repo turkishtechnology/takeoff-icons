@@ -1,0 +1,15 @@
+icons:
+  arrow-left:
+    category: navigation
+    tags: [arrow, left, back, previous]
+    aliases: [back, previous]
+    added: '1.0.0'
+    variants:
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/bevel
+      - outlined/tk
+      - filled/rounded
+      - filled/sharp
+      - filled/bevel
+      - filled/tk

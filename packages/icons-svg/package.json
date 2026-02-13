@@ -1,0 +1,12 @@
+{
+  "name": "@tk-icons/svg",
+  "version": "0.0.1",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "svg",
+    "metadata"
+  ],
+  "sideEffects": false
+}

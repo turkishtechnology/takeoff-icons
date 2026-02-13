@@ -1,0 +1,98 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "tasks": {
+    "//#optimize": {
+      "inputs": [
+        "packages/icons-svg/svg/**/*.svg",
+        "scripts/optimize.ts",
+        "scripts/utils.ts"
+      ],
+      "outputs": []
+    },
+    "//#validate": {
+      "dependsOn": ["//#optimize"],
+      "inputs": [
+        "packages/icons-svg/**",
+        "scripts/validate.ts",
+        "scripts/utils.ts"
+      ],
+      "outputs": []
+    },
+    "//#generate:metadata": {
+      "dependsOn": ["//#validate"],
+      "inputs": [
+        "packages/icons-svg/metadata/**",
+        "scripts/generate-metadata.ts",
+        "scripts/utils.ts"
+      ],
+      "outputs": [
+        "packages/icons-core/src/metadata.ts",
+        "packages/icons-core/src/alias-map.ts",
+        "packages/icons-core/src/search-index.ts"
+      ]
+    },
+    "//#generate:core": {
+      "dependsOn": ["//#generate:metadata"],
+      "inputs": [
+        "packages/icons-svg/svg/**/*.svg",
+        "scripts/generate-core.ts",
+        "scripts/utils.ts"
+      ],
+      "outputs": [
+        "packages/icons-core/src/icons/**",
+        "packages/icons-core/src/index.ts"
+      ]
+    },
+    "//#generate:react": {
+      "dependsOn": ["//#validate"],
+      "inputs": [
+        "packages/icons-svg/svg/**/*.svg",
+        "scripts/generate-react.ts",
+        "scripts/utils.ts"
+      ],
+      "outputs": ["packages/icons-react/src/**"]
+    },
+    "//#generate:vue": {
+      "dependsOn": ["//#validate"],
+      "inputs": [
+        "packages/icons-svg/svg/**/*.svg",
+        "scripts/generate-vue.ts",
+        "scripts/utils.ts"
+      ],
+      "outputs": ["packages/icons-vue/src/**"]
+    },
+    "//#generate:sprite": {
+      "dependsOn": ["//#validate"],
+      "inputs": [
+        "packages/icons-svg/svg/**/*.svg",
+        "scripts/generate-sprite.ts",
+        "scripts/utils.ts"
+      ],
+      "outputs": ["packages/icons-sprite/dist/**"]
+    },
+    "//#generate:font": {
+      "dependsOn": ["//#validate"],
+      "inputs": [
+        "packages/icons-svg/svg/**/*.svg",
+        "scripts/generate-font.ts",
+        "scripts/utils.ts"
+      ],
+      "outputs": ["packages/icons-font/dist/**"]
+    },
+    "build": {
+      "dependsOn": [
+        "//#generate:core",
+        "//#generate:react",
+        "//#generate:vue",
+        "//#generate:sprite",
+        "//#generate:font",
+        "^build"
+      ],
+      "outputs": ["dist/**"]
+    },
+    "test": {
+      "dependsOn": ["build"]
+    },
+    "lint": {}
+  }
+}

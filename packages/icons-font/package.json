@@ -1,0 +1,20 @@
+{
+  "name": "@tk-icons/font",
+  "version": "0.0.1",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/tk-icons.css",
+  "exports": {
+    ".": "./dist/tk-icons.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "mkdir -p dist",
+    "clean": "rimraf dist"
+  },
+  "sideEffects": [
+    "*.css"
+  ]
+}
