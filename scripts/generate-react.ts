@@ -1,4 +1,6 @@
+import fs from 'node:fs';
 import path from 'node:path';
+import { transform } from '@svgr/core';
 import {
   getAllSvgFiles,
   getIconName,
@@ -7,92 +9,74 @@ import {
   parseSvgFile,
   toPascalCase,
   writeGeneratedFile,
+  ensureDir,
 } from './utils';
 
-interface VariantData {
-  svg: string;
-  viewBox: string;
-}
+async function generateReactComponents() {
+  const svgFiles = getAllSvgFiles();
+  const grouped = new Map<
+    string,
+    { componentName: string; filePath: string; fileName: string }[]
+  >();
 
-type VariantMap = Record<string, VariantData>;
-
-const grouped = new Map<string, VariantMap>();
-
-for (const filePath of getAllSvgFiles()) {
-  const name = getIconName(filePath);
-  const { style, type } = getVariantFromPath(filePath);
-  const { innerHTML, viewBox } = parseSvgFile(filePath);
-  const key = `${style}/${type}`;
-
-  const entry = grouped.get(name) ?? {};
-  entry[key] = { svg: innerHTML, viewBox };
-  grouped.set(name, entry);
-}
-
-const iconNames = [...grouped.keys()].sort();
-const barrel: string[] = [];
-
-for (const name of iconNames) {
-  const componentName = `${toPascalCase(name)}Icon`;
-  const variants = grouped.get(name) ?? {};
-
-  const svgMap: Record<string, string> = {};
-  const viewBoxMap: Record<string, string> = {};
-  for (const [key, data] of Object.entries(variants)) {
-    svgMap[key] = data.svg;
-    viewBoxMap[key] = data.viewBox;
+  // Clean the target folder first
+  if (fs.existsSync(ICONS_REACT_SRC)) {
+    fs.rmSync(ICONS_REACT_SRC, { recursive: true, force: true });
   }
 
-  const content = `
-import { forwardRef, type SVGProps } from 'react';
-import type { IconStyle, IconType } from '@tk-icons/core';
+  for (const filePath of svgFiles) {
+    const rawName = getIconName(filePath);
+    const { style, type } = getVariantFromPath(filePath);
 
-const variants: Record<string, string> = ${JSON.stringify(svgMap, null, 2)};
+    // Naming convention: CalendarIconOutlinedRounded
+    const componentName = `${toPascalCase(rawName)}Icon${toPascalCase(style)}${toPascalCase(type)}`;
+    const fileName = `${componentName}.tsx`;
 
-const viewBoxes: Record<string, string> = ${JSON.stringify(viewBoxMap, null, 2)};
+    const { innerHTML, viewBox } = parseSvgFile(filePath);
+    const svgCode = `<svg viewBox="${viewBox}">${innerHTML}</svg>`;
 
-export interface TkIconProps extends SVGProps<SVGSVGElement> {
-  size?: number | string;
-  color?: string;
-  iconStyle?: IconStyle;
-  iconType?: IconType;
-}
+    const reactCode = await transform(
+      svgCode,
+      {
+        icon: true,
+        typescript: true,
+        plugins: ['@svgr/plugin-jsx'],
+        jsxRuntime: 'automatic',
+        exportType: 'named',
+        namedExport: componentName,
+      },
+      { componentName },
+    );
 
-export const ${componentName} = forwardRef<SVGSVGElement, TkIconProps>(
-  ({ size = 24, color = 'currentColor', iconStyle = 'outlined', iconType = 'rounded', children: _children, ...props }, ref) => {
-    const key = iconStyle + '/' + iconType;
-    const svg = variants[key];
-    if (!svg) {
-      return null;
-    }
+    const destDir = path.join(ICONS_REACT_SRC, rawName);
+    const destPath = path.join(destDir, fileName);
+    writeGeneratedFile(destPath, reactCode);
 
-    return (
-      <svg
-        {...props}
-        ref={ref}
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox={viewBoxes[key] ?? '0 0 24 24'}
-        width={size}
-        height={size}
-        style={{ color }}
-        dangerouslySetInnerHTML={{ __html: svg }}
-      />
+    const entry = grouped.get(rawName) ?? [];
+    entry.push({ componentName, filePath, fileName });
+    grouped.set(rawName, entry);
+  }
+
+  for (const [iconName, variants] of grouped.entries()) {
+    const barrel =
+      variants
+        .map(
+          (v) => `export { ${v.componentName} } from './${v.componentName}';`,
+        )
+        .join('\n') + '\n';
+    writeGeneratedFile(
+      path.join(ICONS_REACT_SRC, iconName, 'index.ts'),
+      barrel,
     );
   }
-);
 
-${componentName}.displayName = '${componentName}';
-`;
-
-  writeGeneratedFile(
-    path.join(ICONS_REACT_SRC, `${componentName}.tsx`),
-    content,
+  let totalComponents = 0;
+  for (const variants of grouped.values()) {
+    totalComponents += variants.length;
+  }
+  console.log(
+    `Generated ${totalComponents} React component(s) across ${grouped.size} icon libraries.`,
   );
-  barrel.push(`export { ${componentName} } from './${componentName}';`);
 }
 
-writeGeneratedFile(
-  path.join(ICONS_REACT_SRC, 'index.ts'),
-  `${barrel.join('\n')}\n`,
-);
-console.log(`Generated ${iconNames.length} React component(s).`);
+generateReactComponents().catch(console.error);

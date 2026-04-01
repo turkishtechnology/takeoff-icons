@@ -1,15 +1,5555 @@
 icons:
+  action-add:
+    category: actions-iconography
+    tags: [action, add]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  action-allign-center:
+    category: uncategorized
+    tags: [action, allign, center]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  action-allign-circle-center:
+    category: uncategorized
+    tags: [action, allign, circle, center]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  action-allign-circle-left:
+    category: uncategorized
+    tags: [action, allign, circle, left]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  action-allign-circle-right:
+    category: uncategorized
+    tags: [action, allign, circle, right]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  action-allign-left:
+    category: uncategorized
+    tags: [action, allign, left]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  action-allign-right:
+    category: uncategorized
+    tags: [action, allign, right]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  action-allign-square-center:
+    category: uncategorized
+    tags: [action, allign, square, center]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  action-allign-square-left:
+    category: uncategorized
+    tags: [action, allign, square, left]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  action-allign-square-right:
+    category: uncategorized
+    tags: [action, allign, square, right]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  action-block:
+    category: uncategorized
+    tags: [action, block]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  action-block-circle:
+    category: uncategorized
+    tags: [action, block, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  action-block-square:
+    category: uncategorized
+    tags: [action, block, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  action-check:
+    category: uncategorized
+    tags: [action, check]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  action-check-circle:
+    category: uncategorized
+    tags: [action, check, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  action-check-square:
+    category: uncategorized
+    tags: [action, check, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  action-circle-add:
+    category: uncategorized
+    tags: [action, circle, add]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  action-close:
+    category: uncategorized
+    tags: [action, close]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  action-close-circle:
+    category: uncategorized
+    tags: [action, close, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  action-close-square:
+    category: uncategorized
+    tags: [action, close, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  action-delete:
+    category: uncategorized
+    tags: [action, delete]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  action-delete-circle:
+    category: uncategorized
+    tags: [action, delete, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  action-delete-square:
+    category: uncategorized
+    tags: [action, delete, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  action-doublecheck:
+    category: uncategorized
+    tags: [action, doublecheck]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  action-doublecheck-circle:
+    category: uncategorized
+    tags: [action, doublecheck, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  action-doublecheck-square:
+    category: uncategorized
+    tags: [action, doublecheck, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  action-edit:
+    category: uncategorized
+    tags: [action, edit]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  action-edit-circle:
+    category: uncategorized
+    tags: [action, edit, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  action-edit-square:
+    category: uncategorized
+    tags: [action, edit, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  action-folder:
+    category: uncategorized
+    tags: [action, folder]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  action-notification-alert:
+    category: actions-iconography
+    tags: [action, notification, alert]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  action-quit:
+    category: uncategorized
+    tags: [action, quit]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  action-quit-circle:
+    category: uncategorized
+    tags: [action, quit, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  action-quit-square:
+    category: uncategorized
+    tags: [action, quit, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  action-remove:
+    category: uncategorized
+    tags: [action, remove]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  action-remove-circle:
+    category: uncategorized
+    tags: [action, remove, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  action-remove-square:
+    category: uncategorized
+    tags: [action, remove, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  action-share:
+    category: uncategorized
+    tags: [action, share]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  action-share-circle:
+    category: uncategorized
+    tags: [action, share, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  action-share-square:
+    category: uncategorized
+    tags: [action, share, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  action-square-add:
+    category: uncategorized
+    tags: [action, square, add]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  action-upload:
+    category: uncategorized
+    tags: [action, upload]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  action-upload-circle:
+    category: uncategorized
+    tags: [action, upload, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  action-upload-square:
+    category: uncategorized
+    tags: [action, upload, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  add:
+    category: actions
+    tags: [add]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  add-circle:
+    category: actions
+    tags: [add, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  add-link:
+    category: actions
+    tags: [add, link]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  add-square:
+    category: actions
+    tags: [add, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  airplay:
+    category: actions
+    tags: [airplay]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  airplay-circle:
+    category: actions
+    tags: [airplay, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  airplay-square:
+    category: actions
+    tags: [airplay, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  alert:
+    category: actions
+    tags: [alert]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  alert-circle:
+    category: actions
+    tags: [alert, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  alert-square:
+    category: actions
+    tags: [alert, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  align-center:
+    category: actions
+    tags: [align, center]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  align-center-circle:
+    category: actions
+    tags: [align, center, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  align-center-square:
+    category: actions
+    tags: [align, center, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  align-left:
+    category: actions
+    tags: [align, left]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  align-left-circle:
+    category: actions
+    tags: [align, left, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  align-left-square:
+    category: actions
+    tags: [align, left, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  align-right:
+    category: actions
+    tags: [align, right]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  align-right-circle:
+    category: actions
+    tags: [align, right, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  align-right-square:
+    category: actions
+    tags: [align, right, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-backward:
+    category: uncategorized
+    tags: [arrow, backward]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-backward-circle:
+    category: uncategorized
+    tags: [arrow, backward, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-backward-square:
+    category: uncategorized
+    tags: [arrow, backward, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-bottom:
+    category: uncategorized
+    tags: [arrow, bottom]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-bottom-circle:
+    category: arrow
+    tags: [arrow, bottom, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-bottom-square:
+    category: arrow
+    tags: [arrow, bottom, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-caret-bottom:
+    category: uncategorized
+    tags: [arrow, caret, bottom]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-caret-circle-bottom:
+    category: uncategorized
+    tags: [arrow, caret, circle, bottom]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-caret-circle-left:
+    category: uncategorized
+    tags: [arrow, caret, circle, left]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-caret-circle-righ:
+    category: uncategorized
+    tags: [arrow, caret, circle, righ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-caret-circle-top:
+    category: uncategorized
+    tags: [arrow, caret, circle, top]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-caret-left:
+    category: uncategorized
+    tags: [arrow, caret, left]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-caret-righ:
+    category: uncategorized
+    tags: [arrow, caret, righ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-caret-square-bottom:
+    category: uncategorized
+    tags: [arrow, caret, square, bottom]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-caret-square-left:
+    category: uncategorized
+    tags: [arrow, caret, square, left]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-caret-square-righ:
+    category: uncategorized
+    tags: [arrow, caret, square, righ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-caret-square-top:
+    category: uncategorized
+    tags: [arrow, caret, square, top]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-caret-top:
+    category: uncategorized
+    tags: [arrow, caret, top]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-chevron-bottom:
+    category: uncategorized
+    tags: [arrow, chevron, bottom]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-chevron-circle-bottom:
+    category: uncategorized
+    tags: [arrow, chevron, circle, bottom]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-chevron-circle-left:
+    category: uncategorized
+    tags: [arrow, chevron, circle, left]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-chevron-circle-right:
+    category: uncategorized
+    tags: [arrow, chevron, circle, right]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-chevron-circle-top:
+    category: uncategorized
+    tags: [arrow, chevron, circle, top]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-chevron-left:
+    category: uncategorized
+    tags: [arrow, chevron, left]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-chevron-right:
+    category: uncategorized
+    tags: [arrow, chevron, right]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-chevron-square-bottom:
+    category: uncategorized
+    tags: [arrow, chevron, square, bottom]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-chevron-square-left:
+    category: uncategorized
+    tags: [arrow, chevron, square, left]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-chevron-square-right:
+    category: uncategorized
+    tags: [arrow, chevron, square, right]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-chevron-square-top:
+    category: uncategorized
+    tags: [arrow, chevron, square, top]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-chevron-top:
+    category: uncategorized
+    tags: [arrow, chevron, top]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-circle-bottom:
+    category: uncategorized
+    tags: [arrow, circle, bottom]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-circle-left:
+    category: uncategorized
+    tags: [arrow, circle, left]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-circle-right:
+    category: uncategorized
+    tags: [arrow, circle, right]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-circle-top:
+    category: uncategorized
+    tags: [arrow, circle, top]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-code:
+    category: actions-iconography
+    tags: [arrow, code]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-code-slash:
+    category: actions-iconography
+    tags: [arrow, code, slash]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-collapse:
+    category: actions-iconography
+    tags: [arrow, collapse]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-download:
+    category: actions-iconography
+    tags: [arrow, download]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-expand:
+    category: actions-iconography
+    tags: [arrow, expand]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-forward:
+    category: uncategorized
+    tags: [arrow, forward]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-forward-circle:
+    category: uncategorized
+    tags: [arrow, forward, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-forward-square:
+    category: uncategorized
+    tags: [arrow, forward, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
   arrow-left:
     category: navigation
     tags: [arrow, left, back, previous]
     aliases: [back, previous]
     added: '1.0.0'
     variants:
-      - outlined/rounded
-      - outlined/sharp
-      - outlined/bevel
-      - outlined/tk
+      - filled/bevel
       - filled/rounded
       - filled/sharp
-      - filled/bevel
       - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-left-circle:
+    category: arrow
+    tags: [arrow, left, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-left-square:
+    category: arrow
+    tags: [arrow, left, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-move:
+    category: actions-iconography
+    tags: [arrow, move]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-open:
+    category: actions-iconography
+    tags: [arrow, open]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-refresh-circle-left:
+    category: uncategorized
+    tags: [arrow, refresh, circle, left]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-refresh-circle-right:
+    category: uncategorized
+    tags: [arrow, refresh, circle, right]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-refresh-left:
+    category: uncategorized
+    tags: [arrow, refresh, left]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-refresh-right:
+    category: uncategorized
+    tags: [arrow, refresh, right]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-refresh-square-right:
+    category: uncategorized
+    tags: [arrow, refresh, square, right]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-refresh-square-square-left:
+    category: uncategorized
+    tags: [arrow, refresh, square, square, left]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-repeat-circle-horizontal:
+    category: uncategorized
+    tags: [arrow, repeat, circle, horizontal]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-repeat-circle-vertical:
+    category: uncategorized
+    tags: [arrow, repeat, circle, vertical]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-repeat-horizontal:
+    category: uncategorized
+    tags: [arrow, repeat, horizontal]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-repeat-square-horizontal:
+    category: uncategorized
+    tags: [arrow, repeat, square, horizontal]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-repeat-square-vertical:
+    category: uncategorized
+    tags: [arrow, repeat, square, vertical]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-repeat-vertical:
+    category: uncategorized
+    tags: [arrow, repeat, vertical]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-resize-horizontal:
+    category: uncategorized
+    tags: [arrow, resize, horizontal]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-resize-left:
+    category: uncategorized
+    tags: [arrow, resize, left]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-resize-right:
+    category: uncategorized
+    tags: [arrow, resize, right]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-right:
+    category: uncategorized
+    tags: [arrow, right]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-right-circle:
+    category: arrow
+    tags: [arrow, right, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-right-square:
+    category: arrow
+    tags: [arrow, right, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-square-bottom:
+    category: uncategorized
+    tags: [arrow, square, bottom]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-square-left:
+    category: uncategorized
+    tags: [arrow, square, left]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-square-right:
+    category: uncategorized
+    tags: [arrow, square, right]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-square-top:
+    category: uncategorized
+    tags: [arrow, square, top]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-swap-bottom-top:
+    category: uncategorized
+    tags: [arrow, swap, bottom, top]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-swap-circle-bottom-top:
+    category: uncategorized
+    tags: [arrow, swap, circle, bottom, top]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-swap-circle-left-right:
+    category: uncategorized
+    tags: [arrow, swap, circle, left, right]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-swap-circle-right-left:
+    category: uncategorized
+    tags: [arrow, swap, circle, right, left]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-swap-circle-top-bottom:
+    category: uncategorized
+    tags: [arrow, swap, circle, top, bottom]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-swap-left-right:
+    category: uncategorized
+    tags: [arrow, swap, left, right]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-swap-right-left:
+    category: uncategorized
+    tags: [arrow, swap, right, left]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-swap-square-bottom-top:
+    category: uncategorized
+    tags: [arrow, swap, square, bottom, top]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-swap-square-right-left:
+    category: uncategorized
+    tags: [arrow, swap, square, right, left]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-swap-square-top-bottom:
+    category: uncategorized
+    tags: [arrow, swap, square, top, bottom]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-swap-top-bottom:
+    category: uncategorized
+    tags: [arrow, swap, top, bottom]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-top:
+    category: uncategorized
+    tags: [arrow, top]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-top-circle:
+    category: arrow
+    tags: [arrow, top, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-top-square:
+    category: arrow
+    tags: [arrow, top, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  attach:
+    category: actions
+    tags: [attach]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  attach-square:
+    category: actions
+    tags: [attach, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  balloon:
+    category: actions
+    tags: [balloon]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  balloon-circle:
+    category: actions
+    tags: [balloon, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  balloon-dots:
+    category: actions
+    tags: [balloon, dots]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  balloon-dots-circle:
+    category: actions
+    tags: [balloon, dots, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  balloon-dots-square:
+    category: actions
+    tags: [balloon, dots, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  balloon-off:
+    category: actions
+    tags: [balloon, off]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  balloon-square:
+    category: actions
+    tags: [balloon, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  barcode-scan:
+    category: actions
+    tags: [barcode, scan]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  barcode-scan-circle:
+    category: actions
+    tags: [barcode, scan, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  barcode-scan-square:
+    category: actions
+    tags: [barcode, scan, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  block:
+    category: actions
+    tags: [block]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  block-circle:
+    category: actions
+    tags: [block, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  block-square:
+    category: actions
+    tags: [block, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  bluetooth:
+    category: actions
+    tags: [bluetooth]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  bluetooth-circle:
+    category: actions
+    tags: [bluetooth, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  bluetooth-square:
+    category: actions
+    tags: [bluetooth, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  brush:
+    category: actions
+    tags: [brush]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  brush-circle:
+    category: actions
+    tags: [brush, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  brush-square:
+    category: actions
+    tags: [brush, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  call-add:
+    category: actions
+    tags: [call, add]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  call-add-circle:
+    category: actions
+    tags: [call, add, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  call-add-square:
+    category: actions
+    tags: [call, add, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  call-blocked:
+    category: actions
+    tags: [call, blocked]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  call-blocked-circle:
+    category: actions
+    tags: [call, blocked, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  call-blocked-square:
+    category: actions
+    tags: [call, blocked, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  call-delete:
+    category: actions
+    tags: [call, delete]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  call-delete-circle:
+    category: actions
+    tags: [call, delete, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  call-delete-square:
+    category: actions
+    tags: [call, delete, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  call-disabled:
+    category: actions
+    tags: [call, disabled]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  call-disabled-circle:
+    category: actions
+    tags: [call, disabled, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  call-disabled-square:
+    category: actions
+    tags: [call, disabled, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  call-done:
+    category: actions
+    tags: [call, done]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  call-done-circle:
+    category: actions
+    tags: [call, done, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  call-done-square:
+    category: actions
+    tags: [call, done, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  call-end:
+    category: actions
+    tags: [call, end]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  call-end-2:
+    category: actions
+    tags: [call, end, 2]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  call-end-2-circle:
+    category: actions
+    tags: [call, end, 2, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  call-end-2-square:
+    category: actions
+    tags: [call, end, 2, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  call-end-circle:
+    category: actions
+    tags: [call, end, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  call-end-square:
+    category: actions
+    tags: [call, end, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  call-hold:
+    category: actions
+    tags: [call, hold]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  call-hold-circle:
+    category: actions
+    tags: [call, hold, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  call-hold-square:
+    category: actions
+    tags: [call, hold, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  call-incoming:
+    category: actions
+    tags: [call, incoming]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  call-incoming-circle:
+    category: actions
+    tags: [call, incoming, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  call-incoming-square:
+    category: actions
+    tags: [call, incoming, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  call-missed:
+    category: actions
+    tags: [call, missed]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  call-missed-circle:
+    category: actions
+    tags: [call, missed, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  call-missed-square:
+    category: actions
+    tags: [call, missed, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  call-outgoing:
+    category: actions
+    tags: [call, outgoing]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  call-outgoing-circle:
+    category: actions
+    tags: [call, outgoing, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  call-outgoing-square:
+    category: actions
+    tags: [call, outgoing, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  call-ringing:
+    category: actions
+    tags: [call, ringing]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  call-ringing-circle:
+    category: actions
+    tags: [call, ringing, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  call-ringing-square:
+    category: actions
+    tags: [call, ringing, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  calling:
+    category: actions
+    tags: [calling]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  calling-circle:
+    category: actions
+    tags: [calling, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  calling-square:
+    category: actions
+    tags: [calling, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  caret-left:
+    category: arrow
+    tags: [caret, left]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  caret-left-circle:
+    category: arrow
+    tags: [caret, left, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  caret-left-square:
+    category: arrow
+    tags: [caret, left, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  caret-right:
+    category: arrow
+    tags: [caret, right]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  caret-right-circle:
+    category: arrow
+    tags: [caret, right, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  caret-right-square:
+    category: arrow
+    tags: [caret, right, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  caret-top:
+    category: arrow
+    tags: [caret, top]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  caret-top-circle:
+    category: arrow
+    tags: [caret, top, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  caret-top-square:
+    category: arrow
+    tags: [caret, top, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  chat:
+    category: actions
+    tags: [chat]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  chat-circle:
+    category: actions
+    tags: [chat, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  chat-copy:
+    category: actions
+    tags: [chat, copy]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  chat-off:
+    category: actions
+    tags: [chat, off]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  chat-on:
+    category: actions
+    tags: [chat, on]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  chat-on-circle:
+    category: actions
+    tags: [chat, on, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  chat-on-square:
+    category: actions
+    tags: [chat, on, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  chat-square:
+    category: actions
+    tags: [chat, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  check:
+    category: actions
+    tags: [check]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  check-circle:
+    category: actions
+    tags: [check, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  check-square:
+    category: actions
+    tags: [check, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  chevron-bottom:
+    category: arrow
+    tags: [chevron, bottom]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  chevron-bottom-circle:
+    category: arrow
+    tags: [chevron, bottom, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  chevron-bottom-square:
+    category: arrow
+    tags: [chevron, bottom, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  chevron-circle-top:
+    category: arrow
+    tags: [chevron, circle, top]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  chevron-left:
+    category: arrow
+    tags: [chevron, left]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  chevron-left-circle:
+    category: arrow
+    tags: [chevron, left, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  chevron-left-square:
+    category: arrow
+    tags: [chevron, left, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  chevron-right:
+    category: arrow
+    tags: [chevron, right]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  chevron-right-circle:
+    category: arrow
+    tags: [chevron, right, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  chevron-right-square:
+    category: arrow
+    tags: [chevron, right, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  chevron-top:
+    category: arrow
+    tags: [chevron, top]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  chevron-top-square:
+    category: arrow
+    tags: [chevron, top, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  close:
+    category: actions
+    tags: [close]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  close-circle:
+    category: actions
+    tags: [close, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  close-square:
+    category: actions
+    tags: [close, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  compare-arrow:
+    category: arrow
+    tags: [compare, arrow]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  compare-arrow-circle:
+    category: arrow
+    tags: [compare, arrow, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  compare-arrow-square:
+    category: arrow
+    tags: [compare, arrow, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  contact:
+    category: actions
+    tags: [contact]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  contact-circle:
+    category: actions
+    tags: [contact, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  contact-square:
+    category: actions
+    tags: [contact, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  conversation-balloon:
+    category: actions
+    tags: [conversation, balloon]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  copy:
+    category: actions
+    tags: [copy]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  copy-circle:
+    category: actions
+    tags: [copy, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  copy-square:
+    category: actions
+    tags: [copy, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  dailpad-1-circle:
+    category: actions
+    tags: [dailpad, 1, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  delete:
+    category: actions
+    tags: [delete]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  delete-circle:
+    category: actions
+    tags: [delete, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  delete-square:
+    category: actions
+    tags: [delete, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  deneme-icon-deneme:
+    category: uncategorized
+    tags: [deneme, icon, deneme]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  dialpad-1:
+    category: actions
+    tags: [dialpad, 1]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  dialpad-1-square:
+    category: actions
+    tags: [dialpad, 1, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  dialpad-2:
+    category: actions
+    tags: [dialpad, 2]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  dialpad-2-circle:
+    category: actions
+    tags: [dialpad, 2, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  dialpad-2-square:
+    category: actions
+    tags: [dialpad, 2, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  dialpad-3:
+    category: actions
+    tags: [dialpad, 3]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  dialpad-3-circle:
+    category: actions
+    tags: [dialpad, 3, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  dialpad-3-square:
+    category: actions
+    tags: [dialpad, 3, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  dialpad-4:
+    category: actions
+    tags: [dialpad, 4]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  dialpad-4-circle:
+    category: actions
+    tags: [dialpad, 4, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  dialpad-4-square:
+    category: actions
+    tags: [dialpad, 4, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  document-scan:
+    category: actions
+    tags: [document, scan]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  document-scan-circle:
+    category: actions
+    tags: [document, scan, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  document-scan-square:
+    category: actions
+    tags: [document, scan, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  document-search:
+    category: actions
+    tags: [document, search]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  done-all:
+    category: actions
+    tags: [done, all]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  done-all-circle:
+    category: actions
+    tags: [done, all, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  done-all-square:
+    category: actions
+    tags: [done, all, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  drafts:
+    category: actions
+    tags: [drafts]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  drafts-circle:
+    category: actions
+    tags: [drafts, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  drafts-square:
+    category: actions
+    tags: [drafts, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  duplicate:
+    category: actions
+    tags: [duplicate]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  duplicate-circle:
+    category: actions
+    tags: [duplicate, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  duplicate-square:
+    category: actions
+    tags: [duplicate, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  edit:
+    category: actions
+    tags: [edit]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  edit-circle:
+    category: actions
+    tags: [edit, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  edit-square:
+    category: actions
+    tags: [edit, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  file-copy:
+    category: actions
+    tags: [file, copy]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  file-copy-circle:
+    category: actions
+    tags: [file, copy, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  file-copy-square:
+    category: actions
+    tags: [file, copy, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  filter:
+    category: actions
+    tags: [filter]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  filter-1:
+    category: actions
+    tags: [filter, 1]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  filter-horizontal:
+    category: actions
+    tags: [filter, horizontal]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  filter-horizontal-circle:
+    category: actions
+    tags: [filter, horizontal, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  filter-horizontal-square:
+    category: actions
+    tags: [filter, horizontal, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  focus:
+    category: actions
+    tags: [focus]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  focus-circle:
+    category: actions
+    tags: [focus, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  focus-square:
+    category: actions
+    tags: [focus, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  folder-copy:
+    category: actions
+    tags: [folder, copy]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  folder-copy-circle:
+    category: actions
+    tags: [folder, copy, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  folder-copy-square:
+    category: actions
+    tags: [folder, copy, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  folder-search:
+    category: actions
+    tags: [folder, search]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  folder-share:
+    category: actions
+    tags: [folder, share]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  folder-share-circle:
+    category: actions
+    tags: [folder, share, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  folder-share-square:
+    category: actions
+    tags: [folder, share, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  forward:
+    category: arrow
+    tags: [forward]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  foward-circle:
+    category: arrow
+    tags: [foward, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  foward-square:
+    category: arrow
+    tags: [foward, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  funnel:
+    category: actions
+    tags: [funnel]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  funnel-circle:
+    category: actions
+    tags: [funnel, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  funnel-simple:
+    category: actions
+    tags: [funnel, simple]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  funnel-simple-circle:
+    category: actions
+    tags: [funnel, simple, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  funnel-simple-off:
+    category: actions
+    tags: [funnel, simple, off]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  funnel-simple-off-circle:
+    category: actions
+    tags: [funnel, simple, off, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  funnel-simple-off-square:
+    category: actions
+    tags: [funnel, simple, off, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  funnel-simple-square:
+    category: actions
+    tags: [funnel, simple, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  funnel-square:
+    category: actions
+    tags: [funnel, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  image-copy:
+    category: actions
+    tags: [image, copy]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  key:
+    category: actions
+    tags: [key]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  key-circle:
+    category: actions
+    tags: [key, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  key-off:
+    category: actions
+    tags: [key, off]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  key-off-circle:
+    category: actions
+    tags: [key, off, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  key-off-square:
+    category: actions
+    tags: [key, off, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  key-square:
+    category: actions
+    tags: [key, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  mail:
+    category: actions
+    tags: [mail]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  mail-circle:
+    category: actions
+    tags: [mail, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  mail-square:
+    category: actions
+    tags: [mail, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  mail-unread:
+    category: actions
+    tags: [mail, unread]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  mic:
+    category: actions
+    tags: [mic]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  mic-circle:
+    category: actions
+    tags: [mic, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  mic-off:
+    category: actions
+    tags: [mic, off]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  mic-off-circle:
+    category: actions
+    tags: [mic, off, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  mic-off-square:
+    category: actions
+    tags: [mic, off, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  mic-square:
+    category: actions
+    tags: [mic, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  notification:
+    category: actions
+    tags: [notification]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  notification-circle:
+    category: actions
+    tags: [notification, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  notification-off:
+    category: actions
+    tags: [notification, off]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  notification-off-circle:
+    category: actions
+    tags: [notification, off, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  notification-off-square:
+    category: actions
+    tags: [notification, off, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  notification-square:
+    category: actions
+    tags: [notification, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  notification-unread:
+    category: actions
+    tags: [notification, unread]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  notification-unread-active:
+    category: actions
+    tags: [notification, unread, active]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  notification-unread-alert:
+    category: actions
+    tags: [notification, unread, alert]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  open:
+    category: actions
+    tags: [open]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  open-circle:
+    category: actions
+    tags: [open, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  open-square:
+    category: actions
+    tags: [open, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  person-search:
+    category: actions
+    tags: [person, search]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  person-search-circle:
+    category: actions
+    tags: [person, search, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  person-search-square:
+    category: actions
+    tags: [person, search, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  phone:
+    category: actions
+    tags: [phone]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  phone-circle:
+    category: actions
+    tags: [phone, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  phone-square:
+    category: actions
+    tags: [phone, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  power:
+    category: actions
+    tags: [power]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  power-circle:
+    category: actions
+    tags: [power, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  power-square:
+    category: actions
+    tags: [power, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  refresh-circle:
+    category: arrow
+    tags: [refresh, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  refresh-left:
+    category: arrow
+    tags: [refresh, left]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  refresh-left-square:
+    category: arrow
+    tags: [refresh, left, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  refresh-right:
+    category: arrow
+    tags: [refresh, right]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  refresh-square:
+    category: arrow
+    tags: [refresh, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  remove:
+    category: actions
+    tags: [remove]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  remove-circle:
+    category: actions
+    tags: [remove, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  remove-square:
+    category: actions
+    tags: [remove, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  repeat:
+    category: arrow
+    tags: [repeat]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  repeat-circle:
+    category: arrow
+    tags: [repeat, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  repeat-square:
+    category: arrow
+    tags: [repeat, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  repeat-vertical:
+    category: arrow
+    tags: [repeat, vertical]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  repeat-vertical-acircle:
+    category: arrow
+    tags: [repeat, vertical, acircle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  repeat-vertical-square:
+    category: arrow
+    tags: [repeat, vertical, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  resize-horizontal:
+    category: arrow
+    tags: [resize, horizontal]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  resize-left:
+    category: arrow
+    tags: [resize, left]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  resize-right:
+    category: arrow
+    tags: [resize, right]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  return:
+    category: arrow
+    tags: [return]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  return-circle:
+    category: arrow
+    tags: [return, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  return-square:
+    category: arrow
+    tags: [return, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  screenshare:
+    category: actions
+    tags: [screenshare]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  search:
+    category: actions
+    tags: [search]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  search-check:
+    category: actions
+    tags: [search, check]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  search-check-circle:
+    category: actions
+    tags: [search, check, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  search-check-square:
+    category: actions
+    tags: [search, check, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  search-circle:
+    category: actions
+    tags: [search, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  search-scan:
+    category: actions
+    tags: [search, scan]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  search-square:
+    category: actions
+    tags: [search, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  send:
+    category: actions
+    tags: [send]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  send-circle:
+    category: actions
+    tags: [send, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  send-square:
+    category: actions
+    tags: [send, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  share-circle:
+    category: sunum
+    tags: [share, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  share-square:
+    category: sunum
+    tags: [share, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  swap:
+    category: arrow
+    tags: [swap]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  swap-circle:
+    category: arrow
+    tags: [swap, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  swap-left-right:
+    category: arrow
+    tags: [swap, left, right]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  swap-square:
+    category: arrow
+    tags: [swap, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  upload:
+    category: actions
+    tags: [upload]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  upload-circle:
+    category: actions
+    tags: [upload, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  upload-square:
+    category: actions
+    tags: [upload, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  warning:
+    category: actions
+    tags: [warning]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  warning-circle:
+    category: actions
+    tags: [warning, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  warning-square:
+    category: actions
+    tags: [warning, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  wifi:
+    category: actions
+    tags: [wifi]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  wifi-circle:
+    category: actions
+    tags: [wifi, circle]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  wifi-square:
+    category: actions
+    tags: [wifi, square]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk

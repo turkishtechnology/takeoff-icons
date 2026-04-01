@@ -14,7 +14,8 @@
     "build": "stencil build",
     "dev": "stencil build --dev --watch",
     "test": "stencil test --spec --e2e",
-    "clean": "rimraf dist"
+    "clean": "rimraf dist",
+    "lint": "eslint . --ext .ts,.tsx,.js,.jsx,.mjs,.cjs"
   },
   "dependencies": {
     "@tk-icons/core": "workspace:*"

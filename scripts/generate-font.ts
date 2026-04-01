@@ -96,10 +96,15 @@ saveCodepoints(codepoints);
 async function loadFantasticon(): Promise<GenerateFontsFn | null> {
   try {
     const mod = await import('fantasticon');
+    const fantasticonModule = mod as unknown as {
+      generateFonts?: GenerateFontsFn;
+      default?: {
+        generateFonts?: GenerateFontsFn;
+      };
+    };
     const fn =
-      (mod as { generateFonts?: GenerateFontsFn }).generateFonts ??
-      (mod as { default?: { generateFonts?: GenerateFontsFn } }).default
-        ?.generateFonts;
+      fantasticonModule.generateFonts ??
+      fantasticonModule.default?.generateFonts;
 
     if (!fn) {
       return null;
@@ -128,8 +133,7 @@ function buildCss(iconNames: string[]): string {
   }
 
   lines.push('');
-  lines.push('[class^="tk-icon-"],');
-  lines.push('[class*=" tk-icon-"] {');
+  lines.push('.ti {');
   lines.push(`  font-family: 'tk-icons-outlined-rounded';`);
   lines.push('  font-style: normal;');
   lines.push('  font-weight: normal;');
@@ -139,25 +143,39 @@ function buildCss(iconNames: string[]): string {
   lines.push('  -moz-osx-font-smoothing: grayscale;');
   lines.push('}');
   lines.push('');
-  lines.push(".tk-icon-filled { font-family: 'tk-icons-filled-rounded'; }");
-  lines.push(".tk-icon-sharp { font-family: 'tk-icons-outlined-sharp'; }");
+  lines.push(".ti.ti-rounded { font-family: 'tk-icons-outlined-rounded'; }");
+  lines.push(".ti.ti-sharp { font-family: 'tk-icons-outlined-sharp'; }");
+  lines.push(".ti.ti-bevel { font-family: 'tk-icons-outlined-bevel'; }");
+  lines.push(".ti.ti-tk { font-family: 'tk-icons-outlined-tk'; }");
+  lines.push('');
   lines.push(
-    ".tk-icon-filled.tk-icon-sharp { font-family: 'tk-icons-filled-sharp'; }",
+    ".ti[class*='-filled'] { font-family: 'tk-icons-filled-rounded'; }",
   );
-  lines.push(".tk-icon-bevel { font-family: 'tk-icons-outlined-bevel'; }");
   lines.push(
-    ".tk-icon-filled.tk-icon-bevel { font-family: 'tk-icons-filled-bevel'; }",
+    ".ti.ti-rounded[class*='-filled'] { font-family: 'tk-icons-filled-rounded'; }",
   );
-  lines.push(".tk-icon-tk { font-family: 'tk-icons-outlined-tk'; }");
   lines.push(
-    ".tk-icon-filled.tk-icon-tk { font-family: 'tk-icons-filled-tk'; }",
+    ".ti.ti-sharp[class*='-filled'] { font-family: 'tk-icons-filled-sharp'; }",
+  );
+  lines.push(
+    ".ti.ti-bevel[class*='-filled'] { font-family: 'tk-icons-filled-bevel'; }",
+  );
+  lines.push(
+    ".ti.ti-tk[class*='-filled'] { font-family: 'tk-icons-filled-tk'; }",
   );
   lines.push('');
 
   for (const name of iconNames) {
-    const codepoint = codepoints[name] ?? 0;
+    const codepoint = codepoints[name];
+    if (codepoint == null) {
+      continue;
+    }
+
     lines.push(
-      `.tk-icon-${name}::before { content: '\\${codepoint.toString(16)}'; }`,
+      `.ti.ti-${name}::before { content: '\\${codepoint.toString(16)}'; }`,
+    );
+    lines.push(
+      `.ti.ti-${name}-filled::before { content: '\\${codepoint.toString(16)}'; }`,
     );
   }
 

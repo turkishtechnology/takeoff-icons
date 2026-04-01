@@ -38,6 +38,10 @@ const categoriesDoc = parse(
 ) as CategoryYaml;
 const metaDoc = parse(fs.readFileSync(metaPath, 'utf8')) as IconsMetaYaml;
 
+function normalizeStringArray(values: unknown[] | undefined): string[] {
+  return (values ?? []).map((value) => String(value));
+}
+
 const iconNames = Object.keys(metaDoc.icons).sort();
 const categoryIds = categoriesDoc.categories
   .map((category) => category.id)
@@ -45,10 +49,10 @@ const categoryIds = categoriesDoc.categories
 
 const iconMetadata = iconNames.map((name) => ({
   name,
-  category: metaDoc.icons[name].category,
-  tags: metaDoc.icons[name].tags,
-  aliases: metaDoc.icons[name].aliases ?? [],
-  added: metaDoc.icons[name].added,
+  category: String(metaDoc.icons[name].category),
+  tags: normalizeStringArray(metaDoc.icons[name].tags),
+  aliases: normalizeStringArray(metaDoc.icons[name].aliases),
+  added: String(metaDoc.icons[name].added),
   deprecated: Boolean(metaDoc.icons[name].deprecated),
   variants: metaDoc.icons[name].variants,
 }));

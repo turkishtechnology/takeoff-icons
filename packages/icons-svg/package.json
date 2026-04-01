@@ -8,5 +8,8 @@
     "svg",
     "metadata"
   ],
-  "sideEffects": false
+  "sideEffects": false,
+  "scripts": {
+    "lint": "eslint . --ext .ts,.tsx,.js,.jsx,.mjs,.cjs"
+  }
 }

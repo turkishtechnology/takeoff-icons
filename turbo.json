@@ -90,9 +90,17 @@
       ],
       "outputs": ["dist/**"]
     },
-    "test": {
-      "dependsOn": ["build"]
+    "dev": {
+      "dependsOn": ["^build"],
+      "cache": false,
+      "persistent": true
     },
-    "lint": {}
+    "test": {
+      "dependsOn": ["build"],
+      "outputs": ["coverage/**"]
+    },
+    "lint": {
+      "outputs": []
+    }
   }
 }

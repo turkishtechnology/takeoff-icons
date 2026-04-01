@@ -6,9 +6,10 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js"
+    "./*": {
+      "types": "./dist/*/index.d.ts",
+      "import": "./dist/*/index.js",
+      "default": "./dist/*/index.js"
     }
   },
   "files": [
@@ -16,7 +17,8 @@
   ],
   "scripts": {
     "build": "rimraf dist && mkdir -p dist && cp -R src/. dist/",
-    "clean": "rimraf dist"
+    "clean": "rimraf dist",
+    "lint": "eslint . --ext .ts,.tsx,.js,.jsx,.mjs,.cjs"
   },
   "peerDependencies": {
     "vue": ">=3"

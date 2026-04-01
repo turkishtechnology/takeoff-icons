@@ -10,7 +10,6 @@ import {
 } from './utils';
 
 const files = getAllSvgFiles();
-const exports: string[] = [];
 
 for (const filePath of files) {
   const name = getIconName(filePath);
@@ -35,9 +34,6 @@ export default ${exportName};
 
   const outPath = path.join(ICONS_CORE_SRC, 'icons', style, type, `${name}.ts`);
   writeGeneratedFile(outPath, fileContent);
-  exports.push(
-    `export { ${exportName} } from './icons/${style}/${type}/${name}';`,
-  );
 }
 
 const indexContent = `
@@ -45,7 +41,6 @@ export * from './types';
 export * from './metadata';
 export * from './alias-map';
 export * from './search-index';
-${exports.sort().join('\n')}
 `;
 
 writeGeneratedFile(path.join(ICONS_CORE_SRC, 'index.ts'), indexContent);

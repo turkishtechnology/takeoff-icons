@@ -3,6 +3,8 @@ dist/
 .turbo/
 .stencil/
 *.tsbuildinfo
+.env
+coverage/
 
 # Auto-generated files
 packages/icons-core/src/icons/

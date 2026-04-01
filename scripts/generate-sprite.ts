@@ -15,7 +15,8 @@ for (const filePath of getAllSvgFiles()) {
   const name = getIconName(filePath);
   const { style, type } = getVariantFromPath(filePath);
   const { viewBox, innerHTML } = parseSvgFile(filePath);
-  const symbolId = `${name}--${style}-${type}`;
+  const filledSuffix = style === 'filled' ? '-filled' : '';
+  const symbolId = `ti-${name}${filledSuffix}-${type}`;
 
   symbols.push(
     `<symbol id="${symbolId}" viewBox="${viewBox}">${innerHTML}</symbol>`,

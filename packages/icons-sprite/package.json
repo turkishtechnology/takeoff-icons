@@ -12,7 +12,8 @@
   ],
   "scripts": {
     "build": "mkdir -p dist",
-    "clean": "rimraf dist"
+    "clean": "rimraf dist",
+    "lint": "eslint . --ext .ts,.tsx,.js,.jsx,.mjs,.cjs"
   },
   "sideEffects": false
 }

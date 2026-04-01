@@ -9,6 +9,7 @@
     "node": ">=18"
   },
   "scripts": {
+    "figma:export": "tsx scripts/figma-export.ts",
     "optimize": "tsx scripts/optimize.ts",
     "validate": "tsx scripts/validate.ts",
     "generate:metadata": "tsx scripts/generate-metadata.ts",
@@ -21,15 +22,28 @@
     "build": "turbo run build",
     "dev": "turbo run dev",
     "test": "turbo run test",
+    "test:coverage": "vitest run --coverage",
+    "lint": "turbo run lint",
     "clean": "turbo run clean && rimraf node_modules",
     "prepublish": "pnpm generate && pnpm build",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "changeset publish",
     "prepare": "husky"
   },
   "devDependencies": {
+    "@changesets/changelog-github": "^0.5.2",
+    "@changesets/cli": "^2.29.8",
     "@commitlint/cli": "^20.4.1",
     "@commitlint/config-conventional": "^20.4.1",
+    "@svgr/cli": "^8.1.0",
+    "@svgr/core": "^8.1.0",
+    "@tk-icons/eslint-config": "workspace:^",
     "@types/node": "^22.10.7",
+    "@vitest/coverage-v8": "^4.0.18",
+    "@vitest/ui": "^4.0.18",
     "change-case": "^5.4.4",
+    "eslint": "^8.57.1",
     "fantasticon": "^3.0.0",
     "glob": "^11.0.1",
     "husky": "^9.1.7",
@@ -42,6 +56,7 @@
     "tsx": "^4.19.2",
     "turbo": "^2.3.3",
     "typescript": "^5.7.3",
+    "vitest": "^4.0.18",
     "yaml": "^2.6.1"
   },
   "lint-staged": {
