@@ -1,8 +1,28 @@
 {
   "name": "@tk-icons/web",
   "version": "0.0.1",
+  "description": "Framework-agnostic <tk-icon> web component for the tk-icons icon library, built with Stencil.",
   "license": "MIT",
   "type": "module",
+  "homepage": "https://github.com/turkishtechnology/tk-icons/tree/main/packages/icons-web#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/turkishtechnology/tk-icons.git",
+    "directory": "packages/icons-web"
+  },
+  "bugs": {
+    "url": "https://github.com/turkishtechnology/tk-icons/issues"
+  },
+  "keywords": [
+    "icons",
+    "svg",
+    "icon-library",
+    "tk-icons",
+    "turkish-technology",
+    "web-components",
+    "custom-elements",
+    "stencil"
+  ],
   "main": "dist/index.cjs.js",
   "module": "dist/index.js",
   "collection": "dist/collection/collection-manifest.json",

@@ -1,7 +1,13 @@
 import { useState, useMemo, useCallback, useEffect, useRef } from 'react';
 import { iconMetadata, searchIcons } from '@tk-icons/core';
+import addCoreIcon from '@tk-icons/core/icons/outlined/rounded/add';
 import type { IconStyle, IconType } from '@tk-icons/core';
+import { AddIconOutlinedRounded } from '@tk-icons/react/add';
+import spriteUrl from '@tk-icons/sprite';
+import { defineCustomElements } from '@tk-icons/web/dist/loader';
 import '@tk-icons/font';
+import addSvgSource from '../../../packages/icons-svg/svg/outlined/rounded/add.svg?raw';
+import addVueSource from '../../../packages/icons-vue/src/add/AddIconOutlinedRounded.vue?raw';
 import './index.css';
 
 const rawIcons = import.meta.glob('../../../packages/icons-react/src/*/*.tsx', {
@@ -50,12 +56,41 @@ const allIconEntries: GroupedIcon[] = Array.from(groupedIcons.entries())
 
 const STYLES: IconStyle[] = ['outlined', 'filled'];
 const TYPES: IconType[] = ['rounded', 'sharp', 'bevel', 'tk'];
+const PACKAGE_SMOKE_ICON = 'add';
+const vueSfcMatch = addVueSource.match(/name:\s*'([^']+)'/);
+const vueSfcName = vueSfcMatch?.[1] ?? 'Vue SFC';
+
+let didDefineCustomElements = false;
 
 function toPascalCase(str: string): string {
   return str
     .split('-')
     .map((s) => s.charAt(0).toUpperCase() + s.slice(1))
     .join('');
+}
+
+function ensureWebComponentsDefined() {
+  if (didDefineCustomElements || typeof window === 'undefined') return;
+  defineCustomElements(window);
+  didDefineCustomElements = true;
+}
+
+function getFontClass(
+  iconName: string,
+  style: IconStyle,
+  type: IconType,
+): string {
+  return `ti ti-${iconName}${style === 'filled' ? '-filled' : ''}${type !== 'rounded' ? ` ti-${type}` : ''}`;
+}
+
+function getSpriteSymbolId(
+  iconName: string,
+  style: IconStyle,
+  type: IconType,
+): string {
+  return style === 'filled'
+    ? `ti-${iconName}-filled-${type}`
+    : `ti-${iconName}-${type}`;
 }
 
 function CopyButton({ text }: { text: string }) {
@@ -149,6 +184,136 @@ function ListIcon() {
   );
 }
 
+function CoreDataIcon({ color }: { color: string }) {
+  return (
+    <svg
+      viewBox={addCoreIcon.viewBox}
+      width={36}
+      height={36}
+      style={{ color }}
+      aria-hidden="true"
+      dangerouslySetInnerHTML={{ __html: addCoreIcon.svg }}
+    />
+  );
+}
+
+interface PackageSmokePanelProps {
+  style: IconStyle;
+  type: IconType;
+  color: string;
+}
+
+function PackageSmokePanel({ style, type, color }: PackageSmokePanelProps) {
+  const fontClass = getFontClass(PACKAGE_SMOKE_ICON, style, type);
+  const spriteSymbolId = getSpriteSymbolId(PACKAGE_SMOKE_ICON, style, type);
+
+  return (
+    <section className="package-smoke" aria-label="Package smoke tests">
+      <div className="package-smoke-header">
+        <div>
+          <h2>Package smoke</h2>
+          <span>{PACKAGE_SMOKE_ICON}</span>
+        </div>
+        <span className="package-smoke-mode">
+          {style}/{type}
+        </span>
+      </div>
+
+      <div className="package-smoke-grid">
+        <div className="package-smoke-card">
+          <div className="package-icon">
+            <CoreDataIcon color={color} />
+          </div>
+          <div>
+            <span className="package-name">@tk-icons/core</span>
+            <span className="package-detail">{addCoreIcon.variant}</span>
+          </div>
+        </div>
+
+        <div className="package-smoke-card">
+          <div className="package-icon">
+            <AddIconOutlinedRounded width={36} height={36} style={{ color }} />
+          </div>
+          <div>
+            <span className="package-name">@tk-icons/react</span>
+            <span className="package-detail">component export</span>
+          </div>
+        </div>
+
+        <div className="package-smoke-card">
+          <div className="package-icon font-preview">
+            <i className={fontClass} style={{ color }} aria-hidden="true" />
+          </div>
+          <div>
+            <span className="package-name">@tk-icons/font</span>
+            <span className="package-detail">{fontClass}</span>
+          </div>
+        </div>
+
+        <div className="package-smoke-card">
+          <div className="package-icon">
+            <svg width={36} height={36} style={{ color }} aria-hidden="true">
+              <use href={`${spriteUrl}#${spriteSymbolId}`} />
+            </svg>
+          </div>
+          <div>
+            <span className="package-name">@tk-icons/sprite</span>
+            <span className="package-detail">#{spriteSymbolId}</span>
+          </div>
+        </div>
+
+        <div className="package-smoke-card">
+          <div className="package-icon">
+            <tk-icon
+              icon={PACKAGE_SMOKE_ICON}
+              fill={style === 'filled' ? true : undefined}
+              icon-type={type}
+              size="large"
+              color={color}
+            />
+          </div>
+          <div>
+            <span className="package-name">@tk-icons/web</span>
+            <span className="package-detail">custom element</span>
+          </div>
+        </div>
+
+        <div className="package-smoke-card">
+          <div
+            className="package-icon svg-source-preview"
+            style={{ color }}
+            dangerouslySetInnerHTML={{ __html: addSvgSource }}
+          />
+          <div>
+            <span className="package-name">@tk-icons/svg</span>
+            <span className="package-detail">raw source</span>
+          </div>
+        </div>
+
+        <div className="package-smoke-card">
+          <div className="package-icon source-preview">
+            <span>{vueSfcName}</span>
+          </div>
+          <div>
+            <span className="package-name">@tk-icons/vue</span>
+            <span className="package-detail">{addVueSource.length} bytes</span>
+          </div>
+        </div>
+
+        <div className="package-smoke-card">
+          <div className="package-icon source-preview">
+            <span>ESLint</span>
+          </div>
+          <div>
+            <span className="package-name">@tk-icons/eslint-config</span>
+            <span className="package-detail">react config</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 interface DetailPanelProps {
   icon: GroupedIcon;
   style: IconStyle;
@@ -188,7 +353,7 @@ function DetailPanel({
   const componentName = `${pascalName}Icon${styleSuffix}${typeSuffix}`;
   const reactImport = `import { ${componentName} } from '@tk-icons/react/${icon.name}';\n\n<${componentName} width={24} height={24} />`;
   const webComponentSnippet = `<tk-icon icon="${icon.name}"${style === 'filled' ? ' fill' : ''} icon-type="${type}" size="base" variant="primary" />`;
-  const fontClass = `ti ti-${icon.name}${style === 'filled' ? '-filled' : ''}${type !== 'rounded' ? ` ti-${type}` : ''}`;
+  const fontClass = getFontClass(icon.name, style, type);
 
   return (
     <div className="detail-overlay" onClick={handleOverlayClick}>
@@ -294,6 +459,10 @@ function App() {
   const searchRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
+    ensureWebComponentsDefined();
+  }, []);
+
+  useEffect(() => {
     const handleKey = (e: KeyboardEvent) => {
       if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
         e.preventDefault();
@@ -395,6 +564,12 @@ function App() {
       </div>
 
       <main className="main-content">
+        <PackageSmokePanel
+          style={activeStyle}
+          type={activeType}
+          color={color}
+        />
+
         <div className="results-bar">
           <div className="results-count">
             <span>{filteredIcons.length}</span>{' '}

@@ -1,8 +1,28 @@
 {
   "name": "@tk-icons/react",
   "version": "0.0.1",
+  "description": "Tree-shakeable, typed React components for the tk-icons icon library.",
   "license": "MIT",
   "type": "module",
+  "homepage": "https://github.com/turkishtechnology/tk-icons/tree/main/packages/icons-react#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/turkishtechnology/tk-icons.git",
+    "directory": "packages/icons-react"
+  },
+  "bugs": {
+    "url": "https://github.com/turkishtechnology/tk-icons/issues"
+  },
+  "keywords": [
+    "icons",
+    "svg",
+    "icon-library",
+    "tk-icons",
+    "turkish-technology",
+    "react",
+    "react-icons",
+    "components"
+  ],
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {

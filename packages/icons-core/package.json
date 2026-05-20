@@ -1,8 +1,27 @@
 {
   "name": "@tk-icons/core",
   "version": "0.0.1",
+  "description": "Framework-agnostic core for tk-icons: icon data, metadata, aliases, and search index.",
   "license": "MIT",
   "type": "module",
+  "homepage": "https://github.com/turkishtechnology/tk-icons/tree/main/packages/icons-core#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/turkishtechnology/tk-icons.git",
+    "directory": "packages/icons-core"
+  },
+  "bugs": {
+    "url": "https://github.com/turkishtechnology/tk-icons/issues"
+  },
+  "keywords": [
+    "icons",
+    "svg",
+    "icon-library",
+    "tk-icons",
+    "turkish-technology",
+    "metadata",
+    "icon-data"
+  ],
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {

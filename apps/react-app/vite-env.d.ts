@@ -1,1 +1,19 @@
 /// <reference types="vite/client" />
+
+declare module '@tk-icons/sprite' {
+  const spriteUrl: string;
+  export default spriteUrl;
+}
+
+declare namespace JSX {
+  interface IntrinsicElements {
+    'tk-icon': import('react').HTMLAttributes<HTMLElement> & {
+      icon?: string;
+      fill?: boolean;
+      'icon-type'?: string;
+      size?: string;
+      variant?: string;
+      color?: string;
+    };
+  }
+}

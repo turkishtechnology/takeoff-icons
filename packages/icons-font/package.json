@@ -1,8 +1,29 @@
 {
   "name": "@tk-icons/font",
   "version": "0.0.1",
+  "description": "Icon webfont (woff2) and CSS for the tk-icons icon library.",
   "license": "MIT",
   "type": "module",
+  "homepage": "https://github.com/turkishtechnology/tk-icons/tree/main/packages/icons-font#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/turkishtechnology/tk-icons.git",
+    "directory": "packages/icons-font"
+  },
+  "bugs": {
+    "url": "https://github.com/turkishtechnology/tk-icons/issues"
+  },
+  "keywords": [
+    "icons",
+    "svg",
+    "icon-library",
+    "tk-icons",
+    "turkish-technology",
+    "icon-font",
+    "webfont",
+    "woff2",
+    "css"
+  ],
   "main": "./dist/tk-icons.css",
   "exports": {
     ".": "./dist/tk-icons.css"

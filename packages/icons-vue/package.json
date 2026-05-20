@@ -1,8 +1,28 @@
 {
   "name": "@tk-icons/vue",
   "version": "0.0.1",
+  "description": "Typed Vue 3 components for the tk-icons icon library.",
   "license": "MIT",
   "type": "module",
+  "homepage": "https://github.com/turkishtechnology/tk-icons/tree/main/packages/icons-vue#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/turkishtechnology/tk-icons.git",
+    "directory": "packages/icons-vue"
+  },
+  "bugs": {
+    "url": "https://github.com/turkishtechnology/tk-icons/issues"
+  },
+  "keywords": [
+    "icons",
+    "svg",
+    "icon-library",
+    "tk-icons",
+    "turkish-technology",
+    "vue",
+    "vue3",
+    "components"
+  ],
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {

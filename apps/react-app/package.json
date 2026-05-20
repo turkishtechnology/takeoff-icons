@@ -13,6 +13,10 @@
     "@tk-icons/core": "workspace:*",
     "@tk-icons/font": "workspace:*",
     "@tk-icons/react": "workspace:*",
+    "@tk-icons/sprite": "workspace:*",
+    "@tk-icons/svg": "workspace:*",
+    "@tk-icons/vue": "workspace:*",
+    "@tk-icons/web": "workspace:*",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },

@@ -1,9 +1,17 @@
 {
   "name": "tk-icons",
   "version": "0.0.1",
+  "description": "Production-grade icon library monorepo for the @tk-icons/* packages.",
   "private": true,
   "license": "MIT",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/turkishtechnology/tk-icons.git"
+  },
+  "bugs": {
+    "url": "https://github.com/turkishtechnology/tk-icons/issues"
+  },
   "packageManager": "pnpm@9.0.0",
   "engines": {
     "node": ">=18"

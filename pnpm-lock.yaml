@@ -97,6 +97,18 @@ importers:
       '@tk-icons/react':
         specifier: workspace:*
         version: link:../../packages/icons-react
+      '@tk-icons/sprite':
+        specifier: workspace:*
+        version: link:../../packages/icons-sprite
+      '@tk-icons/svg':
+        specifier: workspace:*
+        version: link:../../packages/icons-svg
+      '@tk-icons/vue':
+        specifier: workspace:*
+        version: link:../../packages/icons-vue
+      '@tk-icons/web':
+        specifier: workspace:*
+        version: link:../../packages/icons-web
       react:
         specifier: ^18.3.1
         version: 18.3.1

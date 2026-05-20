@@ -1,8 +1,27 @@
 {
   "name": "@tk-icons/sprite",
   "version": "0.0.1",
+  "description": "SVG sprite sheet for the tk-icons icon library.",
   "license": "MIT",
   "type": "module",
+  "homepage": "https://github.com/turkishtechnology/tk-icons/tree/main/packages/icons-sprite#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/turkishtechnology/tk-icons.git",
+    "directory": "packages/icons-sprite"
+  },
+  "bugs": {
+    "url": "https://github.com/turkishtechnology/tk-icons/issues"
+  },
+  "keywords": [
+    "icons",
+    "svg",
+    "icon-library",
+    "tk-icons",
+    "turkish-technology",
+    "svg-sprite",
+    "sprite"
+  ],
   "main": "./dist/sprite.svg",
   "exports": {
     ".": "./dist/sprite.svg"
