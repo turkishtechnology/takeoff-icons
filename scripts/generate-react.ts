@@ -1,6 +1,5 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { transform } from '@svgr/core';
 import {
   getAllSvgFiles,
   getIconName,
@@ -9,15 +8,11 @@ import {
   parseSvgFile,
   toPascalCase,
   writeGeneratedFile,
-  ensureDir,
 } from './utils';
 
-async function generateReactComponents() {
+function generateReactComponents() {
   const svgFiles = getAllSvgFiles();
-  const grouped = new Map<
-    string,
-    { componentName: string; filePath: string; fileName: string }[]
-  >();
+  const grouped = new Map<string, { componentName: string }[]>();
 
   // Clean the target folder first
   if (fs.existsSync(ICONS_REACT_SRC)) {
@@ -30,30 +25,47 @@ async function generateReactComponents() {
 
     // Naming convention: CalendarIconOutlinedRounded
     const componentName = `${toPascalCase(rawName)}Icon${toPascalCase(style)}${toPascalCase(type)}`;
-    const fileName = `${componentName}.tsx`;
-
     const { innerHTML, viewBox } = parseSvgFile(filePath);
-    const svgCode = `<svg viewBox="${viewBox}">${innerHTML}</svg>`;
 
-    const reactCode = await transform(
-      svgCode,
-      {
-        icon: true,
-        typescript: true,
-        plugins: ['@svgr/plugin-jsx'],
-        jsxRuntime: 'automatic',
-        exportType: 'named',
-        namedExport: componentName,
-      },
-      { componentName },
+    const reactCode = `
+import { forwardRef } from 'react';
+import type { Ref, SVGProps } from 'react';
+
+export interface ${componentName}Props extends SVGProps<SVGSVGElement> {
+  /** Accessible label. When set, the icon is exposed to assistive technology as an image with this name. */
+  title?: string;
+}
+
+export const ${componentName} = forwardRef<SVGSVGElement, ${componentName}Props>(
+  ({ title, ...props }: ${componentName}Props, ref: Ref<SVGSVGElement>) => {
+    const label = title ?? props['aria-label'];
+    return (
+      <svg
+        ref={ref}
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox=${JSON.stringify(viewBox)}
+        width="1em"
+        height="1em"
+        {...props}
+        role={label != null ? 'img' : undefined}
+        aria-label={label}
+        aria-hidden={label != null ? undefined : true}
+        dangerouslySetInnerHTML={{ __html: ${JSON.stringify(innerHTML)} }}
+      />
+    );
+  },
+);
+
+${componentName}.displayName = ${JSON.stringify(componentName)};
+`;
+
+    writeGeneratedFile(
+      path.join(ICONS_REACT_SRC, rawName, `${componentName}.tsx`),
+      reactCode,
     );
 
-    const destDir = path.join(ICONS_REACT_SRC, rawName);
-    const destPath = path.join(destDir, fileName);
-    writeGeneratedFile(destPath, reactCode);
-
     const entry = grouped.get(rawName) ?? [];
-    entry.push({ componentName, filePath, fileName });
+    entry.push({ componentName });
     grouped.set(rawName, entry);
   }
 
@@ -79,4 +91,4 @@ async function generateReactComponents() {
   );
 }
 
-generateReactComponents().catch(console.error);
+generateReactComponents();

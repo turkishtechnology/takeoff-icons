@@ -114,4 +114,48 @@ describe('tk-icon', () => {
     const svg = page.root?.shadowRoot?.querySelector('svg');
     expect(svg?.classList.contains('tk-icon-primary')).toBe(true);
   });
+
+  it('is decorative (aria-hidden, no role) without a label', async () => {
+    const page = await newSpecPage({
+      components: [TkIcon],
+      html: '<tk-icon></tk-icon>',
+    });
+
+    page.root!.icon = {
+      name: 'check',
+      style: 'outlined',
+      type: 'rounded',
+      variant: 'outlined/rounded',
+      viewBox: '0 0 24 24',
+      svg: '<path d="M0 0h24v24H0z" />',
+    };
+    await page.waitForChanges();
+
+    const svg = page.root?.shadowRoot?.querySelector('svg');
+    expect(svg?.getAttribute('aria-hidden')).toBe('true');
+    expect(svg?.getAttribute('role')).toBeNull();
+    expect(svg?.getAttribute('aria-label')).toBeNull();
+  });
+
+  it('exposes an accessible image when a label is set', async () => {
+    const page = await newSpecPage({
+      components: [TkIcon],
+      html: '<tk-icon label="Done"></tk-icon>',
+    });
+
+    page.root!.icon = {
+      name: 'check',
+      style: 'outlined',
+      type: 'rounded',
+      variant: 'outlined/rounded',
+      viewBox: '0 0 24 24',
+      svg: '<path d="M0 0h24v24H0z" />',
+    };
+    await page.waitForChanges();
+
+    const svg = page.root?.shadowRoot?.querySelector('svg');
+    expect(svg?.getAttribute('role')).toBe('img');
+    expect(svg?.getAttribute('aria-label')).toBe('Done');
+    expect(svg?.getAttribute('aria-hidden')).toBeNull();
+  });
 });

@@ -1,5 +1,6 @@
 import { useState, useMemo, useCallback, useEffect, useRef } from 'react';
-import { iconMetadata, searchIcons } from '@tk-icons/core';
+import { iconMetadata } from '@tk-icons/core/metadata';
+import { searchIcons } from '@tk-icons/core/search-index';
 import addCoreIcon from '@tk-icons/core/icons/outlined/rounded/add';
 import type { IconStyle, IconType } from '@tk-icons/core';
 import { AddIconOutlinedRounded } from '@tk-icons/react/add';
@@ -365,7 +366,7 @@ function DetailPanel({
   const typeSuffix = toPascalCase(type);
   const componentName = `${pascalName}Icon${styleSuffix}${typeSuffix}`;
   const reactImport = `import { ${componentName} } from '@tk-icons/react/${icon.name}';\n\n<${componentName} width={24} height={24} />`;
-  const webComponentSnippet = `<tk-icon icon="${icon.name}"${style === 'filled' ? ' fill' : ''} icon-type="${type}" size="base" variant="primary" />`;
+  const webComponentSnippet = `import iconData from '@tk-icons/core/icons/${style}/${type}/${icon.name}';\n\nconst el = document.createElement('tk-icon');\nel.icon = iconData;\nel.size = 'base';\nel.variant = 'primary';`;
   const fontClass = getFontClass(icon.name, style, type);
 
   return (

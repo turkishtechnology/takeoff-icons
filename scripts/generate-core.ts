@@ -36,11 +36,12 @@ export default ${exportName};
   writeGeneratedFile(outPath, fileContent);
 }
 
+// The root barrel intentionally re-exports types only (erased at build time),
+// so importing '@tk-icons/core' never pulls the heavy metadata, search-index or
+// alias-map data into a consumer's bundle. Those are available as subpaths:
+//   '@tk-icons/core/metadata', '@tk-icons/core/search-index', '@tk-icons/core/alias-map'
 const indexContent = `
 export * from './types';
-export * from './metadata';
-export * from './alias-map';
-export * from './search-index';
 `;
 
 writeGeneratedFile(path.join(ICONS_CORE_SRC, 'index.ts'), indexContent);

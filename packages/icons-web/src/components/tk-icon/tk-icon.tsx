@@ -1,13 +1,5 @@
-import { Component, Prop, State, Watch, h } from '@stencil/core';
-import {
-  aliasMap,
-  hasVariant,
-  type IconData,
-  type IconSemanticVariant,
-  type IconSize,
-  type IconStyle,
-  type IconType,
-} from '@tk-icons/core';
+import { Component, Prop, h } from '@stencil/core';
+import type { IconData, IconSemanticVariant, IconSize } from '@tk-icons/core';
 
 const SIZE_MAP: Record<IconSize, number> = {
   xsmall: 12,
@@ -26,18 +18,10 @@ const SIZE_MAP: Record<IconSize, number> = {
 })
 export class TkIcon {
   /**
-   * Icon name or full icon data.
+   * The icon to render. Obtain icon data from `@tk-icons/core`, e.g.
+   * `import addIcon from '@tk-icons/core/icons/outlined/rounded/add'`.
    */
-  @Prop() icon?: string | IconData;
-  /**
-   * @deprecated Use `icon` instead.
-   */
-  @Prop() name?: string;
-  /**
-   * Indicates whether the filled variant should be used.
-   */
-  @Prop() fill = false;
-  @Prop({ attribute: 'icon-type' }) iconType: IconType = 'rounded';
+  @Prop() icon?: IconData;
   /**
    * Sets size for the component.
    * @default 'base'
@@ -49,69 +33,29 @@ export class TkIcon {
    */
   @Prop() variant: IconSemanticVariant = 'primary';
   @Prop() color?: string;
+  /**
+   * Accessible label. When provided the icon is exposed to assistive
+   * technology as an image with this name; otherwise it is treated as
+   * decorative and hidden.
+   */
+  @Prop() label?: string;
 
-  @State() private resolvedIcon?: IconData;
   private svgEl?: SVGSVGElement;
 
-  @Watch('name')
-  @Watch('icon')
-  @Watch('fill')
-  @Watch('iconType')
-  protected onPropsChange(): Promise<void> {
-    return this.loadIcon();
-  }
-
-  public async componentWillLoad(): Promise<void> {
-    await this.loadIcon();
-  }
-
   public componentDidRender(): void {
-    if (this.svgEl && this.resolvedIcon) {
-      this.svgEl.innerHTML = this.resolvedIcon.svg;
-    }
-  }
-
-  private async loadIcon(): Promise<void> {
-    if (this.icon && typeof this.icon !== 'string') {
-      this.resolvedIcon = this.icon;
-      return;
-    }
-
-    const iconName =
-      typeof this.icon === 'string' && this.icon.trim() ? this.icon : this.name;
-
-    if (!iconName) {
-      this.resolvedIcon = undefined;
-      return;
-    }
-
-    const resolvedName = aliasMap[iconName] ?? iconName;
-    const iconStyle: IconStyle = this.fill ? 'filled' : 'outlined';
-    const variant = `${iconStyle}/${this.iconType}`;
-    if (!hasVariant(resolvedName, variant)) {
-      this.resolvedIcon = undefined;
-      return;
-    }
-
-    try {
-      const mod = await import(
-        /* @vite-ignore */
-        `@tk-icons/core/icons/${iconStyle}/${this.iconType}/${resolvedName}`
-      );
-      const data = (mod as { default?: IconData }).default;
-      this.resolvedIcon = data;
-    } catch {
-      this.resolvedIcon = undefined;
+    if (this.svgEl && this.icon) {
+      this.svgEl.innerHTML = this.icon.svg;
     }
   }
 
   public render() {
-    const icon = this.resolvedIcon;
+    const icon = this.icon;
     if (!icon) {
       return null;
     }
 
     const px = SIZE_MAP[this.size] ?? SIZE_MAP.base;
+    const labelled = Boolean(this.label);
 
     return (
       <svg
@@ -122,8 +66,9 @@ export class TkIcon {
         viewBox={icon.viewBox}
         width={px}
         height={px}
-        role="img"
-        aria-hidden="true"
+        role={labelled ? 'img' : undefined}
+        aria-label={labelled ? this.label : undefined}
+        aria-hidden={labelled ? undefined : 'true'}
         class={`tk-icon-${this.variant}`}
         style={{ color: this.color ?? undefined }}
       />

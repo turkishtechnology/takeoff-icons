@@ -23,8 +23,6 @@
     "vue3",
     "components"
   ],
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
   "exports": {
     "./*": {
       "types": "./dist/*/index.d.ts",
@@ -36,7 +34,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "rimraf dist && mkdir -p dist && cp -R src/. dist/",
+    "build": "vue-tsc --noEmit -p tsconfig.json && rimraf dist && mkdir -p dist && cp -R src/. dist/",
     "clean": "rimraf dist",
     "lint": "eslint . --ext .ts,.tsx,.js,.jsx,.mjs,.cjs"
   },
@@ -46,7 +44,8 @@
   "devDependencies": {
     "@tk-icons/core": "workspace:*",
     "typescript": "^5.7.3",
-    "vue": "^3.5.13"
+    "vue": "^3.5.13",
+    "vue-tsc": "^2.1.10"
   },
   "sideEffects": false
 }

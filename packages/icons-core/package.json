@@ -36,6 +36,14 @@
     "./metadata": {
       "types": "./dist/metadata.d.ts",
       "import": "./dist/metadata.js"
+    },
+    "./search-index": {
+      "types": "./dist/search-index.d.ts",
+      "import": "./dist/search-index.js"
+    },
+    "./alias-map": {
+      "types": "./dist/alias-map.d.ts",
+      "import": "./dist/alias-map.js"
     }
   },
   "files": [

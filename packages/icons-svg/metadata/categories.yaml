@@ -1,37 +1,19 @@
 categories:
   - id: actions
     label: 'Actions'
-    description: ''
-  - id: actions-iconography
-    label: 'Actions Iconography'
-    description: ''
+    description: 'General-purpose action and control icons.'
   - id: arrow
     label: 'Arrow'
-    description: ''
+    description: 'Directional arrows, carets and chevrons.'
   - id: commerce
     label: 'Commerce'
-    description: ''
-  - id: lock-open
-    label: 'Lock Open'
-    description: ''
-  - id: lock-open-right
-    label: 'Lock Open Right'
-    description: ''
-  - id: no-encryption
-    label: 'No Encryption'
-    description: ''
-  - id: password
-    label: 'Password'
-    description: ''
-  - id: password-dots
-    label: 'Password Dots'
-    description: ''
-  - id: pin
-    label: 'Pin'
-    description: ''
-  - id: sunum
-    label: 'Sunum'
-    description: ''
+    description: 'Money, payments, shopping and banking.'
+  - id: people
+    label: 'People'
+    description: 'Accounts, persons, groups and contacts.'
+  - id: security
+    label: 'Security'
+    description: 'Locks, passwords and encryption.'
   - id: uncategorized
     label: 'Uncategorized'
-    description: ''
+    description: 'Icons that have not been categorized yet.'

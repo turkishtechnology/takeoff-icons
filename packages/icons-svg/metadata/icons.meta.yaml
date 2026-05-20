@@ -1,6 +1,6 @@
 icons:
   account-balance:
-    category: 'arrow'
+    category: 'commerce'
     tags:
       [
         'account',
@@ -34,7 +34,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   account-balance-circle:
-    category: 'arrow'
+    category: 'commerce'
     tags:
       [
         'account',
@@ -68,7 +68,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   account-balance-square:
-    category: 'arrow'
+    category: 'commerce'
     tags:
       [
         'account',
@@ -102,7 +102,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   account-box:
-    category: 'pin'
+    category: 'people'
     tags:
       [
         'account',
@@ -134,7 +134,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   account-box-circle:
-    category: 'pin'
+    category: 'people'
     tags:
       [
         'account',
@@ -167,7 +167,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   account-box-square:
-    category: 'pin'
+    category: 'people'
     tags:
       [
         'account',
@@ -200,7 +200,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   account-circle:
-    category: 'pin'
+    category: 'people'
     tags:
       [
         'account',
@@ -233,7 +233,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   account-circle-circle:
-    category: 'pin'
+    category: 'people'
     tags:
       [
         'account',
@@ -267,7 +267,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   account-circle-square:
-    category: 'pin'
+    category: 'people'
     tags:
       [
         'account',
@@ -301,7 +301,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   action-add:
-    category: 'actions-iconography'
+    category: 'actions'
     tags:
       [
         'data',
@@ -332,7 +332,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   action-notification-alert:
-    category: 'actions-iconography'
+    category: 'actions'
     tags: ['action', 'notification', 'alert']
     aliases: []
     added: '1.0.0'
@@ -346,7 +346,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   action-share:
-    category: 'sunum'
+    category: 'actions'
     tags:
       [
         'share',
@@ -1443,7 +1443,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   arrow-code:
-    category: 'actions-iconography'
+    category: 'arrow'
     tags: ['arrow', 'code']
     aliases: []
     added: '1.0.0'
@@ -1457,7 +1457,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   arrow-code-slash:
-    category: 'actions-iconography'
+    category: 'arrow'
     tags: ['arrow', 'code', 'slash']
     aliases: []
     added: '1.0.0'
@@ -1471,7 +1471,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   arrow-collapse:
-    category: 'actions-iconography'
+    category: 'arrow'
     tags: ['arrow', 'collapse']
     aliases: []
     added: '1.0.0'
@@ -1485,7 +1485,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   arrow-download:
-    category: 'actions-iconography'
+    category: 'arrow'
     tags: ['arrow', 'download']
     aliases: []
     added: '1.0.0'
@@ -1499,7 +1499,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   arrow-expand:
-    category: 'actions-iconography'
+    category: 'arrow'
     tags: ['arrow', 'expand']
     aliases: []
     added: '1.0.0'
@@ -1594,7 +1594,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   arrow-move:
-    category: 'actions-iconography'
+    category: 'arrow'
     tags: ['arrow', 'move']
     aliases: []
     added: '1.0.0'
@@ -1608,7 +1608,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   arrow-open:
-    category: 'actions-iconography'
+    category: 'arrow'
     tags: ['arrow', 'open']
     aliases: []
     added: '1.0.0'
@@ -5368,7 +5368,7 @@ icons:
       - outlined/rounded
       - outlined/sharp
       - outlined/tk
-  chevron-circle-top:
+  chevron-top-circle:
     category: 'arrow'
     tags:
       [
@@ -5393,7 +5393,7 @@ icons:
         'up arrow',
         'upward',
       ]
-    aliases: []
+    aliases: ['chevron-circle-top']
     added: '1.0.0'
     variants:
       - filled/bevel
@@ -6357,7 +6357,7 @@ icons:
       - outlined/rounded
       - outlined/sharp
       - outlined/tk
-  currency-liracircle:
+  currency-lira-circle:
     category: 'commerce'
     tags:
       [
@@ -6379,7 +6379,7 @@ icons:
         'tl symbol',
         'turkish lira',
       ]
-    aliases: []
+    aliases: ['currency-liracircle']
     added: '1.0.0'
     variants:
       - filled/bevel
@@ -6390,7 +6390,7 @@ icons:
       - outlined/rounded
       - outlined/sharp
       - outlined/tk
-  dailpad-1-circle:
+  dialpad-1-circle:
     category: 'actions'
     tags:
       [
@@ -6410,7 +6410,7 @@ icons:
         'telephone',
         'actions',
       ]
-    aliases: []
+    aliases: ['dailpad-1-circle']
     added: '1.0.0'
     variants:
       - filled/bevel
@@ -6510,18 +6510,6 @@ icons:
       - filled/sharp
       - filled/tk
       - outlined/bevel
-      - outlined/rounded
-      - outlined/sharp
-      - outlined/tk
-  deneme-icon-deneme:
-    category: 'uncategorized'
-    tags: ['deneme', 'icon', 'deneme']
-    aliases: []
-    added: '1.0.0'
-    variants:
-      - filled/rounded
-      - filled/sharp
-      - filled/tk
       - outlined/rounded
       - outlined/sharp
       - outlined/tk
@@ -7282,7 +7270,7 @@ icons:
       - outlined/rounded
       - outlined/sharp
       - outlined/tk
-  drag-squre:
+  drag-square:
     category: 'actions'
     tags:
       [
@@ -7301,7 +7289,7 @@ icons:
         'actions',
         'square',
       ]
-    aliases: []
+    aliases: ['drag-squre']
     added: '1.0.0'
     variants:
       - filled/bevel
@@ -7576,7 +7564,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   favorite:
-    category: 'pin'
+    category: 'actions'
     tags:
       [
         'affection',
@@ -7610,7 +7598,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   favorite-circle:
-    category: 'pin'
+    category: 'actions'
     tags:
       [
         'affection',
@@ -7645,7 +7633,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   favorite-square:
-    category: 'pin'
+    category: 'actions'
     tags:
       [
         'affection',
@@ -8480,7 +8468,7 @@ icons:
       - outlined/rounded
       - outlined/sharp
       - outlined/tk
-  foward-circle:
+  forward-circle:
     category: 'arrow'
     tags:
       [
@@ -8494,7 +8482,7 @@ icons:
         'transfer',
         'circle',
       ]
-    aliases: []
+    aliases: ['foward-circle']
     added: '1.0.0'
     variants:
       - filled/bevel
@@ -8505,7 +8493,7 @@ icons:
       - outlined/rounded
       - outlined/sharp
       - outlined/tk
-  foward-square:
+  forward-square:
     category: 'arrow'
     tags:
       [
@@ -8519,7 +8507,7 @@ icons:
         'transfer',
         'square',
       ]
-    aliases: []
+    aliases: ['foward-square']
     added: '1.0.0'
     variants:
       - filled/bevel
@@ -8863,7 +8851,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   group:
-    category: 'pin'
+    category: 'people'
     tags:
       [
         'accounts',
@@ -8896,7 +8884,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   group-circle:
-    category: 'pin'
+    category: 'people'
     tags:
       [
         'accounts',
@@ -8930,7 +8918,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   group-square:
-    category: 'pin'
+    category: 'people'
     tags:
       [
         'accounts',
@@ -9471,7 +9459,7 @@ icons:
       - outlined/rounded
       - outlined/sharp
       - outlined/tk
-  hard-drive-cirlce:
+  hard-drive-circle:
     category: 'uncategorized'
     tags:
       [
@@ -9493,7 +9481,7 @@ icons:
         'storage',
         'store',
       ]
-    aliases: []
+    aliases: ['hard-drive-cirlce']
     added: '1.0.0'
     variants:
       - filled/bevel
@@ -10447,7 +10435,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   lock-open:
-    category: 'lock-open'
+    category: 'security'
     tags:
       [
         'unlock',
@@ -10476,7 +10464,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   lock-open-circle:
-    category: 'lock-open'
+    category: 'security'
     tags:
       [
         'unlock',
@@ -10506,7 +10494,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   lock-open-right:
-    category: 'lock-open-right'
+    category: 'security'
     tags:
       [
         'unlock',
@@ -10534,7 +10522,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   lock-open-right-circle:
-    category: 'lock-open-right'
+    category: 'security'
     tags:
       [
         'unlock',
@@ -10563,7 +10551,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   lock-open-right-square:
-    category: 'lock-open-right'
+    category: 'security'
     tags:
       [
         'unlock',
@@ -10592,7 +10580,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   lock-open-square:
-    category: 'lock-open'
+    category: 'security'
     tags:
       [
         'unlock',
@@ -12204,7 +12192,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   no-encryption:
-    category: 'no-encryption'
+    category: 'security'
     tags:
       [
         'security',
@@ -12232,7 +12220,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   no-encryption-circle:
-    category: 'no-encryption'
+    category: 'security'
     tags:
       [
         'security',
@@ -12261,7 +12249,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   no-encryption-square:
-    category: 'no-encryption'
+    category: 'security'
     tags:
       [
         'security',
@@ -12658,7 +12646,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   password:
-    category: 'password'
+    category: 'security'
     tags:
       [
         'code',
@@ -12686,7 +12674,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   password-circle:
-    category: 'password'
+    category: 'security'
     tags:
       [
         'code',
@@ -12715,7 +12703,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   password-dots:
-    category: 'password-dots'
+    category: 'security'
     tags:
       [
         'code',
@@ -12744,7 +12732,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   password-dots-circle:
-    category: 'password-dots'
+    category: 'security'
     tags:
       [
         'code',
@@ -12774,7 +12762,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   password-dots-square:
-    category: 'password-dots'
+    category: 'security'
     tags:
       [
         'code',
@@ -12804,7 +12792,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   password-square:
-    category: 'password'
+    category: 'security'
     tags:
       [
         'code',
@@ -13016,7 +13004,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   person:
-    category: 'pin'
+    category: 'people'
     tags:
       [
         'account',
@@ -13049,7 +13037,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   person-add:
-    category: 'pin'
+    category: 'people'
     tags:
       [
         '+',
@@ -13084,7 +13072,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   person-add-circle:
-    category: 'pin'
+    category: 'people'
     tags:
       [
         '+',
@@ -13120,7 +13108,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   person-add-square:
-    category: 'pin'
+    category: 'people'
     tags:
       [
         '+',
@@ -13156,7 +13144,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   person-circle:
-    category: 'pin'
+    category: 'people'
     tags:
       [
         'account',
@@ -13190,7 +13178,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   person-remove:
-    category: 'pin'
+    category: 'people'
     tags:
       [
         'ban',
@@ -13222,7 +13210,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   person-remove-circle:
-    category: 'pin'
+    category: 'people'
     tags:
       [
         'ban',
@@ -13255,7 +13243,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   person-remove-square:
-    category: 'pin'
+    category: 'people'
     tags:
       [
         'ban',
@@ -13375,7 +13363,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   person-square:
-    category: 'pin'
+    category: 'people'
     tags:
       [
         'account',
@@ -13589,7 +13577,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   pin:
-    category: 'pin'
+    category: 'uncategorized'
     tags:
       [
         'login',
@@ -13617,7 +13605,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   pin-circle:
-    category: 'pin'
+    category: 'uncategorized'
     tags:
       [
         'login',
@@ -13646,7 +13634,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   pin-square:
-    category: 'pin'
+    category: 'uncategorized'
     tags:
       [
         'login',
@@ -13773,7 +13761,7 @@ icons:
       - outlined/rounded
       - outlined/sharp
       - outlined/tk
-  place-squarearrow-left-square:
+  place-square-square:
     category: 'arrow'
     tags:
       [
@@ -13795,7 +13783,7 @@ icons:
         'route',
         'travel',
       ]
-    aliases: []
+    aliases: ['place-squarearrow-left-square']
     added: '1.0.0'
     variants:
       - filled/bevel
@@ -14672,7 +14660,7 @@ icons:
       - outlined/rounded
       - outlined/sharp
       - outlined/tk
-  repeat-vertical-acircle:
+  repeat-vertical-circle:
     category: 'arrow'
     tags:
       [
@@ -14692,7 +14680,7 @@ icons:
         'video player. vertical',
         'circle',
       ]
-    aliases: []
+    aliases: ['repeat-vertical-acircle']
     added: '1.0.0'
     variants:
       - filled/bevel
@@ -15458,7 +15446,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   share-circle:
-    category: 'sunum'
+    category: 'actions'
     tags:
       [
         'share',
@@ -15487,7 +15475,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   share-square:
-    category: 'sunum'
+    category: 'actions'
     tags:
       [
         'share',
@@ -16528,7 +16516,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   star:
-    category: 'pin'
+    category: 'actions'
     tags:
       [
         'add to favorite',
@@ -16561,7 +16549,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   star-circle:
-    category: 'pin'
+    category: 'actions'
     tags:
       [
         'add to favorite',
@@ -16595,7 +16583,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   star-off:
-    category: 'pin'
+    category: 'actions'
     tags:
       [
         'add to favorite',
@@ -16628,7 +16616,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   star-off-circle:
-    category: 'pin'
+    category: 'actions'
     tags:
       [
         'add to favorite',
@@ -16662,7 +16650,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   star-off-square:
-    category: 'pin'
+    category: 'actions'
     tags:
       [
         'add to favorite',
@@ -16696,7 +16684,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   star-square:
-    category: 'pin'
+    category: 'actions'
     tags:
       [
         'add to favorite',
@@ -17405,7 +17393,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   thumb-down:
-    category: 'pin'
+    category: 'actions'
     tags:
       [
         'cancel',
@@ -17439,7 +17427,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   thumb-down-circle:
-    category: 'pin'
+    category: 'actions'
     tags:
       [
         'cancel',
@@ -17474,7 +17462,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   thumb-down-square:
-    category: 'pin'
+    category: 'actions'
     tags:
       [
         'cancel',
@@ -17509,7 +17497,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   thumb-up:
-    category: 'pin'
+    category: 'actions'
     tags:
       [
         'agree',
@@ -17544,7 +17532,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   thumb-up-circle:
-    category: 'pin'
+    category: 'actions'
     tags:
       [
         'agree',
@@ -17580,7 +17568,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   thumb-up-square:
-    category: 'pin'
+    category: 'actions'
     tags:
       [
         'agree',
