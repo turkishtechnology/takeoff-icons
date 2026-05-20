@@ -1,10 +1,37 @@
 categories:
-  - id: navigation
-    label: Navigation
-    description: Arrows, menus, pagination
-  - id: action
-    label: Actions
-    description: Edit, delete, save, share
-  - id: status
-    label: Status & Feedback
-    description: Check, warning, error, info
+  - id: actions
+    label: 'Actions'
+    description: ''
+  - id: actions-iconography
+    label: 'Actions Iconography'
+    description: ''
+  - id: arrow
+    label: 'Arrow'
+    description: ''
+  - id: commerce
+    label: 'Commerce'
+    description: ''
+  - id: lock-open
+    label: 'Lock Open'
+    description: ''
+  - id: lock-open-right
+    label: 'Lock Open Right'
+    description: ''
+  - id: no-encryption
+    label: 'No Encryption'
+    description: ''
+  - id: password
+    label: 'Password'
+    description: ''
+  - id: password-dots
+    label: 'Password Dots'
+    description: ''
+  - id: pin
+    label: 'Pin'
+    description: ''
+  - id: sunum
+    label: 'Sunum'
+    description: ''
+  - id: uncategorized
+    label: 'Uncategorized'
+    description: ''

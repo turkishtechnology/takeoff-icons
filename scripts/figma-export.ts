@@ -77,6 +77,7 @@ const VALID_TYPES: readonly string[] = ['rounded', 'sharp', 'bevel', 'tk'];
 
 const args = process.argv.slice(2);
 const DRY_RUN = args.includes('--dry-run');
+const METADATA_ONLY = args.includes('--metadata-only');
 
 // ═══════════════════════════════════════════════════════════════════════════
 // Terminal colors
@@ -124,6 +125,7 @@ interface FigmaNode {
   id: string;
   name: string;
   type: string;
+  characters?: string;
   children?: FigmaNode[];
 }
 
@@ -142,6 +144,7 @@ interface IconEntry {
   style: IconStyle;
   type: IconType;
   parentPath: string; // category hint from parent container
+  tags?: string[];
   svgContent?: string;
 }
 
@@ -237,6 +240,10 @@ function toKebabCase(name: string): string {
     .replace(/^-|-$/g, '');
 }
 
+function normalizePageName(name: string): string {
+  return name.replace(/\s+/g, ' ').trim();
+}
+
 /**
  * Parses Figma variant component names into the project's style/type system.
  *
@@ -283,11 +290,49 @@ function parseVariantProps(
 }
 
 /**
+ * Extracts tags from a Color-tag INSTANCE sibling of a COMPONENT_SET.
+ *
+ * Structure: parent FRAME → [ INSTANCE(Color-tag) → [ TEXT(name), TEXT(tags) ], COMPONENT_SET ]
+ * The second TEXT node inside the Color-tag contains comma-separated tags.
+ */
+function extractTagsFromSiblings(siblings: FigmaNode[]): string[] {
+  for (const sibling of siblings) {
+    if (sibling.type !== 'INSTANCE') continue;
+    const textNodes = findAllTextNodes(sibling);
+    // The longest text content is typically the tags string
+    let tagsText = '';
+    for (const tn of textNodes) {
+      if (tn.characters && tn.characters.length > tagsText.length) {
+        tagsText = tn.characters;
+      }
+    }
+    if (tagsText.includes(',')) {
+      return tagsText
+        .split(',')
+        .map((t) => t.trim().toLowerCase())
+        .filter(Boolean);
+    }
+  }
+  return [];
+}
+
+/** Recursively finds all TEXT nodes in a subtree. */
+function findAllTextNodes(node: FigmaNode): FigmaNode[] {
+  const result: FigmaNode[] = [];
+  if (node.type === 'TEXT') result.push(node);
+  for (const child of node.children ?? []) {
+    result.push(...findAllTextNodes(child));
+  }
+  return result;
+}
+
+/**
  * Recursively collects icon component variants from the Figma tree.
  *
  * - Filters out nodes prefixed with `_` or `.`
  * - Tracks nearest meaningful parent container as category hint
  * - Only collects COMPONENT children of COMPONENT_SET nodes
+ * - Extracts tags from sibling Color-tag INSTANCE nodes
  */
 function collectIcons(
   node: FigmaNode,
@@ -324,9 +369,29 @@ function collectIcons(
   }
 
   // Recurse into children (skip plain COMPONENTs — they are variant leaves)
+  // When a frame contains COMPONENT_SETs, extract tags from sibling nodes
   if (node.children) {
+    const hasComponentSet = node.children.some(
+      (c) => c.type === 'COMPONENT_SET',
+    );
+
+    // Extract tags once from sibling Color-tag instances (shared across all CS in this frame)
+    const frameTags = hasComponentSet
+      ? extractTagsFromSiblings(node.children)
+      : [];
+
     for (const child of node.children) {
-      if (child.type !== 'COMPONENT') {
+      if (child.type === 'COMPONENT') continue;
+
+      if (child.type === 'COMPONENT_SET') {
+        const iconEntries = collectIcons(child, currentPath);
+        if (frameTags.length > 0) {
+          for (const entry of iconEntries) {
+            entry.tags = frameTags;
+          }
+        }
+        entries.push(...iconEntries);
+      } else {
         entries.push(...collectIcons(child, currentPath));
       }
     }
@@ -335,8 +400,16 @@ function collectIcons(
   return entries;
 }
 
+interface FigmaComponentSetMeta {
+  key: string;
+  name: string;
+  description: string;
+  documentationLinks: { uri: string }[];
+}
+
 /**
  * Fetch a specific Figma node by ID and collect icons from it.
+ * Also reads componentSets metadata to extract tags from descriptions.
  */
 async function fetchByNodeId(
   env: EnvConfig,
@@ -345,13 +418,56 @@ async function fetchByNodeId(
   logDim(`Fetching node: ${nodeId}`);
 
   const nodesResp = await figmaFetch<{
-    nodes: Record<string, { document: FigmaNode }>;
+    nodes: Record<
+      string,
+      {
+        document: FigmaNode;
+        componentSets?: Record<string, FigmaComponentSetMeta>;
+      }
+    >;
   }>(env, `/files/${env.fileId}/nodes?ids=${nodeId}`);
 
-  const node = nodesResp.nodes[nodeId]?.document;
-  if (!node) throw new Error(`Node "${nodeId}" not found in file.`);
+  const nodeData = nodesResp.nodes[nodeId];
+  if (!nodeData?.document)
+    throw new Error(`Node "${nodeId}" not found in file.`);
 
-  return collectIcons(node);
+  const entries = collectIcons(nodeData.document);
+
+  // Enrich entries with tags from componentSets descriptions
+  if (nodeData.componentSets) {
+    // Build a map: componentSetId → tags from description
+    const csDescriptions = new Map<string, string[]>();
+    for (const [csId, csMeta] of Object.entries(nodeData.componentSets)) {
+      if (csMeta.description) {
+        const tags = csMeta.description
+          .split(',')
+          .map((t) => t.trim().toLowerCase())
+          .filter(Boolean);
+        if (tags.length > 0) csDescriptions.set(csId, tags);
+      }
+    }
+
+    // Match entries to their parent COMPONENT_SET by looking up node IDs
+    // The entry nodeId is a COMPONENT child; its parent COMPONENT_SET ID
+    // can be found via the componentSetId in the components metadata
+    // Alternative: match by iconName since COMPONENT_SET.name == iconName
+    for (const entry of entries) {
+      if (entry.tags && entry.tags.length > 0) continue;
+
+      // Find matching componentSet by name
+      for (const [, csMeta] of Object.entries(nodeData.componentSets)) {
+        if (toKebabCase(csMeta.name) === entry.iconName && csMeta.description) {
+          entry.tags = csMeta.description
+            .split(',')
+            .map((t) => t.trim().toLowerCase())
+            .filter(Boolean);
+          break;
+        }
+      }
+    }
+  }
+
+  return entries;
 }
 
 /**
@@ -380,7 +496,10 @@ async function fetchIconEntries(env: EnvConfig): Promise<IconEntry[]> {
   );
 
   const allPages = file.document.children ?? [];
-  const matched = allPages.filter((p) => env.pageNames.includes(p.name));
+  const requestedPages = new Set(env.pageNames.map(normalizePageName));
+  const matched = allPages.filter((p) =>
+    requestedPages.has(normalizePageName(p.name)),
+  );
 
   if (matched.length === 0) {
     const available = allPages.map((p) => p.name);
@@ -494,40 +613,68 @@ function saveIcons(icons: IconEntry[], report: Report): void {
 // ═══════════════════════════════════════════════════════════════════════════
 
 function syncMetadata(icons: IconEntry[], report: Report): void {
-  const raw = fs.readFileSync(METADATA_PATH, 'utf8');
+  const raw = fs.existsSync(METADATA_PATH)
+    ? fs.readFileSync(METADATA_PATH, 'utf8')
+    : 'icons: {}';
   const metadata = parse(raw) as { icons: Record<string, IconMeta> };
   if (!metadata.icons) metadata.icons = {};
 
-  // Group variants by icon name
+  // Group variants and tags by icon name
   const grouped = new Map<
     string,
-    { variants: Set<string>; category: string }
+    { variants: Set<string>; category: string; tags: string[] }
   >();
 
+  const svgRoot = path.join(ROOT_DIR, 'packages/icons-svg/svg');
+
   for (const ic of icons) {
+    // In full export mode, only include icons with downloaded SVG content.
+    // In metadata-only mode, verify the SVG file exists on disk.
+    if (METADATA_ONLY) {
+      const svgPath = path.join(
+        svgRoot,
+        ic.style,
+        ic.type,
+        `${ic.iconName}.svg`,
+      );
+      if (!fs.existsSync(svgPath)) continue;
+    } else {
+      if (!ic.svgContent) continue;
+    }
+
     if (!grouped.has(ic.iconName)) {
       grouped.set(ic.iconName, {
         variants: new Set(),
         category: ic.parentPath,
+        tags: ic.tags ?? [],
       });
     }
-    grouped.get(ic.iconName)!.variants.add(`${ic.style}/${ic.type}`);
+    const group = grouped.get(ic.iconName)!;
+    group.variants.add(`${ic.style}/${ic.type}`);
+    // Use tags from the first entry that has them
+    if (group.tags.length === 0 && ic.tags && ic.tags.length > 0) {
+      group.tags = ic.tags;
+    }
   }
 
   for (const [name, info] of grouped) {
     const sortedVariants = [...info.variants].sort();
+    const tags = info.tags.length > 0 ? info.tags : name.split('-');
 
     if (metadata.icons[name]) {
-      // Existing icon — merge variants, preserve other fields
+      // Existing icon — merge variants, update tags if from Figma
       const existing = new Set(metadata.icons[name].variants ?? []);
       for (const v of sortedVariants) existing.add(v);
       metadata.icons[name].variants = [...existing].sort();
+      if (info.tags.length > 0) {
+        metadata.icons[name].tags = tags;
+      }
       report.updatedIcons++;
     } else {
       // New icon — create entry
       metadata.icons[name] = {
         category: info.category,
-        tags: name.split('-'),
+        tags,
         aliases: [],
         added: '1.0.0',
         variants: sortedVariants,
@@ -543,18 +690,42 @@ function syncMetadata(icons: IconEntry[], report: Report): void {
   }
   metadata.icons = sorted;
 
+  fs.mkdirSync(path.dirname(METADATA_PATH), { recursive: true });
   fs.writeFileSync(METADATA_PATH, buildMetadataYaml(sorted), 'utf8');
+
+  // Generate categories.yaml from unique categories in metadata
+  const categories = new Set<string>();
+  for (const meta of Object.values(sorted)) {
+    categories.add(meta.category);
+  }
+  const categoriesPath = path.join(
+    path.dirname(METADATA_PATH),
+    'categories.yaml',
+  );
+  const catLines: string[] = ['categories:'];
+  for (const cat of [...categories].sort()) {
+    const label = cat
+      .split('-')
+      .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+      .join(' ');
+    catLines.push(`  - id: ${cat}`);
+    catLines.push(`    label: "${label}"`);
+    catLines.push(`    description: ""`);
+  }
+  fs.writeFileSync(categoriesPath, catLines.join('\n') + '\n', 'utf8');
 }
 
 function buildMetadataYaml(icons: Record<string, IconMeta>): string {
   const lines: string[] = ['icons:'];
+  const quote = (value: string) => JSON.stringify(value);
+  const list = (values: string[]) => values.map(quote).join(', ');
 
   for (const [name, meta] of Object.entries(icons)) {
     lines.push(`  ${name}:`);
-    lines.push(`    category: ${meta.category}`);
-    lines.push(`    tags: [${meta.tags.join(', ')}]`);
-    lines.push(`    aliases: [${(meta.aliases ?? []).join(', ')}]`);
-    lines.push(`    added: '${meta.added}'`);
+    lines.push(`    category: ${quote(meta.category)}`);
+    lines.push(`    tags: [${list(meta.tags)}]`);
+    lines.push(`    aliases: [${list(meta.aliases ?? [])}]`);
+    lines.push(`    added: ${quote(meta.added)}`);
     if (meta.deprecated) lines.push(`    deprecated: true`);
     lines.push(`    variants:`);
     for (const v of meta.variants) {
@@ -643,9 +814,12 @@ function printReport(icons: IconEntry[], report: Report): void {
 // ═══════════════════════════════════════════════════════════════════════════
 
 async function main() {
-  log(
-    `\n${c.bold}tk-icons · Figma Export${c.reset}${DRY_RUN ? `  ${c.yellow}(dry run)${c.reset}` : ''}`,
-  );
+  const modeLabel = METADATA_ONLY
+    ? `  ${c.cyan}(metadata only)${c.reset}`
+    : DRY_RUN
+      ? `  ${c.yellow}(dry run)${c.reset}`
+      : '';
+  log(`\n${c.bold}tk-icons · Figma Export${c.reset}${modeLabel}`);
 
   const report: Report = {
     fetched: 0,
@@ -694,6 +868,17 @@ async function main() {
   if (DRY_RUN) {
     printReport(icons, report);
     log(`  ${c.yellow}Dry run — no files written.${c.reset}\n`);
+    return;
+  }
+
+  // ── Metadata-only: skip SVG export, only sync metadata ─────────────
+  if (METADATA_ONLY) {
+    logStep(3, 'Syncing metadata');
+    syncMetadata(icons, report);
+    logOk(
+      `Metadata: ${c.green}+${report.newIcons}${c.reset} new, ${c.yellow}~${report.updatedIcons}${c.reset} updated`,
+    );
+    printReport(icons, report);
     return;
   }
 

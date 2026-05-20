@@ -10,6 +10,7 @@
   },
   "scripts": {
     "figma:export": "tsx scripts/figma-export.ts",
+    "figma:metadata": "tsx scripts/figma-export.ts --metadata-only",
     "optimize": "tsx scripts/optimize.ts",
     "validate": "tsx scripts/validate.ts",
     "generate:metadata": "tsx scripts/generate-metadata.ts",
