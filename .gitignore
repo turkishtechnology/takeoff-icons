@@ -15,3 +15,4 @@ packages/icons-react/src/
 packages/icons-vue/src/
 packages/icons-sprite/dist/
 packages/icons-font/dist/
+packages/icons-web/src/components.d.ts
