@@ -95,6 +95,7 @@ export class TkIcon {
 
     try {
       const mod = await import(
+        /* @vite-ignore */
         `@tk-icons/core/icons/${iconStyle}/${this.iconType}/${resolvedName}`
       );
       const data = (mod as { default?: IconData }).default;

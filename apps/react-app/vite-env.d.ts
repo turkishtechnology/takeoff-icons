@@ -7,7 +7,10 @@ declare module '@tk-icons/sprite' {
 
 declare namespace JSX {
   interface IntrinsicElements {
-    'tk-icon': import('react').HTMLAttributes<HTMLElement> & {
+    'tk-icon': import('react').DetailedHTMLProps<
+      import('react').HTMLAttributes<HTMLElement>,
+      HTMLElement
+    > & {
       icon?: string;
       fill?: boolean;
       'icon-type'?: string;

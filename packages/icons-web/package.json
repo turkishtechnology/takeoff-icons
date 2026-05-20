@@ -27,12 +27,27 @@
   "module": "dist/index.js",
   "collection": "dist/collection/collection-manifest.json",
   "types": "dist/types/components.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/types/components.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs.js"
+    },
+    "./components": {
+      "types": "./dist/components/index.d.ts",
+      "import": "./dist/components/index.js"
+    },
+    "./components/tk-icon": {
+      "types": "./dist/components/tk-icon.d.ts",
+      "import": "./dist/components/tk-icon.js"
+    }
+  },
   "files": [
     "dist"
   ],
   "scripts": {
     "build": "stencil build",
-    "dev": "stencil build --dev --watch",
+    "dev": "stencil build --dev --watch --esm",
     "test": "stencil test --spec --e2e",
     "clean": "rimraf dist",
     "lint": "eslint . --ext .ts,.tsx,.js,.jsx,.mjs,.cjs"

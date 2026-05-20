@@ -4,7 +4,7 @@ import addCoreIcon from '@tk-icons/core/icons/outlined/rounded/add';
 import type { IconStyle, IconType } from '@tk-icons/core';
 import { AddIconOutlinedRounded } from '@tk-icons/react/add';
 import spriteUrl from '@tk-icons/sprite';
-import { defineCustomElements } from '@tk-icons/web/dist/loader';
+import { defineCustomElement as defineTkIconElement } from '@tk-icons/web/components/tk-icon';
 import '@tk-icons/font';
 import addSvgSource from '../../../packages/icons-svg/svg/outlined/rounded/add.svg?raw';
 import addVueSource from '../../../packages/icons-vue/src/add/AddIconOutlinedRounded.vue?raw';
@@ -71,7 +71,7 @@ function toPascalCase(str: string): string {
 
 function ensureWebComponentsDefined() {
   if (didDefineCustomElements || typeof window === 'undefined') return;
-  defineCustomElements(window);
+  defineTkIconElement();
   didDefineCustomElements = true;
 }
 
@@ -197,6 +197,25 @@ function CoreDataIcon({ color }: { color: string }) {
   );
 }
 
+type TkIconElement = HTMLElement & {
+  icon?: typeof addCoreIcon;
+  size?: string;
+  color?: string;
+};
+
+function WebComponentIcon({ color }: { color: string }) {
+  const iconRef = useRef<TkIconElement | null>(null);
+
+  useEffect(() => {
+    if (!iconRef.current) return;
+    iconRef.current.icon = addCoreIcon;
+    iconRef.current.size = 'large';
+    iconRef.current.color = color;
+  }, [color]);
+
+  return <tk-icon ref={iconRef} />;
+}
+
 interface PackageSmokePanelProps {
   style: IconStyle;
   type: IconType;
@@ -264,17 +283,11 @@ function PackageSmokePanel({ style, type, color }: PackageSmokePanelProps) {
 
         <div className="package-smoke-card">
           <div className="package-icon">
-            <tk-icon
-              icon={PACKAGE_SMOKE_ICON}
-              fill={style === 'filled' ? true : undefined}
-              icon-type={type}
-              size="large"
-              color={color}
-            />
+            <WebComponentIcon color={color} />
           </div>
           <div>
             <span className="package-name">@tk-icons/web</span>
-            <span className="package-detail">custom element</span>
+            <span className="package-detail">IconData prop</span>
           </div>
         </div>
 

@@ -25,10 +25,16 @@
     "css"
   ],
   "main": "./dist/tk-icons.css",
+  "types": "./index.d.ts",
   "exports": {
-    ".": "./dist/tk-icons.css"
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./dist/tk-icons.css",
+      "default": "./dist/tk-icons.css"
+    }
   },
   "files": [
+    "index.d.ts",
     "dist"
   ],
   "scripts": {
