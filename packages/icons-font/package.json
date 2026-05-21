@@ -43,6 +43,6 @@
     "lint": "eslint . --ext .ts,.tsx,.js,.jsx,.mjs,.cjs"
   },
   "sideEffects": [
-    "*.css"
+    "**/*.css"
   ]
 }

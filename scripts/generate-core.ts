@@ -18,7 +18,7 @@ for (const filePath of files) {
   const exportName = `${toCamelCase(name)}_${style}_${type}`;
 
   const fileContent = `
-import type { IconData } from '../../../types';
+import type { IconData } from '../../../types.js';
 
 export const ${exportName}: IconData = {
   name: ${JSON.stringify(name)},
@@ -41,7 +41,7 @@ export default ${exportName};
 // alias-map data into a consumer's bundle. Those are available as subpaths:
 //   '@tk-icons/core/metadata', '@tk-icons/core/search-index', '@tk-icons/core/alias-map'
 const indexContent = `
-export * from './types';
+export * from './types.js';
 `;
 
 writeGeneratedFile(path.join(ICONS_CORE_SRC, 'index.ts'), indexContent);

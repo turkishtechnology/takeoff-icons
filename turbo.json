@@ -28,7 +28,8 @@
       "outputs": [
         "packages/icons-core/src/metadata.ts",
         "packages/icons-core/src/alias-map.ts",
-        "packages/icons-core/src/search-index.ts"
+        "packages/icons-core/src/search-index.ts",
+        "packages/icons-core/src/types.ts"
       ]
     },
     "//#generate:core": {

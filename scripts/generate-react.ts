@@ -73,7 +73,8 @@ ${componentName}.displayName = ${JSON.stringify(componentName)};
     const barrel =
       variants
         .map(
-          (v) => `export { ${v.componentName} } from './${v.componentName}';`,
+          (v) =>
+            `export { ${v.componentName} } from './${v.componentName}.js';`,
         )
         .join('\n') + '\n';
     writeGeneratedFile(

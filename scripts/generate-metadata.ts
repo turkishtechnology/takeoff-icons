@@ -80,7 +80,7 @@ function formatStringLiteralUnionType(
 }
 
 const metadataContent = `
-import type { CategoryId, IconMeta, IconName, IconVariant } from './types';
+import type { CategoryId, IconMeta, IconName, IconVariant } from './types.js';
 
 export const categories = ${JSON.stringify(categoriesDoc.categories, null, 2)} as const;
 
@@ -120,7 +120,7 @@ for (const meta of iconMetadata) {
 }
 
 const aliasContent = `
-import type { IconName } from './types';
+import type { IconName } from './types.js';
 
 export const aliasMap: Record<string, IconName> = ${JSON.stringify(aliasEntries, null, 2)};
 
@@ -137,7 +137,7 @@ const searchEntries = iconMetadata.map((meta) => ({
 }));
 
 const searchContent = `
-import type { IconName } from './types';
+import type { IconName } from './types.js';
 
 export const searchIndex: Array<{ name: IconName; text: string }> = ${JSON.stringify(searchEntries, null, 2)};
 
