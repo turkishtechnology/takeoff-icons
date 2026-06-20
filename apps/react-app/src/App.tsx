@@ -1,14 +1,17 @@
 import { useState, useMemo, useCallback, useEffect, useRef } from 'react';
-import { iconMetadata } from '@tk-icons/core/metadata';
-import { searchIcons } from '@tk-icons/core/search-index';
-import addCoreIcon from '@tk-icons/core/icons/outlined/rounded/add';
-import type { IconStyle, IconType } from '@tk-icons/core';
-import { AddIconOutlinedRounded } from '@tk-icons/react/add';
-import spriteUrl from '@tk-icons/sprite';
-import { defineCustomElement as defineTkIconElement } from '@tk-icons/web/components/tk-icon';
-import '@tk-icons/font';
+import { iconMetadata } from '@takeoff-icons/core/metadata';
+import { searchIcons } from '@takeoff-icons/core/search-index';
+import addCoreIcon from '@takeoff-icons/core/icons/outlined/rounded/add';
+import type { IconStyle, IconType } from '@takeoff-icons/core';
+import { AddIconOutlinedRounded } from '@takeoff-icons/react/add';
+import spriteUrl from '@takeoff-icons/sprite';
+import { defineCustomElement as defineTakeoffIconElement } from '@takeoff-icons/wc/components/takeoff-icon';
+import '@takeoff-icons/font';
+// icons-svg is committed source; icons-vue/src is generated (run `pnpm generate`
+// at the repo root first — see this app's README). These ?raw reads showcase
+// the raw SVG source and the generated Vue component for the smoke panel.
 import addSvgSource from '../../../packages/icons-svg/svg/outlined/rounded/add.svg?raw';
-import addVueSource from '../../../packages/icons-vue/src/add/AddIconOutlinedRounded.vue?raw';
+import addVueSource from '../../../packages/icons-vue/src/add/AddIconOutlinedRounded.ts?raw';
 import './index.css';
 
 const rawIcons = import.meta.glob('../../../packages/icons-react/src/*/*.tsx', {
@@ -58,8 +61,8 @@ const allIconEntries: GroupedIcon[] = Array.from(groupedIcons.entries())
 const STYLES: IconStyle[] = ['outlined', 'filled'];
 const TYPES: IconType[] = ['rounded', 'sharp', 'bevel', 'tk'];
 const PACKAGE_SMOKE_ICON = 'add';
-const vueSfcMatch = addVueSource.match(/name:\s*'([^']+)'/);
-const vueSfcName = vueSfcMatch?.[1] ?? 'Vue SFC';
+const vueSfcMatch = addVueSource.match(/name:\s*['"]([^'"]+)['"]/);
+const vueSfcName = vueSfcMatch?.[1] ?? 'Vue component';
 
 let didDefineCustomElements = false;
 
@@ -72,7 +75,7 @@ function toPascalCase(str: string): string {
 
 function ensureWebComponentsDefined() {
   if (didDefineCustomElements || typeof window === 'undefined') return;
-  defineTkIconElement();
+  defineTakeoffIconElement();
   didDefineCustomElements = true;
 }
 
@@ -198,14 +201,14 @@ function CoreDataIcon({ color }: { color: string }) {
   );
 }
 
-type TkIconElement = HTMLElement & {
+type TakeoffIconElement = HTMLElement & {
   icon?: typeof addCoreIcon;
   size?: string;
   color?: string;
 };
 
 function WebComponentIcon({ color }: { color: string }) {
-  const iconRef = useRef<TkIconElement | null>(null);
+  const iconRef = useRef<TakeoffIconElement | null>(null);
 
   useEffect(() => {
     if (!iconRef.current) return;
@@ -214,7 +217,7 @@ function WebComponentIcon({ color }: { color: string }) {
     iconRef.current.color = color;
   }, [color]);
 
-  return <tk-icon ref={iconRef} />;
+  return <takeoff-icon ref={iconRef} />;
 }
 
 interface PackageSmokePanelProps {
@@ -245,7 +248,7 @@ function PackageSmokePanel({ style, type, color }: PackageSmokePanelProps) {
             <CoreDataIcon color={color} />
           </div>
           <div>
-            <span className="package-name">@tk-icons/core</span>
+            <span className="package-name">@takeoff-icons/core</span>
             <span className="package-detail">{addCoreIcon.variant}</span>
           </div>
         </div>
@@ -255,7 +258,7 @@ function PackageSmokePanel({ style, type, color }: PackageSmokePanelProps) {
             <AddIconOutlinedRounded width={36} height={36} style={{ color }} />
           </div>
           <div>
-            <span className="package-name">@tk-icons/react</span>
+            <span className="package-name">@takeoff-icons/react</span>
             <span className="package-detail">component export</span>
           </div>
         </div>
@@ -265,7 +268,7 @@ function PackageSmokePanel({ style, type, color }: PackageSmokePanelProps) {
             <i className={fontClass} style={{ color }} aria-hidden="true" />
           </div>
           <div>
-            <span className="package-name">@tk-icons/font</span>
+            <span className="package-name">@takeoff-icons/font</span>
             <span className="package-detail">{fontClass}</span>
           </div>
         </div>
@@ -277,7 +280,7 @@ function PackageSmokePanel({ style, type, color }: PackageSmokePanelProps) {
             </svg>
           </div>
           <div>
-            <span className="package-name">@tk-icons/sprite</span>
+            <span className="package-name">@takeoff-icons/sprite</span>
             <span className="package-detail">#{spriteSymbolId}</span>
           </div>
         </div>
@@ -287,7 +290,7 @@ function PackageSmokePanel({ style, type, color }: PackageSmokePanelProps) {
             <WebComponentIcon color={color} />
           </div>
           <div>
-            <span className="package-name">@tk-icons/web</span>
+            <span className="package-name">@takeoff-icons/wc</span>
             <span className="package-detail">IconData prop</span>
           </div>
         </div>
@@ -299,7 +302,7 @@ function PackageSmokePanel({ style, type, color }: PackageSmokePanelProps) {
             dangerouslySetInnerHTML={{ __html: addSvgSource }}
           />
           <div>
-            <span className="package-name">@tk-icons/svg</span>
+            <span className="package-name">@takeoff-icons/svg</span>
             <span className="package-detail">raw source</span>
           </div>
         </div>
@@ -309,7 +312,7 @@ function PackageSmokePanel({ style, type, color }: PackageSmokePanelProps) {
             <span>{vueSfcName}</span>
           </div>
           <div>
-            <span className="package-name">@tk-icons/vue</span>
+            <span className="package-name">@takeoff-icons/vue</span>
             <span className="package-detail">{addVueSource.length} bytes</span>
           </div>
         </div>
@@ -319,7 +322,7 @@ function PackageSmokePanel({ style, type, color }: PackageSmokePanelProps) {
             <span>ESLint</span>
           </div>
           <div>
-            <span className="package-name">@tk-icons/eslint-config</span>
+            <span className="package-name">@takeoff-icons/eslint-config</span>
             <span className="package-detail">react config</span>
           </div>
         </div>
@@ -365,8 +368,8 @@ function DetailPanel({
   const styleSuffix = style === 'filled' ? 'Filled' : 'Outlined';
   const typeSuffix = toPascalCase(type);
   const componentName = `${pascalName}Icon${styleSuffix}${typeSuffix}`;
-  const reactImport = `import { ${componentName} } from '@tk-icons/react/${icon.name}';\n\n<${componentName} width={24} height={24} />`;
-  const webComponentSnippet = `import iconData from '@tk-icons/core/icons/${style}/${type}/${icon.name}';\n\nconst el = document.createElement('tk-icon');\nel.icon = iconData;\nel.size = 'base';\nel.variant = 'primary';`;
+  const reactImport = `import { ${componentName} } from '@takeoff-icons/react/${icon.name}';\n\n<${componentName} width={24} height={24} />`;
+  const webComponentSnippet = `import iconData from '@takeoff-icons/core/icons/${style}/${type}/${icon.name}';\n\nconst el = document.createElement('takeoff-icon');\nel.icon = iconData;\nel.size = 'base';\nel.variant = 'primary';`;
   const fontClass = getFontClass(icon.name, style, type);
 
   return (

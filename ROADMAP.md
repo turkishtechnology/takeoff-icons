@@ -1,4 +1,4 @@
-# tk-icons Roadmap: Prototype'dan Production'a
+# takeoff-icons Roadmap: Prototype'dan Production'a
 
 > Tasklar dependency sırasına gore dizilmistir. Bir faz tamamlanmadan sonraki faza gecilmez.
 > Her task basinda `[ ]`, tamamlaninca `[x]` ile isaretlenir.
@@ -117,9 +117,9 @@ Bu fazdaki her sorun, production'da sessiz bozulmaya (silent corruption) yol aca
 **Cozum:** Variant data'sini core'dan dynamic import ile cek, veya variant bazinda ayri component dosyalari uret.
 
 - [ ] **Yaklasim secimi:**
-  - **A) Lazy variant:** React component render aninda `@tk-icons/core/icons/{style}/{type}/{name}` path'inden dynamic import yapsin (web component gibi). Asenkron olur ama tree-shake edilir.
+  - **A) Lazy variant:** React component render aninda `@takeoff-icons/core/icons/{style}/{type}/{name}` path'inden dynamic import yapsin (web component gibi). Asenkron olur ama tree-shake edilir.
   - **B) Per-variant static export:** `HomeIconOutlinedRounded`, `HomeIconFilledSharp` gibi ayri component'lar uret. Her biri tek variant icerir. Barrel export'ta hepsi var ama bundler kullanilmayanlari atar. Senkron kalir.
-  - **C) Mevcut hali koruyup sadece barrel export'u split et:** `@tk-icons/react/HomeIcon` ve `@tk-icons/react` seklinde iki entry point. Package exports field'i guncelle.
+  - **C) Mevcut hali koruyup sadece barrel export'u split et:** `@takeoff-icons/react/HomeIcon` ve `@takeoff-icons/react` seklinde iki entry point. Package exports field'i guncelle.
 - [ ] Secilen yaklasimi implement et
 - [ ] Bundle size karsilastirmasi yap (oncesi/sonrasi)
 
@@ -136,7 +136,7 @@ Bu fazdaki her sorun, production'da sessiz bozulmaya (silent corruption) yol aca
 - [ ] `aria-label` verilmemisse: `aria-hidden="true"` ekle (dekoratif icon varsayimi)
 - [ ] `title` prop'u ekle: SVG icine `<title>` elementi render etsin (tooltip + screen reader)
 
-**Dosyalar:** `scripts/generate-react.ts`, `scripts/generate-vue.ts`, `packages/icons-web/src/components/tk-icon/tk-icon.tsx`
+**Dosyalar:** `scripts/generate-react.ts`, `scripts/generate-vue.ts`, `packages/icons-web/src/components/takeoff-icon/takeoff-icon.tsx`
 
 ---
 
@@ -169,13 +169,13 @@ Bu fazdaki her sorun, production'da sessiz bozulmaya (silent corruption) yol aca
 
 ### 3.1 — Web component: Upfront import azaltma
 
-**Sorun:** `tk-icon.tsx` `aliasMap` ve `hasVariant`'i top-level import ediyor. Tum alias ve metadata her zaman bundle'a girer.
+**Sorun:** `takeoff-icon.tsx` `aliasMap` ve `hasVariant`'i top-level import ediyor. Tum alias ve metadata her zaman bundle'a girer.
 
 - [ ] `aliasMap` yerine `resolveIconName` fonksiyonunu import et (ayni dosyadan, zaten var)
 - [ ] `hasVariant` check'ini dynamic import'un catch block'una tasi — eger import basarisiz olursa variant yok demektir. Bu sekilde metadata import'u gereksiz olur
 - [ ] Alternatif: Variant kontrolunu bir lightweight map'e cevir (sadece `name -> variant[]` mapping'i, tam metadata degil)
 
-**Dosyalar:** `packages/icons-web/src/components/tk-icon/tk-icon.tsx`
+**Dosyalar:** `packages/icons-web/src/components/takeoff-icon/takeoff-icon.tsx`
 
 ---
 
@@ -190,7 +190,7 @@ Bu fazdaki her sorun, production'da sessiz bozulmaya (silent corruption) yol aca
 - [ ] Gecersiz variant testi (uygun variant yoksa null render)
 - [ ] `size` ve `color` prop testi
 
-**Dosyalar:** `packages/icons-web/src/components/tk-icon/test/tk-icon.spec.tsx`
+**Dosyalar:** `packages/icons-web/src/components/takeoff-icon/test/takeoff-icon.spec.tsx`
 
 ---
 

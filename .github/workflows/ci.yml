@@ -6,6 +6,10 @@ on:
   pull_request:
     branches: ['main']
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   build_test_lint:
     name: Build, Test & Lint
@@ -14,30 +18,19 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
-
-      - name: Install pnpm
-        uses: pnpm/action-setup@v3
-        with:
-          version: 9
-
-      - name: Get pnpm store directory
-        id: pnpm-cache
-        shell: bash
-        run: |
-          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
-
-      - name: Setup pnpm cache
-        uses: actions/cache@v4
-        with:
-          path: ${{ env.STORE_PATH }}
-          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-store-
+          # Single source of truth for Node — matches the release workflow so a
+          # green CI can't hide a publish-time Node mismatch.
+          node-version-file: '.nvmrc'
+          cache: pnpm
 
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
@@ -50,3 +43,14 @@ jobs:
 
       - name: Build Project
         run: pnpm run build
+
+      - name: Assert tracked sources are not mutated by the build
+        # The optimize step rewrites SVGs in place and the font generator may
+        # rewrite codepoints.json. A clean checkout that has already been
+        # optimized must produce a no-op; any diff means an un-optimized SVG or
+        # a new icon's codepoint was committed without running `pnpm generate`.
+        run: |
+          git diff --exit-code -- \
+            packages/icons-svg/svg \
+            packages/icons-svg/metadata/codepoints.json \
+          || (echo "::error::Build mutated tracked source files. Run 'pnpm generate' locally and commit the result." && exit 1)

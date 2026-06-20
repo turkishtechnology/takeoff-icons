@@ -1,23 +1,23 @@
 {
-  "name": "@tk-icons/sprite",
-  "version": "0.0.1",
-  "description": "SVG sprite sheet for the tk-icons icon library.",
+  "name": "@takeoff-icons/sprite",
+  "version": "0.1.0",
+  "description": "SVG sprite sheet for the takeoff-icons icon library.",
   "license": "MIT",
   "type": "module",
-  "homepage": "https://github.com/turkishtechnology/tk-icons/tree/main/packages/icons-sprite#readme",
+  "homepage": "https://github.com/turkishtechnology/takeoff-icons/tree/main/packages/icons-sprite#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/turkishtechnology/tk-icons.git",
+    "url": "git+https://github.com/turkishtechnology/takeoff-icons.git",
     "directory": "packages/icons-sprite"
   },
   "bugs": {
-    "url": "https://github.com/turkishtechnology/tk-icons/issues"
+    "url": "https://github.com/turkishtechnology/takeoff-icons/issues"
   },
   "keywords": [
     "icons",
     "svg",
     "icon-library",
-    "tk-icons",
+    "takeoff-icons",
     "turkish-technology",
     "svg-sprite",
     "sprite"

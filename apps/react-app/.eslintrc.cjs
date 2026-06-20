@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['@tk-icons/eslint-config/react'],
+  extends: ['@takeoff-icons/eslint-config/react'],
 };

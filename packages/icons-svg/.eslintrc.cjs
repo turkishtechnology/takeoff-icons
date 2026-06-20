@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['@tk-icons/eslint-config'],
+  extends: ['@takeoff-icons/eslint-config'],
 };

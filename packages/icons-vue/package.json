@@ -1,23 +1,23 @@
 {
-  "name": "@tk-icons/vue",
-  "version": "0.0.1",
-  "description": "Typed Vue 3 components for the tk-icons icon library.",
+  "name": "@takeoff-icons/vue",
+  "version": "0.1.0",
+  "description": "Typed Vue 3 components for the takeoff-icons icon library.",
   "license": "MIT",
   "type": "module",
-  "homepage": "https://github.com/turkishtechnology/tk-icons/tree/main/packages/icons-vue#readme",
+  "homepage": "https://github.com/turkishtechnology/takeoff-icons/tree/main/packages/icons-vue#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/turkishtechnology/tk-icons.git",
+    "url": "git+https://github.com/turkishtechnology/takeoff-icons.git",
     "directory": "packages/icons-vue"
   },
   "bugs": {
-    "url": "https://github.com/turkishtechnology/tk-icons/issues"
+    "url": "https://github.com/turkishtechnology/takeoff-icons/issues"
   },
   "keywords": [
     "icons",
     "svg",
     "icon-library",
-    "tk-icons",
+    "takeoff-icons",
     "turkish-technology",
     "vue",
     "vue3",
@@ -34,7 +34,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "vue-tsc --noEmit -p tsconfig.json && rimraf dist && mkdir -p dist && cp -R src/. dist/",
+    "build": "rimraf dist && NODE_OPTIONS=--max-old-space-size=8192 vue-tsc -p tsconfig.json",
     "clean": "rimraf dist",
     "lint": "eslint . --ext .ts,.tsx,.js,.jsx,.mjs,.cjs"
   },
@@ -42,7 +42,7 @@
     "vue": ">=3"
   },
   "devDependencies": {
-    "@tk-icons/core": "workspace:*",
+    "@takeoff-icons/core": "workspace:*",
     "typescript": "^5.7.3",
     "vue": "^3.5.13",
     "vue-tsc": "^2.1.10"

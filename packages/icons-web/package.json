@@ -1,23 +1,23 @@
 {
-  "name": "@tk-icons/web",
-  "version": "0.0.1",
-  "description": "Framework-agnostic <tk-icon> web component for the tk-icons icon library, built with Stencil.",
+  "name": "@takeoff-icons/wc",
+  "version": "0.1.0",
+  "description": "Framework-agnostic <takeoff-icon> web component for the takeoff-icons icon library, built with Stencil.",
   "license": "MIT",
   "type": "module",
-  "homepage": "https://github.com/turkishtechnology/tk-icons/tree/main/packages/icons-web#readme",
+  "homepage": "https://github.com/turkishtechnology/takeoff-icons/tree/main/packages/icons-web#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/turkishtechnology/tk-icons.git",
+    "url": "git+https://github.com/turkishtechnology/takeoff-icons.git",
     "directory": "packages/icons-web"
   },
   "bugs": {
-    "url": "https://github.com/turkishtechnology/tk-icons/issues"
+    "url": "https://github.com/turkishtechnology/takeoff-icons/issues"
   },
   "keywords": [
     "icons",
     "svg",
     "icon-library",
-    "tk-icons",
+    "takeoff-icons",
     "turkish-technology",
     "web-components",
     "custom-elements",
@@ -36,9 +36,9 @@
       "types": "./dist/components/index.d.ts",
       "import": "./dist/components/index.js"
     },
-    "./components/tk-icon": {
-      "types": "./dist/components/tk-icon.d.ts",
-      "import": "./dist/components/tk-icon.js"
+    "./components/takeoff-icon": {
+      "types": "./dist/components/takeoff-icon.d.ts",
+      "import": "./dist/components/takeoff-icon.js"
     }
   },
   "files": [
@@ -52,7 +52,7 @@
     "lint": "eslint . --ext .ts,.tsx,.js,.jsx,.mjs,.cjs"
   },
   "dependencies": {
-    "@tk-icons/core": "workspace:*"
+    "@takeoff-icons/core": "workspace:*"
   },
   "devDependencies": {
     "@stencil/core": "^4.20.0",

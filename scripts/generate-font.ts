@@ -4,6 +4,7 @@ import path from 'node:path';
 import { globSync } from 'glob';
 import {
   ensureDir,
+  getAllIconNames,
   ICONS_FONT_DIST,
   ROOT_DIR,
   SVG_ROOT,
@@ -21,15 +22,7 @@ const CODEPOINTS_PATH = path.join(
   'packages/icons-svg/metadata/codepoints.json',
 );
 
-const allIconNames = [
-  ...new Set(
-    globSync('**/*.svg', {
-      cwd: SVG_ROOT,
-      absolute: false,
-      nodir: true,
-    }).map((item) => path.basename(item, '.svg')),
-  ),
-].sort();
+const allIconNames = getAllIconNames();
 
 function loadCodepoints(): Record<string, number> {
   if (fs.existsSync(CODEPOINTS_PATH)) {
@@ -122,7 +115,7 @@ function buildCss(iconNames: string[]): string {
 
   for (const style of styles) {
     for (const type of types) {
-      const fontName = `tk-icons-${style}-${type}`;
+      const fontName = `takeoff-icons-${style}-${type}`;
       lines.push(`@font-face {`);
       lines.push(`  font-family: '${fontName}';`);
       lines.push(`  src: url('./${fontName}.woff2') format('woff2');`);
@@ -134,7 +127,7 @@ function buildCss(iconNames: string[]): string {
 
   lines.push('');
   lines.push('.ti {');
-  lines.push(`  font-family: 'tk-icons-outlined-rounded';`);
+  lines.push(`  font-family: 'takeoff-icons-outlined-rounded';`);
   lines.push('  font-style: normal;');
   lines.push('  font-weight: normal;');
   lines.push('  display: inline-block;');
@@ -143,25 +136,27 @@ function buildCss(iconNames: string[]): string {
   lines.push('  -moz-osx-font-smoothing: grayscale;');
   lines.push('}');
   lines.push('');
-  lines.push(".ti.ti-rounded { font-family: 'tk-icons-outlined-rounded'; }");
-  lines.push(".ti.ti-sharp { font-family: 'tk-icons-outlined-sharp'; }");
-  lines.push(".ti.ti-bevel { font-family: 'tk-icons-outlined-bevel'; }");
-  lines.push(".ti.ti-tk { font-family: 'tk-icons-outlined-tk'; }");
+  lines.push(
+    ".ti.ti-rounded { font-family: 'takeoff-icons-outlined-rounded'; }",
+  );
+  lines.push(".ti.ti-sharp { font-family: 'takeoff-icons-outlined-sharp'; }");
+  lines.push(".ti.ti-bevel { font-family: 'takeoff-icons-outlined-bevel'; }");
+  lines.push(".ti.ti-tk { font-family: 'takeoff-icons-outlined-tk'; }");
   lines.push('');
   lines.push(
-    ".ti[class*='-filled'] { font-family: 'tk-icons-filled-rounded'; }",
+    ".ti[class*='-filled'] { font-family: 'takeoff-icons-filled-rounded'; }",
   );
   lines.push(
-    ".ti.ti-rounded[class*='-filled'] { font-family: 'tk-icons-filled-rounded'; }",
+    ".ti.ti-rounded[class*='-filled'] { font-family: 'takeoff-icons-filled-rounded'; }",
   );
   lines.push(
-    ".ti.ti-sharp[class*='-filled'] { font-family: 'tk-icons-filled-sharp'; }",
+    ".ti.ti-sharp[class*='-filled'] { font-family: 'takeoff-icons-filled-sharp'; }",
   );
   lines.push(
-    ".ti.ti-bevel[class*='-filled'] { font-family: 'tk-icons-filled-bevel'; }",
+    ".ti.ti-bevel[class*='-filled'] { font-family: 'takeoff-icons-filled-bevel'; }",
   );
   lines.push(
-    ".ti.ti-tk[class*='-filled'] { font-family: 'tk-icons-filled-tk'; }",
+    ".ti.ti-tk[class*='-filled'] { font-family: 'takeoff-icons-filled-tk'; }",
   );
   lines.push('');
 
@@ -188,11 +183,17 @@ async function main(): Promise<void> {
 
   const generateFonts = await loadFantasticon();
   if (!generateFonts) {
-    console.warn('fantasticon is not available; skipping font generation.');
-    return;
+    // Fail loud: silently skipping here would let `turbo run build` exit 0 with
+    // an empty dist and publish an empty @takeoff-icons/font package.
+    throw new Error(
+      'fantasticon is not available; cannot generate the icon font. ' +
+        'Install dependencies (pnpm install) before running generate:font.',
+    );
   }
 
-  const tempRoot = fs.mkdtempSync(path.join(os.tmpdir(), 'tk-icons-font-'));
+  const tempRoot = fs.mkdtempSync(
+    path.join(os.tmpdir(), 'takeoff-icons-font-'),
+  );
 
   try {
     for (const style of styles) {
@@ -214,27 +215,21 @@ async function main(): Promise<void> {
           fs.copyFileSync(svgFile, path.join(variantTempDir, fileName));
         }
 
-        const fontName = `tk-icons-${style}-${type}`;
-        try {
-          await generateFonts({
-            inputDir: variantTempDir,
-            outputDir: ICONS_FONT_DIST,
-            name: fontName,
-            fontTypes: ['woff2'],
-            assetTypes: ['json'],
-            formatOptions: {
-              svg: {
-                centerHorizontally: true,
-                centerVertically: true,
-              },
+        const fontName = `takeoff-icons-${style}-${type}`;
+        await generateFonts({
+          inputDir: variantTempDir,
+          outputDir: ICONS_FONT_DIST,
+          name: fontName,
+          fontTypes: ['woff2'],
+          assetTypes: ['json'],
+          formatOptions: {
+            svg: {
+              centerHorizontally: true,
+              centerVertically: true,
             },
-            codepoints,
-          });
-        } catch (error) {
-          console.warn(
-            `Skipping font variant ${style}/${type}: ${(error as Error).message}`,
-          );
-        }
+          },
+          codepoints,
+        });
       }
     }
 
@@ -245,14 +240,29 @@ async function main(): Promise<void> {
     }
 
     fs.writeFileSync(
-      path.join(ICONS_FONT_DIST, 'tk-icons.css'),
+      path.join(ICONS_FONT_DIST, 'takeoff-icons.css'),
       buildCss(Object.keys(codepoints).sort()),
       'utf8',
     );
-    console.log('Generated icon font assets.');
+
+    // Sanity gate: never let an empty/partial run be cached as success and
+    // shipped as an empty @takeoff-icons/font package.
+    const woff2Count = fs
+      .readdirSync(ICONS_FONT_DIST)
+      .filter((f) => f.endsWith('.woff2')).length;
+    if (woff2Count === 0) {
+      throw new Error(
+        'Font generation produced no .woff2 files; refusing to emit an empty font package.',
+      );
+    }
+
+    console.log(`Generated icon font assets (${woff2Count} woff2 file(s)).`);
   } finally {
     fs.rmSync(tempRoot, { recursive: true, force: true });
   }
 }
 
-void main();
+main().catch((error) => {
+  console.error(error);
+  process.exit(1);
+});
