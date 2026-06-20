@@ -50,7 +50,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "rimraf dist && tsc -p tsconfig.json",
+    "build": "rimraf dist && NODE_OPTIONS=--max-old-space-size=8192 tsc -p tsconfig.json",
     "clean": "rimraf dist",
     "lint": "eslint . --ext .ts,.tsx,.js,.jsx,.mjs,.cjs"
   },
