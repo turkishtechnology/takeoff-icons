@@ -624,6 +624,7 @@ export type IconName =
   | 'swipe-right'
   | 'swipe-right-circle'
   | 'swipe-right-square'
+  | 'takeoff-rocket'
   | 'thumb-down'
   | 'thumb-down-circle'
   | 'thumb-down-square'
