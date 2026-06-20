@@ -1,6 +1,6 @@
 {
   "name": "@takeoff-icons/core",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Framework-agnostic core for takeoff-icons: icon data, metadata, aliases, and search index.",
   "license": "MIT",
   "type": "module",

@@ -1,6 +1,6 @@
 {
   "name": "@takeoff-icons/wc",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Framework-agnostic <takeoff-icon> web component for the takeoff-icons icon library, built with Stencil.",
   "license": "MIT",
   "type": "module",
