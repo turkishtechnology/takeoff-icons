@@ -1,5 +1,11 @@
 # @takeoff-icons/core
 
+## 0.1.1
+
+### Patch Changes
+
+- [#2](https://github.com/turkishtechnology/takeoff-icons/pull/2) [`cecfa33`](https://github.com/turkishtechnology/takeoff-icons/commit/cecfa332e1bf89a8fe525bdc44d3f40ebb1982a3) Thanks [@harun-demir](https://github.com/harun-demir)! - Add the `takeoff-rocket` icon (all 8 variants).
+
 ## 0.1.0
 
 ### Minor Changes

@@ -1,6 +1,6 @@
 {
   "name": "@takeoff-icons/sprite",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "SVG sprite sheet for the takeoff-icons icon library.",
   "license": "MIT",
   "type": "module",
