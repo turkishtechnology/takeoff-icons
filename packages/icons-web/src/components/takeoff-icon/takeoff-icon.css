@@ -1,0 +1,43 @@
+:host {
+  display: inline-flex;
+  line-height: 0;
+  vertical-align: middle;
+  color: var(--takeoff-icon-color, currentColor);
+}
+
+svg {
+  display: block;
+}
+
+/* Semantic variant colors */
+.takeoff-icon-primary {
+  color: var(--takeoff-icon-primary, var(--primary-base, #063048));
+}
+
+.takeoff-icon-secondary {
+  color: var(--takeoff-icon-secondary, var(--secondary-base, #6c757d));
+}
+
+.takeoff-icon-neutral {
+  color: var(--takeoff-icon-neutral, var(--background-base, #495057));
+}
+
+.takeoff-icon-info {
+  color: var(--takeoff-icon-info, var(--states-info-dark, #0dcaf0));
+}
+
+.takeoff-icon-success {
+  color: var(--takeoff-icon-success, var(--states-success-dark, #198754));
+}
+
+.takeoff-icon-danger {
+  color: var(--takeoff-icon-danger, var(--states-danger-dark, #dc3545));
+}
+
+.takeoff-icon-warning {
+  color: var(--takeoff-icon-warning, var(--states-warning-dark, #ffc107));
+}
+
+.takeoff-icon-white {
+  color: var(--takeoff-icon-white, #ffffff);
+}

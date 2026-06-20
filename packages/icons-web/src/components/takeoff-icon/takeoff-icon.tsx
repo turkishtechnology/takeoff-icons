@@ -1,5 +1,9 @@
 import { Component, Prop, h } from '@stencil/core';
-import type { IconData, IconSemanticVariant, IconSize } from '@tk-icons/core';
+import type {
+  IconData,
+  IconSemanticVariant,
+  IconSize,
+} from '@takeoff-icons/core';
 
 const SIZE_MAP: Record<IconSize, number> = {
   xsmall: 12,
@@ -12,14 +16,14 @@ const SIZE_MAP: Record<IconSize, number> = {
 };
 
 @Component({
-  tag: 'tk-icon',
-  styleUrl: 'tk-icon.css',
+  tag: 'takeoff-icon',
+  styleUrl: 'takeoff-icon.css',
   shadow: true,
 })
-export class TkIcon {
+export class TakeoffIcon {
   /**
-   * The icon to render. Obtain icon data from `@tk-icons/core`, e.g.
-   * `import addIcon from '@tk-icons/core/icons/outlined/rounded/add'`.
+   * The icon to render. Obtain icon data from `@takeoff-icons/core`, e.g.
+   * `import addIcon from '@takeoff-icons/core/icons/outlined/rounded/add'`.
    */
   @Prop() icon?: IconData;
   /**
@@ -69,7 +73,7 @@ export class TkIcon {
         role={labelled ? 'img' : undefined}
         aria-label={labelled ? this.label : undefined}
         aria-hidden={labelled ? undefined : 'true'}
-        class={`tk-icon-${this.variant}`}
+        class={`takeoff-icon-${this.variant}`}
         style={{ color: this.color ?? undefined }}
       />
     );

@@ -6,7 +6,7 @@ import {
   getVariantFromPath,
   ICONS_REACT_SRC,
   parseSvgFile,
-  toPascalCase,
+  componentName as makeComponentName,
   writeGeneratedFile,
 } from './utils';
 
@@ -24,7 +24,7 @@ function generateReactComponents() {
     const { style, type } = getVariantFromPath(filePath);
 
     // Naming convention: CalendarIconOutlinedRounded
-    const componentName = `${toPascalCase(rawName)}Icon${toPascalCase(style)}${toPascalCase(type)}`;
+    const componentName = makeComponentName(rawName, style, type);
     const { innerHTML, viewBox } = parseSvgFile(filePath);
 
     const reactCode = `

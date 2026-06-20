@@ -1,20 +1,21 @@
 {
-  "name": "tk-icons",
+  "name": "takeoff-icons",
   "version": "0.0.1",
-  "description": "Production-grade icon library monorepo for the @tk-icons/* packages.",
+  "description": "Production-grade icon library monorepo for the @takeoff-icons/* packages.",
   "private": true,
   "license": "MIT",
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/turkishtechnology/tk-icons.git"
+    "url": "git+https://github.com/turkishtechnology/takeoff-icons.git"
   },
   "bugs": {
-    "url": "https://github.com/turkishtechnology/tk-icons/issues"
+    "url": "https://github.com/turkishtechnology/takeoff-icons/issues"
   },
-  "packageManager": "pnpm@9.0.0",
+  "packageManager": "pnpm@9.15.0",
   "engines": {
-    "node": ">=18"
+    "node": ">=20",
+    "pnpm": ">=9"
   },
   "scripts": {
     "figma:export": "tsx scripts/figma-export.ts",
@@ -34,10 +35,10 @@
     "test:coverage": "vitest run --coverage",
     "lint": "turbo run lint",
     "clean": "turbo run clean && rimraf node_modules",
-    "prepublish": "pnpm generate && pnpm build",
+    "verify:publish": "tsx scripts/verify-publish.ts",
     "changeset": "changeset",
     "version-packages": "changeset version",
-    "release": "changeset publish",
+    "release": "pnpm verify:publish && changeset publish",
     "prepare": "husky"
   },
   "devDependencies": {
@@ -47,7 +48,7 @@
     "@commitlint/config-conventional": "^20.4.1",
     "@svgr/cli": "^8.1.0",
     "@svgr/core": "^8.1.0",
-    "@tk-icons/eslint-config": "workspace:^",
+    "@takeoff-icons/eslint-config": "workspace:^",
     "@types/node": "^22.10.7",
     "@vitest/coverage-v8": "^4.0.18",
     "@vitest/ui": "^4.0.18",

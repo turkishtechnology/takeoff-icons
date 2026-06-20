@@ -47,12 +47,36 @@ export function toCamelCase(kebab: string): string {
   return camelCase(kebab);
 }
 
+/**
+ * The component-name convention shared by the React and Vue generators,
+ * e.g. componentName('calendar', 'outlined', 'rounded') ->
+ * 'CalendarIconOutlinedRounded'. Single-sourced so the two outputs cannot
+ * drift apart.
+ */
+export function componentName(
+  rawName: string,
+  style: IconStyle,
+  type: IconType,
+): string {
+  return `${toPascalCase(rawName)}Icon${toPascalCase(style)}${toPascalCase(type)}`;
+}
+
 export function getAllSvgFiles(): string[] {
   return globSync('**/*.svg', {
     cwd: SVG_ROOT,
     absolute: true,
     nodir: true,
   }).sort();
+}
+
+/**
+ * The deduplicated, sorted set of icon names across every variant. Derived
+ * from getAllSvgFiles so the icon-set definition is single-sourced across the
+ * core/react/vue and font generators.
+ */
+export function getAllIconNames(): string[] {
+  const names = new Set(getAllSvgFiles().map(getIconName));
+  return [...names].sort();
 }
 
 export function parseSvgFile(filePath: string): {
@@ -75,6 +99,15 @@ export function parseSvgFile(filePath: string): {
     viewBox: viewBoxMatch[2],
     innerHTML: svgMatch[2].trim(),
   };
+}
+
+/**
+ * A single-quoted JS string literal. SVG markup contains double quotes, so a
+ * single-quoted literal needs no escaping of them and is what Prettier emits
+ * for plain (non-JSX) source — keeps generated .ts files lint-clean.
+ */
+export function singleQuote(value: string): string {
+  return `'${value.replace(/\\/g, '\\\\').replace(/'/g, "\\'")}'`;
 }
 
 export function ensureDir(dirPath: string): void {

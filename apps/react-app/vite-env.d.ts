@@ -1,13 +1,13 @@
 /// <reference types="vite/client" />
 
-declare module '@tk-icons/sprite' {
+declare module '@takeoff-icons/sprite' {
   const spriteUrl: string;
   export default spriteUrl;
 }
 
 declare namespace JSX {
   interface IntrinsicElements {
-    'tk-icon': import('react').DetailedHTMLProps<
+    'takeoff-icon': import('react').DetailedHTMLProps<
       import('react').HTMLAttributes<HTMLElement>,
       HTMLElement
     > & {
