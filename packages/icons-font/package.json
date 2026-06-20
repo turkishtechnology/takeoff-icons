@@ -1,6 +1,6 @@
 {
   "name": "@takeoff-icons/font",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Icon webfont (woff2) and CSS for the takeoff-icons icon library.",
   "license": "MIT",
   "type": "module",
