@@ -1,7 +1,12 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { parse } from 'yaml';
-import { ICONS_CORE_SRC, ROOT_DIR, writeGeneratedFile } from './utils';
+import {
+  formatGeneratedTypeScript,
+  ICONS_CORE_SRC,
+  ROOT_DIR,
+  writeGeneratedFile,
+} from './utils';
 
 interface CategoryYaml {
   categories: Array<{
@@ -139,22 +144,31 @@ const searchEntries = iconMetadata.map((meta) => ({
 const searchContent = `
 import type { IconName } from './types.js';
 
-export const searchIndex: Array<{ name: IconName; text: string }> = ${JSON.stringify(searchEntries, null, 2)};
+export const searchIndex: Array<{ name: string; text: string }> = ${JSON.stringify(searchEntries, null, 2)};
 
 export function searchIcons(query: string): IconName[] {
   const normalized = query.toLowerCase().trim();
   if (!normalized) {
-    return searchIndex.map((entry) => entry.name);
+    return searchIndex.map((entry) => entry.name as IconName);
   }
   return searchIndex
     .filter((entry) => entry.text.includes(normalized))
-    .map((entry) => entry.name);
+    .map((entry) => entry.name as IconName);
 }
 `;
 
-writeGeneratedFile(path.join(ICONS_CORE_SRC, 'metadata.ts'), metadataContent);
-writeGeneratedFile(path.join(ICONS_CORE_SRC, 'alias-map.ts'), aliasContent);
-writeGeneratedFile(path.join(ICONS_CORE_SRC, 'search-index.ts'), searchContent);
+writeGeneratedFile(
+  path.join(ICONS_CORE_SRC, 'metadata.ts'),
+  await formatGeneratedTypeScript(metadataContent),
+);
+writeGeneratedFile(
+  path.join(ICONS_CORE_SRC, 'alias-map.ts'),
+  await formatGeneratedTypeScript(aliasContent),
+);
+writeGeneratedFile(
+  path.join(ICONS_CORE_SRC, 'search-index.ts'),
+  await formatGeneratedTypeScript(searchContent),
+);
 
 const typesPath = path.join(ICONS_CORE_SRC, 'types.ts');
 const typesSource = fs.readFileSync(typesPath, 'utf8');
@@ -173,5 +187,9 @@ if (!generatedUnionsPattern.test(typesSource)) {
 
 const updatedTypes = typesSource.replace(generatedUnionsPattern, unionBlock);
 
-fs.writeFileSync(typesPath, updatedTypes, 'utf8');
+fs.writeFileSync(
+  typesPath,
+  await formatGeneratedTypeScript(updatedTypes),
+  'utf8',
+);
 console.log(`Generated metadata for ${iconNames.length} icons.`);
