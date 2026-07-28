@@ -1,5 +1,11 @@
 # @takeoff-icons/core
 
+## 0.2.0
+
+### Minor Changes
+
+- [#4](https://github.com/turkishtechnology/takeoff-icons/pull/4) [`549874a`](https://github.com/turkishtechnology/takeoff-icons/commit/549874a01038f703032d64bb0244b3da621f4074) Thanks [@ulasturann](https://github.com/ulasturann)! - Sync icon assets from Figma: add new icons across the filled/bevel (and related) sets, with updated type unions, metadata, categories, and codepoints. Purely additive — no existing icons were removed or renamed.
+
 ## 0.1.1
 
 ### Patch Changes
