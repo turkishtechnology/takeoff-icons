@@ -66,9 +66,16 @@ const METADATA_PATH = path.join(
   ROOT_DIR,
   'packages/icons-svg/metadata/icons.meta.yaml',
 );
+const UNRESOLVED_REPORT_PATH = path.join(
+  ROOT_DIR,
+  'FIGMA_UNRESOLVED_ICONS.txt',
+);
 
 const BATCH_SIZE = 100;
 const CONCURRENT_DOWNLOADS = 10;
+const DOWNLOAD_ATTEMPTS = 3;
+const DOWNLOAD_RETRY_PASSES = 2;
+const RETRY_BATCH_SIZE = 50;
 const VALID_TYPES: readonly string[] = ['rounded', 'sharp', 'bevel', 'tk'];
 
 // ═══════════════════════════════════════════════════════════════════════════
@@ -240,6 +247,32 @@ function toKebabCase(name: string): string {
     .replace(/^-|-$/g, '');
 }
 
+const ICON_NAME_TOKEN_CORRECTIONS: Record<string, string> = {
+  cirlce: 'circle',
+  dailpad: 'dialpad',
+  foward: 'forward',
+  squre: 'square',
+};
+
+const EXCLUDED_ICON_NAME_TOKENS = new Set(['deneme']);
+
+function correctIconNameTokens(name: string): string {
+  return name
+    .split(/([/-])/)
+    .map((token) => ICON_NAME_TOKEN_CORRECTIONS[token] ?? token)
+    .join('');
+}
+
+function normalizeIconName(name: string): string {
+  return correctIconNameTokens(toKebabCase(name));
+}
+
+function isExcludedIconName(name: string): boolean {
+  return name
+    .split(/[/-]/)
+    .some((token) => EXCLUDED_ICON_NAME_TOKENS.has(token));
+}
+
 function normalizePageName(name: string): string {
   return name.replace(/\s+/g, ' ').trim();
 }
@@ -350,21 +383,23 @@ function collectIcons(
       : parentPath;
 
   if (node.type === 'COMPONENT_SET' && node.children) {
-    const iconName = toKebabCase(node.name);
+    const iconName = normalizeIconName(node.name);
 
-    for (const child of node.children) {
-      if (isHidden(child.name)) continue;
+    if (!isExcludedIconName(iconName)) {
+      for (const child of node.children) {
+        if (isHidden(child.name)) continue;
 
-      const parsed = parseVariantProps(child.name);
-      if (!parsed) continue;
+        const parsed = parseVariantProps(child.name);
+        if (!parsed) continue;
 
-      entries.push({
-        nodeId: child.id,
-        iconName,
-        style: parsed.style,
-        type: parsed.type,
-        parentPath: currentPath,
-      });
+        entries.push({
+          nodeId: child.id,
+          iconName,
+          style: parsed.style,
+          type: parsed.type,
+          parentPath: currentPath,
+        });
+      }
     }
   }
 
@@ -456,7 +491,10 @@ async function fetchByNodeId(
 
       // Find matching componentSet by name
       for (const [, csMeta] of Object.entries(nodeData.componentSets)) {
-        if (toKebabCase(csMeta.name) === entry.iconName && csMeta.description) {
+        if (
+          normalizeIconName(csMeta.name) === entry.iconName &&
+          csMeta.description
+        ) {
           entry.tags = csMeta.description
             .split(',')
             .map((t) => t.trim().toLowerCase())
@@ -545,6 +583,47 @@ async function exportAndDownload(
   icons: IconEntry[],
   report: Report,
 ): Promise<void> {
+  async function downloadSvg(url: string): Promise<string | undefined> {
+    for (let attempt = 1; attempt <= DOWNLOAD_ATTEMPTS; attempt++) {
+      try {
+        const res = await fetch(url);
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        return await res.text();
+      } catch {
+        if (attempt < DOWNLOAD_ATTEMPTS) {
+          await sleep(250 * attempt);
+        }
+      }
+    }
+
+    return undefined;
+  }
+
+  async function downloadEntries(
+    entries: IconEntry[],
+    urls: Record<string, string | null>,
+  ): Promise<void> {
+    const queue = [...entries];
+
+    async function worker() {
+      while (queue.length > 0) {
+        const icon = queue.shift()!;
+        const url = urls[icon.nodeId];
+        if (!url || icon.svgContent) continue;
+
+        const svgContent = await downloadSvg(url);
+        if (svgContent === undefined) continue;
+
+        icon.svgContent = svgContent;
+        report.downloaded++;
+      }
+    }
+
+    await Promise.all(
+      Array.from({ length: CONCURRENT_DOWNLOADS }, () => worker()),
+    );
+  }
+
   // Batch export via Figma Images API
   const svgUrls: Record<string, string | null> = {};
 
@@ -566,33 +645,36 @@ async function exportAndDownload(
     Object.assign(svgUrls, resp.images);
   }
 
-  // Concurrent download
-  const queue = [...icons];
+  await downloadEntries(icons, svgUrls);
 
-  async function worker() {
-    while (queue.length > 0) {
-      const icon = queue.shift()!;
-      const url = svgUrls[icon.nodeId];
+  for (let pass = 1; pass <= DOWNLOAD_RETRY_PASSES; pass++) {
+    const unresolved = icons.filter((icon) => !icon.svgContent);
+    if (unresolved.length === 0) break;
 
-      if (!url) {
-        report.failed.push(`${icon.iconName} (${icon.style}/${icon.type})`);
-        continue;
-      }
+    logWarn(
+      `Retrying ${unresolved.length} unresolved variants (pass ${pass}/${DOWNLOAD_RETRY_PASSES})...`,
+    );
 
-      try {
-        const res = await fetch(url);
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        icon.svgContent = await res.text();
-        report.downloaded++;
-      } catch {
-        report.failed.push(`${icon.iconName} (${icon.style}/${icon.type})`);
-      }
+    const retryUrls: Record<string, string | null> = {};
+    for (let i = 0; i < unresolved.length; i += RETRY_BATCH_SIZE) {
+      const batch = unresolved.slice(i, i + RETRY_BATCH_SIZE);
+      const ids = batch.map((icon) => icon.nodeId).join(',');
+      const resp = await figmaFetch<FigmaImagesResponse>(
+        env,
+        `/images/${env.fileId}?ids=${ids}&format=svg`,
+      );
+      if (resp.err) logWarn(`Figma retry: ${resp.err}`);
+      Object.assign(retryUrls, resp.images);
     }
+
+    await downloadEntries(unresolved, retryUrls);
   }
 
-  await Promise.all(
-    Array.from({ length: CONCURRENT_DOWNLOADS }, () => worker()),
-  );
+  for (const icon of icons) {
+    if (!icon.svgContent) {
+      report.failed.push(`${icon.iconName} (${icon.style}/${icon.type})`);
+    }
+  }
 }
 
 function saveIcons(icons: IconEntry[], report: Report): void {
@@ -608,9 +690,77 @@ function saveIcons(icons: IconEntry[], report: Report): void {
   }
 }
 
+function migrateLegacySvgFiles(): { migrated: number; removed: number } {
+  let migrated = 0;
+  let removed = 0;
+
+  for (const style of ['filled', 'outlined'] as const) {
+    for (const type of VALID_TYPES) {
+      const variantDir = path.join(SVG_ROOT, style, type);
+      if (!fs.existsSync(variantDir)) continue;
+
+      for (const fileName of fs.readdirSync(variantDir)) {
+        if (!fileName.endsWith('.svg')) continue;
+
+        const iconName = path.basename(fileName, '.svg');
+        const correctedName = correctIconNameTokens(iconName);
+
+        const sourcePath = path.join(variantDir, fileName);
+        if (isExcludedIconName(correctedName)) {
+          fs.unlinkSync(sourcePath);
+          removed++;
+          continue;
+        }
+
+        if (correctedName === iconName) continue;
+
+        const destinationPath = path.join(variantDir, `${correctedName}.svg`);
+        fs.copyFileSync(sourcePath, destinationPath);
+        fs.unlinkSync(sourcePath);
+        migrated++;
+      }
+    }
+  }
+
+  return { migrated, removed };
+}
+
 // ═══════════════════════════════════════════════════════════════════════════
 // 5. Syncing
 // ═══════════════════════════════════════════════════════════════════════════
+
+function migrateLegacyMetadata(icons: Record<string, IconMeta>): void {
+  for (const name of Object.keys(icons)) {
+    const normalizedName = correctIconNameTokens(name);
+
+    if (isExcludedIconName(normalizedName)) {
+      delete icons[name];
+      continue;
+    }
+
+    if (normalizedName === name) continue;
+
+    const legacy = icons[name];
+    const current = icons[normalizedName];
+    const aliases = new Set([
+      ...(current?.aliases ?? []),
+      ...(legacy.aliases ?? []),
+      name,
+    ]);
+    const variants = new Set([
+      ...(current?.variants ?? []),
+      ...(legacy.variants ?? []),
+    ]);
+
+    icons[normalizedName] = {
+      ...(legacy as IconMeta),
+      ...(current ?? {}),
+      aliases: [...aliases].sort(),
+      variants: [...variants].sort(),
+    };
+    delete icons[name];
+  }
+}
 
 function syncMetadata(icons: IconEntry[], report: Report): void {
   const raw = fs.existsSync(METADATA_PATH)
@@ -618,6 +768,7 @@ function syncMetadata(icons: IconEntry[], report: Report): void {
     : 'icons: {}';
   const metadata = parse(raw) as { icons: Record<string, IconMeta> };
   if (!metadata.icons) metadata.icons = {};
+  migrateLegacyMetadata(metadata.icons);
 
   // Group variants and tags by icon name
   const grouped = new Map<
@@ -809,6 +960,44 @@ function printReport(icons: IconEntry[], report: Report): void {
   log('');
 }
 
+function writeUnresolvedReport(
+  env: EnvConfig,
+  icons: IconEntry[],
+  report: Report,
+): void {
+  const unresolvedByName = new Map<string, Set<string>>();
+
+  for (const icon of icons) {
+    if (icon.svgContent) continue;
+
+    const variants = unresolvedByName.get(icon.iconName) ?? new Set<string>();
+    variants.add(`${icon.style}/${icon.type}`);
+    unresolvedByName.set(icon.iconName, variants);
+  }
+
+  const sortedIcons = [...unresolvedByName.entries()].sort(([a], [b]) =>
+    a.localeCompare(b),
+  );
+  const lines = [
+    'Figma unresolved icon exports',
+    `Generated: ${new Date().toISOString()}`,
+    `Figma file: ${env.fileId}`,
+    `Pages: ${env.pageNames.join(', ')}`,
+    `Unresolved variants: ${report.failed.length}`,
+    `Base icons: ${sortedIcons.length}`,
+    '',
+    ...sortedIcons.map(
+      ([name, variants]) => `${name}: ${[...variants].sort().join(', ')}`,
+    ),
+    '',
+  ];
+
+  fs.writeFileSync(UNRESOLVED_REPORT_PATH, lines.join('\n'), 'utf8');
+  logOk(
+    `Unresolved report: ${sortedIcons.length} base icons → ${path.relative(ROOT_DIR, UNRESOLVED_REPORT_PATH)}`,
+  );
+}
+
 // ═══════════════════════════════════════════════════════════════════════════
 // Main
 // ═══════════════════════════════════════════════════════════════════════════
@@ -874,6 +1063,12 @@ async function main() {
   // ── Metadata-only: skip SVG export, only sync metadata ─────────────
   if (METADATA_ONLY) {
     logStep(3, 'Syncing metadata');
+    const legacyFiles = migrateLegacySvgFiles();
+    if (legacyFiles.migrated > 0 || legacyFiles.removed > 0) {
+      logOk(
+        `Legacy files: ${legacyFiles.migrated} renamed, ${legacyFiles.removed} removed`,
+      );
+    }
     syncMetadata(icons, report);
     logOk(
       `Metadata: ${c.green}+${report.newIcons}${c.reset} new, ${c.yellow}~${report.updatedIcons}${c.reset} updated`,
@@ -885,6 +1080,7 @@ async function main() {
   // ── 3. Exporting + Normalizing ──────────────────────────────────────
   logStep(3, 'Normalizing');
   await exportAndDownload(env, icons, report);
+  writeUnresolvedReport(env, icons, report);
 
   for (const icon of icons) {
     if (icon.svgContent) {
@@ -897,6 +1093,12 @@ async function main() {
 
   // ── 4. Saving ───────────────────────────────────────────────────────
   logStep(4, 'Saving');
+  const legacyFiles = migrateLegacySvgFiles();
+  if (legacyFiles.migrated > 0 || legacyFiles.removed > 0) {
+    logOk(
+      `Legacy files: ${legacyFiles.migrated} renamed, ${legacyFiles.removed} removed`,
+    );
+  }
   saveIcons(icons, report);
   logOk(
     `Saved ${report.saved} files to ${c.dim}packages/icons-svg/svg/${c.reset}`,

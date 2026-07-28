@@ -3,6 +3,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { camelCase, pascalCase } from 'change-case';
 import { globSync } from 'glob';
+import { format } from 'prettier';
 
 export type IconStyle = 'outlined' | 'filled';
 export type IconType = 'rounded' | 'sharp' | 'bevel' | 'tk';
@@ -124,6 +125,17 @@ export function writeGeneratedFile(filePath: string, content: string): void {
       ? body
       : `${header}\n${body}`;
   fs.writeFileSync(filePath, `${normalized.trimEnd()}\n`, 'utf8');
+}
+
+export function formatGeneratedTypeScript(content: string): Promise<string> {
+  return format(content, {
+    parser: 'typescript',
+    printWidth: 80,
+    semi: true,
+    singleQuote: true,
+    tabWidth: 2,
+    trailingComma: 'all',
+  });
 }
 
 function isIconStyle(value: string): value is IconStyle {

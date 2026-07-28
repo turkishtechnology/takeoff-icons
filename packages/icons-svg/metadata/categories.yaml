@@ -1,19 +1,43 @@
 categories:
   - id: actions
     label: 'Actions'
-    description: 'General-purpose action and control icons.'
+    description: ''
   - id: arrow
     label: 'Arrow'
-    description: 'Directional arrows, carets and chevrons.'
+    description: ''
+  - id: aviation
+    label: 'Aviation'
+    description: ''
   - id: commerce
     label: 'Commerce'
-    description: 'Money, payments, shopping and banking.'
+    description: ''
+  - id: data-analytics
+    label: 'Data Analytics'
+    description: ''
+  - id: files-documents
+    label: 'Files Documents'
+    description: ''
+  - id: lifestyle
+    label: 'Lifestyle'
+    description: ''
+  - id: lock-open-right
+    label: 'Lock Open Right'
+    description: ''
+  - id: media
+    label: 'Media'
+    description: ''
   - id: people
     label: 'People'
-    description: 'Accounts, persons, groups and contacts.'
+    description: ''
   - id: security
     label: 'Security'
-    description: 'Locks, passwords and encryption.'
+    description: ''
+  - id: shapes-ui-elements
+    label: 'Shapes Ui Elements'
+    description: ''
+  - id: system-settings
+    label: 'System Settings'
+    description: ''
   - id: uncategorized
     label: 'Uncategorized'
-    description: 'Icons that have not been categorized yet.'
+    description: ''
