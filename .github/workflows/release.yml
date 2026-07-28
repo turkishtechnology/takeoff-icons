@@ -62,10 +62,15 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
 
       - name: Ensure npm CLI floor for OIDC trusted publishing
-        # OIDC trusted publishing needs npm >= 11.5.1. --force bypasses a
-        # "Cannot find module 'promise-retry'" bug that can surface when the
-        # bundled npm tries to update itself from a half-resolved global tree.
-        run: npm install -g npm@latest --force
+        # OIDC trusted publishing needs npm >= 11.5.1, so we pin EXACTLY 11.5.1
+        # rather than @latest: changeset publish (packageManager=pnpm) passes
+        # pnpm's --git-checks flag to the publish CLI, and newer npm releases
+        # dropped that flag, so @latest fails every publish with
+        # `EUNKNOWNCONFIG Unknown cli flag: --git-checks`. 11.5.1 still accepts it.
+        # --force bypasses a "Cannot find module 'promise-retry'" bug that can
+        # surface when the bundled npm tries to update itself from a
+        # half-resolved global tree.
+        run: npm install -g npm@11.5.1 --force
 
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
