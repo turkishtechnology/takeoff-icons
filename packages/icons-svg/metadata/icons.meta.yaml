@@ -31826,3 +31826,27 @@ icons:
       - outlined/rounded
       - outlined/sharp
       - outlined/tk
+  takeoff-rocket:
+    category: 'actions'
+    tags:
+      [
+        'rocket',
+        'launch',
+        'takeoff',
+        'space',
+        'startup',
+        'boost',
+        'ship',
+        'fly',
+      ]
+    aliases: []
+    added: '0.1.1'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk

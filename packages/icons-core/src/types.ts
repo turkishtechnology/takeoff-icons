@@ -1020,6 +1020,7 @@ export type IconName =
   | 'swipe-right'
   | 'swipe-right-circle'
   | 'swipe-right-square'
+  | 'takeoff-rocket'
   | 'target'
   | 'target-circle'
   | 'target-square'

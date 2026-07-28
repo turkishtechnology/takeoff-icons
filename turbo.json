@@ -23,13 +23,13 @@
       "inputs": [
         "packages/icons-svg/metadata/**",
         "scripts/generate-metadata.ts",
-        "scripts/utils.ts"
+        "scripts/utils.ts",
+        "packages/icons-core/src/types.ts"
       ],
       "outputs": [
         "packages/icons-core/src/metadata.ts",
         "packages/icons-core/src/alias-map.ts",
-        "packages/icons-core/src/search-index.ts",
-        "packages/icons-core/src/types.ts"
+        "packages/icons-core/src/search-index.ts"
       ]
     },
     "//#generate:core": {
@@ -75,6 +75,7 @@
       "dependsOn": ["//#validate"],
       "inputs": [
         "packages/icons-svg/svg/**/*.svg",
+        "packages/icons-svg/metadata/codepoints.json",
         "scripts/generate-font.ts",
         "scripts/utils.ts"
       ],
@@ -102,6 +103,9 @@
     },
     "lint": {
       "outputs": []
+    },
+    "clean": {
+      "cache": false
     }
   }
 }

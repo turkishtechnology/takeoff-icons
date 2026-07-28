@@ -1,7 +1,7 @@
 /**
  * Figma → Code: Icon Export Script
  *
- * Synchronizes icons from a Figma file into the tk-icons pipeline.
+ * Synchronizes icons from a Figma file into the takeoff-icons pipeline.
  * Inspired by FigLint's Figma-to-Code approach.
  *
  * Pipeline:
@@ -1008,7 +1008,7 @@ async function main() {
     : DRY_RUN
       ? `  ${c.yellow}(dry run)${c.reset}`
       : '';
-  log(`\n${c.bold}tk-icons · Figma Export${c.reset}${modeLabel}`);
+  log(`\n${c.bold}takeoff-icons · Figma Export${c.reset}${modeLabel}`);
 
   const report: Report = {
     fetched: 0,

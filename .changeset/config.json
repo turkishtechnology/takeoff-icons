@@ -3,24 +3,27 @@
   "changelog": [
     "@changesets/changelog-github",
     {
-      "repo": "turkishtechnology/tk-icons"
+      "repo": "turkishtechnology/takeoff-icons"
     }
   ],
   "commit": false,
   "fixed": [
     [
-      "@tk-icons/core",
-      "@tk-icons/react",
-      "@tk-icons/vue",
-      "@tk-icons/font",
-      "@tk-icons/svg",
-      "@tk-icons/sprite",
-      "@tk-icons/web"
+      "@takeoff-icons/core",
+      "@takeoff-icons/react",
+      "@takeoff-icons/vue",
+      "@takeoff-icons/font",
+      "@takeoff-icons/sprite",
+      "@takeoff-icons/wc"
     ]
   ],
   "linked": [],
   "access": "public",
   "baseBranch": "main",
   "updateInternalDependencies": "patch",
-  "ignore": ["@tk-icons/react-app", "@tk-icons/eslint-config"]
+  "ignore": [
+    "@takeoff-icons/react-app",
+    "@takeoff-icons/eslint-config",
+    "@takeoff-icons/svg"
+  ]
 }

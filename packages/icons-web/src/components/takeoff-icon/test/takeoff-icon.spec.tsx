@@ -1,11 +1,11 @@
 import { newSpecPage } from '@stencil/core/testing';
-import { TkIcon } from '../tk-icon';
+import { TakeoffIcon } from '../takeoff-icon';
 
-describe('tk-icon', () => {
+describe('takeoff-icon', () => {
   it('renders empty when icon is missing', async () => {
     const page = await newSpecPage({
-      components: [TkIcon],
-      html: '<tk-icon></tk-icon>',
+      components: [TakeoffIcon],
+      html: '<takeoff-icon></takeoff-icon>',
     });
 
     expect(page.root).toBeTruthy();
@@ -14,8 +14,8 @@ describe('tk-icon', () => {
 
   it('renders when full icon data is passed through the icon prop', async () => {
     const page = await newSpecPage({
-      components: [TkIcon],
-      html: '<tk-icon></tk-icon>',
+      components: [TakeoffIcon],
+      html: '<takeoff-icon></takeoff-icon>',
     });
 
     page.root!.icon = {
@@ -35,8 +35,8 @@ describe('tk-icon', () => {
 
   it('applies default size (base = 24px)', async () => {
     const page = await newSpecPage({
-      components: [TkIcon],
-      html: '<tk-icon></tk-icon>',
+      components: [TakeoffIcon],
+      html: '<takeoff-icon></takeoff-icon>',
     });
 
     page.root!.icon = {
@@ -56,8 +56,8 @@ describe('tk-icon', () => {
 
   it('maps size token to pixel value', async () => {
     const page = await newSpecPage({
-      components: [TkIcon],
-      html: '<tk-icon size="large"></tk-icon>',
+      components: [TakeoffIcon],
+      html: '<takeoff-icon size="large"></takeoff-icon>',
     });
 
     page.root!.icon = {
@@ -77,8 +77,8 @@ describe('tk-icon', () => {
 
   it('applies variant class to svg', async () => {
     const page = await newSpecPage({
-      components: [TkIcon],
-      html: '<tk-icon variant="success"></tk-icon>',
+      components: [TakeoffIcon],
+      html: '<takeoff-icon variant="success"></takeoff-icon>',
     });
 
     page.root!.icon = {
@@ -92,13 +92,13 @@ describe('tk-icon', () => {
     await page.waitForChanges();
 
     const svg = page.root?.shadowRoot?.querySelector('svg');
-    expect(svg?.classList.contains('tk-icon-success')).toBe(true);
+    expect(svg?.classList.contains('takeoff-icon-success')).toBe(true);
   });
 
   it('defaults variant to primary', async () => {
     const page = await newSpecPage({
-      components: [TkIcon],
-      html: '<tk-icon></tk-icon>',
+      components: [TakeoffIcon],
+      html: '<takeoff-icon></takeoff-icon>',
     });
 
     page.root!.icon = {
@@ -112,13 +112,13 @@ describe('tk-icon', () => {
     await page.waitForChanges();
 
     const svg = page.root?.shadowRoot?.querySelector('svg');
-    expect(svg?.classList.contains('tk-icon-primary')).toBe(true);
+    expect(svg?.classList.contains('takeoff-icon-primary')).toBe(true);
   });
 
   it('is decorative (aria-hidden, no role) without a label', async () => {
     const page = await newSpecPage({
-      components: [TkIcon],
-      html: '<tk-icon></tk-icon>',
+      components: [TakeoffIcon],
+      html: '<takeoff-icon></takeoff-icon>',
     });
 
     page.root!.icon = {
@@ -139,8 +139,8 @@ describe('tk-icon', () => {
 
   it('exposes an accessible image when a label is set', async () => {
     const page = await newSpecPage({
-      components: [TkIcon],
-      html: '<tk-icon label="Done"></tk-icon>',
+      components: [TakeoffIcon],
+      html: '<takeoff-icon label="Done"></takeoff-icon>',
     });
 
     page.root!.icon = {

@@ -39,9 +39,9 @@ export default ${exportName};
 }
 
 // The root barrel intentionally re-exports types only (erased at build time),
-// so importing '@tk-icons/core' never pulls the heavy metadata, search-index or
+// so importing '@takeoff-icons/core' never pulls the heavy metadata, search-index or
 // alias-map data into a consumer's bundle. Those are available as subpaths:
-//   '@tk-icons/core/metadata', '@tk-icons/core/search-index', '@tk-icons/core/alias-map'
+//   '@takeoff-icons/core/metadata', '@takeoff-icons/core/search-index', '@takeoff-icons/core/alias-map'
 const indexContent = `
 export * from './types.js';
 `;

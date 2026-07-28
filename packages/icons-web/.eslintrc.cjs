@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['@tk-icons/eslint-config'],
+  extends: ['@takeoff-icons/eslint-config'],
   rules: {
     '@typescript-eslint/no-unused-vars': [
       'error',

@@ -1,63 +1,93 @@
 name: Release
 
+# Stable-only release loop owned by Changesets, on a single `main` branch:
+#
+# On every push to `main`, the Changesets action looks at .changeset/.
+# - If pending changesets exist, it opens (or updates) a single "Version
+#   Packages" PR. Publishing is gated behind merging that PR — so designers can
+#   keep adding icons (each carrying a changeset) and they all batch into ONE
+#   release the moment you merge that PR. Fewer, larger releases by design.
+# - If no pending changesets exist (i.e. a Version Packages PR was just
+#   merged), it builds, verifies, and publishes the bumped packages to npm
+#   under the `latest` dist-tag, and creates matching GitHub Releases.
+#
+# Authentication uses npm Trusted Publishing (OIDC) — no NPM_TOKEN secret.
+# Before the first publish, configure EACH published package at
+# https://www.npmjs.com/package/<name>/settings as a trusted publisher for
+# this repo + this workflow file. Packages to configure:
+#   @takeoff-icons/core, /react, /vue, /font, /sprite, /wc
+# (@takeoff-icons/svg and /eslint-config are private/ignored and never publish.)
+
 on:
   push:
     branches: ['main']
 
-concurrency: ${{ github.workflow }}-${{ github.ref }}
+# Avoid two concurrent releases (e.g. rapid merges to main) racing the npm
+# registry or each other on the Version Packages PR.
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
 
+    # contents:      let the Changesets action commit Version Packages updates
+    #                and create GitHub Releases
+    # pull-requests: open/update the Version Packages PR
+    # id-token:      npm OIDC trusted publishing + provenance attestations
     permissions:
       contents: write
       pull-requests: write
+      id-token: write
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          # Pinned via .nvmrc (currently 24). Node 24 ships with npm 11.x which
+          # supports OIDC trusted publishing natively; CI uses the same .nvmrc so
+          # a green CI can't hide a publish-time Node mismatch.
+          node-version-file: '.nvmrc'
+          cache: pnpm
           registry-url: 'https://registry.npmjs.org'
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v3
-        with:
-          version: 9
-
-      - name: Get pnpm store directory
-        id: pnpm-cache
-        shell: bash
-        run: |
-          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
-
-      - name: Setup pnpm cache
-        uses: actions/cache@v4
-        with:
-          path: ${{ env.STORE_PATH }}
-          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-store-
+      - name: Ensure npm CLI floor for OIDC trusted publishing
+        # OIDC trusted publishing needs npm >= 11.5.1. --force bypasses a
+        # "Cannot find module 'promise-retry'" bug that can surface when the
+        # bundled npm tries to update itself from a half-resolved global tree.
+        run: npm install -g npm@latest --force
 
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
 
       - name: Build Packages
+        # turbo build runs the //#generate:* codegen first, so every published
+        # package's dist is populated before publish.
         run: pnpm run build
+
+      - name: Verify publishable artifacts
+        # Guard against shipping an empty/partial package (e.g. an empty font
+        # dist or an uncompiled package) to npm.
+        run: pnpm run verify:publish
 
       - name: Create Release Pull Request or Publish
         id: changesets
         uses: changesets/action@v1
         with:
           version: pnpm changeset version
-          publish: pnpm changeset publish
+          publish: pnpm release
           title: 'chore: version packages'
           commit: 'chore: version packages'
+          createGithubReleases: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
