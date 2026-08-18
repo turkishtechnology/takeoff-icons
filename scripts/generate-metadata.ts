@@ -139,7 +139,12 @@ const searchEntries = iconMetadata.map((meta) => ({
 const searchContent = `
 import type { IconName } from './types.js';
 
-export const searchIndex: Array<{ name: IconName; text: string }> = ${JSON.stringify(searchEntries, null, 2)};
+// The entries are widened to \`string\` first: contextually typing one object
+// literal per icon against the IconName union exceeds TypeScript's union
+// complexity limit (TS2590) once the library passes ~1000 icons.
+const entries: Array<{ name: string; text: string }> = ${JSON.stringify(searchEntries, null, 2)};
+
+export const searchIndex = entries as Array<{ name: IconName; text: string }>;
 
 export function searchIcons(query: string): IconName[] {
   const normalized = query.toLowerCase().trim();
