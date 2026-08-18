@@ -26771,6 +26771,105 @@ icons:
       - outlined/rounded
       - outlined/sharp
       - outlined/tk
+  seat-cabin:
+    category: 'aviation'
+    tags:
+      [
+        'airplane',
+        'airplanes',
+        'airport',
+        'arrival',
+        'arrow',
+        'artificial intelligence',
+        'automation',
+        'clover',
+        'departure',
+        'flight',
+        'flights',
+        'fly',
+        'flying',
+        'jet',
+        'plane',
+        'planes',
+        'travel',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  seat-cabin-circle:
+    category: 'aviation'
+    tags:
+      [
+        'airplane',
+        'airplanes',
+        'airport',
+        'arrival',
+        'arrow',
+        'artificial intelligence',
+        'automation',
+        'clover',
+        'departure',
+        'flight',
+        'flights',
+        'fly',
+        'flying',
+        'jet',
+        'plane',
+        'planes',
+        'travel',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  seat-cabin-square:
+    category: 'aviation'
+    tags:
+      [
+        'airplane',
+        'airplanes',
+        'airport',
+        'arrival',
+        'arrow',
+        'artificial intelligence',
+        'automation',
+        'clover',
+        'departure',
+        'flight',
+        'flights',
+        'fly',
+        'flying',
+        'jet',
+        'plane',
+        'planes',
+        'travel',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
   seat-cancel:
     category: 'aviation'
     tags:

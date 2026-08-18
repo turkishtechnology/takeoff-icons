@@ -1,5 +1,6 @@
 import path from 'node:path';
 import {
+  formatGeneratedTypeScript,
   getAllSvgFiles,
   getIconName,
   getVariantFromPath,
@@ -33,7 +34,8 @@ export default ${exportName};
 `;
 
   const outPath = path.join(ICONS_CORE_SRC, 'icons', style, type, `${name}.ts`);
-  writeGeneratedFile(outPath, fileContent);
+  const formattedFileContent = await formatGeneratedTypeScript(fileContent);
+  writeGeneratedFile(outPath, formattedFileContent);
 }
 
 // The root barrel intentionally re-exports types only (erased at build time),
@@ -44,5 +46,8 @@ const indexContent = `
 export * from './types.js';
 `;
 
-writeGeneratedFile(path.join(ICONS_CORE_SRC, 'index.ts'), indexContent);
+writeGeneratedFile(
+  path.join(ICONS_CORE_SRC, 'index.ts'),
+  await formatGeneratedTypeScript(indexContent),
+);
 console.log(`Generated ${files.length} icon variant module(s).`);

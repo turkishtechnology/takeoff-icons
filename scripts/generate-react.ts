@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import {
+  formatGeneratedTypeScript,
   getAllSvgFiles,
   getIconName,
   getVariantFromPath,
@@ -10,7 +11,7 @@ import {
   writeGeneratedFile,
 } from './utils';
 
-function generateReactComponents() {
+async function generateReactComponents() {
   const svgFiles = getAllSvgFiles();
   const grouped = new Map<string, { componentName: string }[]>();
 
@@ -59,10 +60,13 @@ export const ${componentName} = forwardRef<SVGSVGElement, ${componentName}Props>
 ${componentName}.displayName = ${JSON.stringify(componentName)};
 `;
 
-    writeGeneratedFile(
-      path.join(ICONS_REACT_SRC, rawName, `${componentName}.tsx`),
-      reactCode,
+    const destinationPath = path.join(
+      ICONS_REACT_SRC,
+      rawName,
+      `${componentName}.tsx`,
     );
+    const formattedReactCode = await formatGeneratedTypeScript(reactCode);
+    writeGeneratedFile(destinationPath, formattedReactCode);
 
     const entry = grouped.get(rawName) ?? [];
     entry.push({ componentName });
@@ -77,9 +81,10 @@ ${componentName}.displayName = ${JSON.stringify(componentName)};
             `export { ${v.componentName} } from './${v.componentName}.js';`,
         )
         .join('\n') + '\n';
+    const formattedBarrel = await formatGeneratedTypeScript(barrel);
     writeGeneratedFile(
       path.join(ICONS_REACT_SRC, iconName, 'index.ts'),
-      barrel,
+      formattedBarrel,
     );
   }
 
@@ -92,4 +97,4 @@ ${componentName}.displayName = ${JSON.stringify(componentName)};
   );
 }
 
-generateReactComponents();
+await generateReactComponents();
