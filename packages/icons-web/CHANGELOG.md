@@ -1,5 +1,22 @@
 # @takeoff-icons/wc
 
+## 0.3.0
+
+### Minor Changes
+
+- [#7](https://github.com/turkishtechnology/takeoff-icons/pull/7) [`b64c1d5`](https://github.com/turkishtechnology/takeoff-icons/commit/b64c1d5160e014bb802a7dcd2f6d3b0a64595e1a) Thanks [@pinaryalcinduran](https://github.com/pinaryalcinduran)! - Sync icons from Figma: 498 new icons (618 → 1116) and 49 updated drawings. No icon
+  or variant was removed, and no existing font codepoint moved, so the icon font stays
+  backwards compatible.
+
+  Also fixes the core build, which failed with TS2590 once the library passed ~1000
+  icons, and stops the Figma export from wiping hand-written category labels and
+  descriptions.
+
+### Patch Changes
+
+- Updated dependencies [[`b64c1d5`](https://github.com/turkishtechnology/takeoff-icons/commit/b64c1d5160e014bb802a7dcd2f6d3b0a64595e1a)]:
+  - @takeoff-icons/core@0.3.0
+
 ## 0.2.0
 
 ### Minor Changes
