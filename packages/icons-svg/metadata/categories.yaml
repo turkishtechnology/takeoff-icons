@@ -1,18 +1,21 @@
 categories:
   - id: actions
     label: 'Actions'
-    description: ''
+    description: 'General-purpose action and control icons.'
   - id: arrow
     label: 'Arrow'
-    description: ''
+    description: 'Directional arrows, carets and chevrons.'
   - id: aviation
     label: 'Aviation'
     description: ''
   - id: commerce
     label: 'Commerce'
-    description: ''
+    description: 'Money, payments, shopping and banking.'
   - id: data-analytics
     label: 'Data Analytics'
+    description: ''
+  - id: devices-hardware
+    label: 'Devices Hardware'
     description: ''
   - id: files-documents
     label: 'Files Documents'
@@ -23,15 +26,18 @@ categories:
   - id: lock-open-right
     label: 'Lock Open Right'
     description: ''
+  - id: logistic
+    label: 'Logistic'
+    description: ''
   - id: media
     label: 'Media'
     description: ''
   - id: people
     label: 'People'
-    description: ''
+    description: 'Accounts, persons, groups and contacts.'
   - id: security
     label: 'Security'
-    description: ''
+    description: 'Locks, passwords and encryption.'
   - id: shapes-ui-elements
     label: 'Shapes Ui Elements'
     description: ''
@@ -40,4 +46,4 @@ categories:
     description: ''
   - id: uncategorized
     label: 'Uncategorized'
-    description: ''
+    description: 'Icons that have not been categorized yet.'

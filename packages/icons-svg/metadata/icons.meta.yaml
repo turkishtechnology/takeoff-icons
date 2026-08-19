@@ -549,6 +549,93 @@ icons:
       - outlined/rounded
       - outlined/sharp
       - outlined/tk
+  airlines:
+    category: 'aviation'
+    tags:
+      [
+        'airplane',
+        'airplanes',
+        'airport',
+        'arrival',
+        'arrow',
+        'flight',
+        'fly',
+        'jet',
+        'plane',
+        'planes',
+        'travel',
+        'airplane tail',
+        'tail',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  airlines-circle:
+    category: 'aviation'
+    tags:
+      [
+        'airplane',
+        'airplanes',
+        'airport',
+        'arrival',
+        'arrow',
+        'flight',
+        'fly',
+        'jet',
+        'plane',
+        'planes',
+        'travel',
+        'airplane tail',
+        'tail',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  airlines-square:
+    category: 'aviation'
+    tags:
+      [
+        'airplane',
+        'airplanes',
+        'airport',
+        'arrival',
+        'arrow',
+        'flight',
+        'fly',
+        'jet',
+        'plane',
+        'planes',
+        'travel',
+        'airplane tail',
+        'tail',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
   airplane:
     category: 'aviation'
     tags:
@@ -636,6 +723,93 @@ icons:
         'plane',
         'planes',
         'travel',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  airplane-window:
+    category: 'aviation'
+    tags:
+      [
+        'airplane',
+        'airport',
+        'flight',
+        'flights',
+        'fly',
+        'flying',
+        'jet',
+        'plane',
+        'window',
+        'cloud',
+        'sky',
+        'plane window',
+        'airplane window',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  airplane-window-circle:
+    category: 'aviation'
+    tags:
+      [
+        'airplane',
+        'airport',
+        'flight',
+        'flights',
+        'fly',
+        'flying',
+        'jet',
+        'plane',
+        'window',
+        'cloud',
+        'sky',
+        'plane window',
+        'airplane window',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  airplane-window-square:
+    category: 'aviation'
+    tags:
+      [
+        'airplane',
+        'airport',
+        'flight',
+        'flights',
+        'fly',
+        'flying',
+        'jet',
+        'plane',
+        'window',
+        'cloud',
+        'sky',
+        'plane window',
+        'airplane window',
       ]
     aliases: []
     added: '1.0.0'
@@ -745,7 +919,6 @@ icons:
         'airplanes',
         'airport',
         'arrival',
-        'arrow',
         'departure',
         'flight',
         'fly',
@@ -777,7 +950,6 @@ icons:
         'airplanes',
         'airport',
         'arrival',
-        'arrow',
         'departure',
         'flight',
         'fly',
@@ -809,7 +981,6 @@ icons:
         'airplanes',
         'airport',
         'arrival',
-        'arrow',
         'departure',
         'flight',
         'fly',
@@ -1559,6 +1730,90 @@ icons:
         'editor',
         'actions',
         'square',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  ambulance:
+    category: 'logistic'
+    tags:
+      [
+        'ambulance',
+        'clinic',
+        'emergency',
+        'health',
+        'healthcare',
+        'help',
+        'hospital',
+        'medical',
+        'medicine',
+        'rescue',
+        'siren',
+        'sos',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  ambulance-circle:
+    category: 'logistic'
+    tags:
+      [
+        'ambulance',
+        'clinic',
+        'emergency',
+        'health',
+        'healthcare',
+        'help',
+        'hospital',
+        'medical',
+        'medicine',
+        'rescue',
+        'siren',
+        'sos',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  ambulance-square:
+    category: 'logistic'
+    tags:
+      [
+        'ambulance',
+        'clinic',
+        'emergency',
+        'health',
+        'healthcare',
+        'help',
+        'hospital',
+        'medical',
+        'medicine',
+        'rescue',
+        'siren',
+        'sos',
       ]
     aliases: []
     added: '1.0.0'
@@ -3349,7 +3604,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   bicycle:
-    category: 'lifestyle'
+    category: 'logistic'
     tags:
       [
         'bike',
@@ -3379,7 +3634,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   bicycle-circle:
-    category: 'lifestyle'
+    category: 'logistic'
     tags:
       [
         'bike',
@@ -3409,7 +3664,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   bicycle-square:
-    category: 'lifestyle'
+    category: 'logistic'
     tags:
       [
         'bike',
@@ -4199,7 +4454,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   bus:
-    category: 'lifestyle'
+    category: 'logistic'
     tags:
       [
         'automobile',
@@ -4228,7 +4483,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   bus-circle:
-    category: 'lifestyle'
+    category: 'logistic'
     tags:
       [
         'automobile',
@@ -4257,7 +4512,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   bus-square:
-    category: 'lifestyle'
+    category: 'logistic'
     tags:
       [
         'automobile',
@@ -6068,8 +6323,95 @@ icons:
       - outlined/rounded
       - outlined/sharp
       - outlined/tk
+  car:
+    category: 'logistic'
+    tags:
+      [
+        'automobile',
+        'automotive',
+        'car',
+        'car symbol',
+        'cars',
+        'driving',
+        'journey',
+        'maps',
+        'navigation',
+        'road',
+        'route',
+        'sedan',
+        'travel',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  car-circle:
+    category: 'logistic'
+    tags:
+      [
+        'automobile',
+        'automotive',
+        'car',
+        'car symbol',
+        'cars',
+        'driving',
+        'journey',
+        'maps',
+        'navigation',
+        'road',
+        'route',
+        'sedan',
+        'travel',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  car-square:
+    category: 'logistic'
+    tags:
+      [
+        'automobile',
+        'automotive',
+        'car',
+        'car symbol',
+        'cars',
+        'driving',
+        'journey',
+        'maps',
+        'navigation',
+        'road',
+        'route',
+        'sedan',
+        'travel',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
   caravan:
-    category: 'lifestyle'
+    category: 'logistic'
     tags:
       [
         'trailer',
@@ -6096,7 +6438,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   caravan-circle:
-    category: 'lifestyle'
+    category: 'logistic'
     tags:
       [
         'trailer',
@@ -6123,7 +6465,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   caravan-square:
-    category: 'lifestyle'
+    category: 'logistic'
     tags:
       [
         'arrow',
@@ -6428,6 +6770,66 @@ icons:
         'triangle up',
         'arrow',
         'square',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  carriage:
+    category: 'aviation'
+    tags:
+      [
+        'baggage',
+        'box',
+        'carry',
+        'carry-on',
+        'flight',
+        'holiday',
+        'hotel',
+        'journey',
+        'luggage',
+        'suitcase',
+        'tourism',
+        'transport',
+        'travel',
+        'travel bag',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  carriage-circle:
+    category: 'aviation'
+    tags:
+      [
+        'baggage',
+        'box',
+        'carry',
+        'carry-on',
+        'flight',
+        'holiday',
+        'hotel',
+        'journey',
+        'luggage',
+        'suitcase',
+        'tourism',
+        'transport',
+        'travel',
+        'travel bag',
       ]
     aliases: []
     added: '1.0.0'
@@ -12039,6 +12441,198 @@ icons:
       - outlined/rounded
       - outlined/sharp
       - outlined/tk
+  double-chevron-left:
+    category: 'actions'
+    tags:
+      [
+        'arrow',
+        'arrows',
+        'chevron',
+        'chevrons',
+        'control',
+        'direction',
+        'double',
+        'double arrow',
+        'double chevron',
+        'backward',
+        'back',
+        'move',
+        'before',
+        'left',
+        'skip',
+        'symbol',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  double-chevron-left-circle:
+    category: 'actions'
+    tags:
+      [
+        'arrow',
+        'arrows',
+        'chevron',
+        'chevrons',
+        'control',
+        'direction',
+        'double',
+        'double arrow',
+        'double chevron',
+        'backward',
+        'back',
+        'move',
+        'before',
+        'left',
+        'skip',
+        'symbol',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  double-chevron-left-square:
+    category: 'actions'
+    tags:
+      [
+        'arrow',
+        'arrows',
+        'chevron',
+        'chevrons',
+        'control',
+        'direction',
+        'double',
+        'double arrow',
+        'double chevron',
+        'backward',
+        'back',
+        'move',
+        'before',
+        'left',
+        'skip',
+        'symbol',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  double-chevron-right:
+    category: 'actions'
+    tags:
+      [
+        'arrow',
+        'arrows',
+        'chevron',
+        'chevrons',
+        'control',
+        'direction',
+        'double',
+        'double arrow',
+        'double chevron',
+        'forward',
+        'go',
+        'move',
+        'next',
+        'right',
+        'skip',
+        'symbol',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  double-chevron-right-circle:
+    category: 'actions'
+    tags:
+      [
+        'arrow',
+        'arrows',
+        'chevron',
+        'chevrons',
+        'control',
+        'direction',
+        'double',
+        'double arrow',
+        'double chevron',
+        'forward',
+        'go',
+        'move',
+        'next',
+        'right',
+        'skip',
+        'symbol',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  double-chevron-right-square:
+    category: 'actions'
+    tags:
+      [
+        'arrow',
+        'arrows',
+        'chevron',
+        'chevrons',
+        'control',
+        'direction',
+        'double',
+        'double arrow',
+        'double chevron',
+        'forward',
+        'go',
+        'move',
+        'next',
+        'right',
+        'skip',
+        'symbol',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
   drafts:
     category: 'actions'
     tags:
@@ -12716,22 +13310,15 @@ icons:
     tags:
       [
         'airplane',
-        'airplanes',
-        'airport',
-        'arrival',
-        'arrow',
-        'artificial intelligence',
-        'automation',
-        'clover',
-        'departure',
-        'flight',
-        'flights',
-        'fly',
-        'flying',
-        'jet',
+        'aviation',
+        'aircraft',
         'plane',
-        'planes',
-        'travel',
+        'engine',
+        'plane engine',
+        'turbine',
+        'flight',
+        'jet',
+        'jet engine',
       ]
     aliases: []
     added: '1.0.0'
@@ -12749,22 +13336,15 @@ icons:
     tags:
       [
         'airplane',
-        'airplanes',
-        'airport',
-        'arrival',
-        'arrow',
-        'artificial intelligence',
-        'automation',
-        'clover',
-        'departure',
-        'flight',
-        'flights',
-        'fly',
-        'flying',
-        'jet',
+        'aviation',
+        'aircraft',
         'plane',
-        'planes',
-        'travel',
+        'engine',
+        'plane engine',
+        'turbine',
+        'flight',
+        'jet',
+        'jet engine',
       ]
     aliases: []
     added: '1.0.0'
@@ -12782,22 +13362,291 @@ icons:
     tags:
       [
         'airplane',
-        'airplanes',
-        'airport',
-        'arrival',
-        'arrow',
-        'artificial intelligence',
-        'automation',
-        'clover',
-        'departure',
-        'flight',
-        'flights',
-        'fly',
-        'flying',
-        'jet',
+        'aviation',
+        'aircraft',
         'plane',
-        'planes',
-        'travel',
+        'engine',
+        'plane engine',
+        'turbine',
+        'flight',
+        'jet',
+        'jet engine',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  eye-closed:
+    category: 'actions'
+    tags:
+      [
+        'display',
+        'eye',
+        'hidden',
+        'hidden text',
+        'look',
+        'off',
+        'optic',
+        'password',
+        'visibility',
+        'private',
+        'security',
+        'see',
+        'show',
+        'view',
+        'close',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  eye-closed-2:
+    category: 'actions'
+    tags:
+      [
+        'display',
+        'eye',
+        'hidden',
+        'hidden text',
+        'look',
+        'off',
+        'optic',
+        'password',
+        'visibility',
+        'private',
+        'security',
+        'see',
+        'show',
+        'view',
+        'close',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  eye-closed-2-circle:
+    category: 'actions'
+    tags:
+      [
+        'display',
+        'eye',
+        'hidden',
+        'hidden text',
+        'look',
+        'off',
+        'optic',
+        'password',
+        'visibility',
+        'private',
+        'security',
+        'see',
+        'show',
+        'view',
+        'close',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  eye-closed-2-square:
+    category: 'actions'
+    tags:
+      [
+        'display',
+        'eye',
+        'hidden',
+        'hidden text',
+        'look',
+        'off',
+        'optic',
+        'password',
+        'visibility',
+        'private',
+        'security',
+        'see',
+        'show',
+        'view',
+        'close',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  eye-closed-circle:
+    category: 'actions'
+    tags:
+      [
+        'display',
+        'eye',
+        'hidden',
+        'hidden text',
+        'look',
+        'off',
+        'optic',
+        'password',
+        'visibility',
+        'private',
+        'security',
+        'see',
+        'show',
+        'view',
+        'close',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  eye-closed-square:
+    category: 'actions'
+    tags:
+      [
+        'display',
+        'eye',
+        'hidden',
+        'hidden text',
+        'look',
+        'off',
+        'optic',
+        'password',
+        'visibility',
+        'private',
+        'security',
+        'see',
+        'show',
+        'view',
+        'close',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  eye-open:
+    category: 'actions'
+    tags:
+      [
+        'display',
+        'eye',
+        'hidden',
+        'hidden text',
+        'look',
+        'on',
+        'optic',
+        'password',
+        'visibility',
+        'private',
+        'security',
+        'see',
+        'show',
+        'view',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  eye-open-circle:
+    category: 'actions'
+    tags:
+      [
+        'display',
+        'eye',
+        'hidden',
+        'hidden text',
+        'look',
+        'on',
+        'optic',
+        'password',
+        'visibility',
+        'private',
+        'security',
+        'see',
+        'show',
+        'view',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  eye-open-square:
+    category: 'actions'
+    tags:
+      [
+        'display',
+        'eye',
+        'hidden',
+        'hidden text',
+        'look',
+        'on',
+        'optic',
+        'password',
+        'visibility',
+        'private',
+        'security',
+        'see',
+        'show',
+        'view',
       ]
     aliases: []
     added: '1.0.0'
@@ -15035,6 +15884,66 @@ icons:
       - outlined/rounded
       - outlined/sharp
       - outlined/tk
+  garage:
+    category: 'logistic'
+    tags:
+      [
+        'automobile',
+        'automotive',
+        'building',
+        'car',
+        'closed',
+        'door',
+        'entrance',
+        'garage',
+        'home',
+        'house',
+        'open',
+        'outline',
+        'park',
+        'parking',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  garage-square:
+    category: 'logistic'
+    tags:
+      [
+        'automobile',
+        'automotive',
+        'building',
+        'car',
+        'closed',
+        'door',
+        'entrance',
+        'garage',
+        'home',
+        'house',
+        'open',
+        'outline',
+        'park',
+        'parking',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
   gate:
     category: 'aviation'
     tags:
@@ -15044,18 +15953,18 @@ icons:
         'airport',
         'arrival',
         'arrow',
-        'artificial intelligence',
-        'automation',
-        'clover',
+        'artificial',
         'departure',
         'flight',
         'flights',
-        'fly',
-        'flying',
         'jet',
         'plane',
-        'planes',
         'travel',
+        'passenger',
+        'traveller',
+        'gate',
+        'check',
+        'check-in',
       ]
     aliases: []
     added: '1.0.0'
@@ -15077,18 +15986,114 @@ icons:
         'airport',
         'arrival',
         'arrow',
-        'artificial intelligence',
-        'automation',
-        'clover',
+        'artificial',
         'departure',
         'flight',
         'flights',
-        'fly',
-        'flying',
         'jet',
+        'plane',
+        'travel',
+        'passenger',
+        'traveller',
+        'gate',
+        'check',
+        'check-in',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  gate-number:
+    category: 'aviation'
+    tags:
+      [
+        'airplane',
+        'airplanes',
+        'airport',
+        'arrival',
+        'arrow',
+        'artificial intelligence',
+        'departure',
+        'flight',
+        'fly',
         'plane',
         'planes',
         'travel',
+        'gate',
+        'number',
+        'gate number',
+        'door',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  gate-number-circle:
+    category: 'aviation'
+    tags:
+      [
+        'airplane',
+        'airplanes',
+        'airport',
+        'arrival',
+        'arrow',
+        'artificial intelligence',
+        'departure',
+        'flight',
+        'fly',
+        'plane',
+        'planes',
+        'travel',
+        'gate',
+        'number',
+        'gate number',
+        'door',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  gate-number-square:
+    category: 'aviation'
+    tags:
+      [
+        'airplane',
+        'airplanes',
+        'airport',
+        'arrival',
+        'arrow',
+        'artificial intelligence',
+        'departure',
+        'flight',
+        'fly',
+        'plane',
+        'planes',
+        'travel',
+        'gate',
+        'number',
+        'gate number',
+        'door',
       ]
     aliases: []
     added: '1.0.0'
@@ -15110,18 +16115,18 @@ icons:
         'airport',
         'arrival',
         'arrow',
-        'artificial intelligence',
-        'automation',
-        'clover',
+        'artificial',
         'departure',
         'flight',
         'flights',
-        'fly',
-        'flying',
         'jet',
         'plane',
-        'planes',
         'travel',
+        'passenger',
+        'traveller',
+        'gate',
+        'check',
+        'check-in',
       ]
     aliases: []
     added: '1.0.0'
@@ -16235,6 +17240,39 @@ icons:
       - outlined/bevel
       - outlined/rounded
       - outlined/sharp
+  helicopter:
+    category: 'aviation'
+    tags:
+      [
+        'air',
+        'air transport',
+        'aircraft',
+        'aviation',
+        'emergency',
+        'flight',
+        'helicopter',
+        'medical',
+        'military',
+        'plane',
+        'propeller',
+        'rescue',
+        'service',
+        'sky',
+        'transportation',
+        'travel',
+        'vehicle',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
   herbal-tea:
     category: 'lifestyle'
     tags:
@@ -16941,6 +17979,99 @@ icons:
       - outlined/bevel
       - outlined/rounded
       - outlined/sharp
+  info:
+    category: 'actions'
+    tags:
+      [
+        'about',
+        'alert',
+        'data',
+        'details',
+        'guide',
+        'help',
+        'i',
+        'important',
+        'info',
+        'information',
+        'message',
+        'notice',
+        'read',
+        'service',
+        'support',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  info-circle:
+    category: 'actions'
+    tags:
+      [
+        'about',
+        'alert',
+        'data',
+        'details',
+        'guide',
+        'help',
+        'i',
+        'important',
+        'info',
+        'information',
+        'message',
+        'notice',
+        'read',
+        'service',
+        'support',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  info-square:
+    category: 'actions'
+    tags:
+      [
+        'about',
+        'alert',
+        'data',
+        'details',
+        'guide',
+        'help',
+        'i',
+        'important',
+        'info',
+        'information',
+        'message',
+        'notice',
+        'read',
+        'service',
+        'support',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
   kebap:
     category: 'lifestyle'
     tags:
@@ -19127,6 +20258,93 @@ icons:
         'more',
         'actions',
         'square',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  meal:
+    category: 'aviation'
+    tags:
+      [
+        'airplane',
+        'airport',
+        'flight',
+        'fly',
+        'flying',
+        'jet',
+        'plane',
+        'travel',
+        'meal',
+        'food',
+        'launch',
+        'checkin',
+        'eat',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  meal-circle:
+    category: 'aviation'
+    tags:
+      [
+        'airplane',
+        'airport',
+        'flight',
+        'fly',
+        'flying',
+        'jet',
+        'plane',
+        'travel',
+        'meal',
+        'food',
+        'launch',
+        'checkin',
+        'eat',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  meal-square:
+    category: 'aviation'
+    tags:
+      [
+        'airplane',
+        'airport',
+        'flight',
+        'fly',
+        'flying',
+        'jet',
+        'plane',
+        'travel',
+        'meal',
+        'food',
+        'launch',
+        'checkin',
+        'eat',
       ]
     aliases: []
     added: '1.0.0'
@@ -25352,19 +26570,18 @@ icons:
       - outlined/rounded
       - outlined/sharp
       - outlined/tk
-  seat-business:
+  seat-belt:
     category: 'aviation'
     tags:
       [
         'airplane',
         'airplanes',
         'airport',
-        'arrival',
-        'arrow',
-        'artificial intelligence',
-        'automation',
-        'clover',
-        'departure',
+        'belt',
+        'seat belt',
+        'security',
+        'safe',
+        'safe belt',
         'flight',
         'flights',
         'fly',
@@ -25373,6 +26590,105 @@ icons:
         'plane',
         'planes',
         'travel',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  seat-belt-circle:
+    category: 'aviation'
+    tags:
+      [
+        'airplane',
+        'airplanes',
+        'airport',
+        'belt',
+        'seat belt',
+        'security',
+        'safe',
+        'safe belt',
+        'flight',
+        'flights',
+        'fly',
+        'flying',
+        'jet',
+        'plane',
+        'planes',
+        'travel',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  seat-belt-square:
+    category: 'aviation'
+    tags:
+      [
+        'airplane',
+        'airplanes',
+        'airport',
+        'belt',
+        'seat belt',
+        'security',
+        'safe',
+        'safe belt',
+        'flight',
+        'flights',
+        'fly',
+        'flying',
+        'jet',
+        'plane',
+        'planes',
+        'travel',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  seat-business:
+    category: 'aviation'
+    tags:
+      [
+        'air',
+        'airline',
+        'airplane',
+        'airport',
+        'aviation',
+        'cabin',
+        'class',
+        'comfort',
+        'flight',
+        'fly',
+        'passenger',
+        'plane',
+        'planes',
+        'seat',
+        'travel',
+        'business',
+        'cool',
+        'vip',
+        'loyalty',
       ]
     aliases: []
     added: '1.0.0'
@@ -25389,23 +26705,25 @@ icons:
     category: 'aviation'
     tags:
       [
+        'air',
+        'airline',
         'airplane',
-        'airplanes',
         'airport',
-        'arrival',
-        'arrow',
-        'artificial intelligence',
-        'automation',
-        'clover',
-        'departure',
+        'aviation',
+        'cabin',
+        'class',
+        'comfort',
         'flight',
-        'flights',
         'fly',
-        'flying',
-        'jet',
+        'passenger',
         'plane',
         'planes',
+        'seat',
         'travel',
+        'business',
+        'cool',
+        'vip',
+        'loyalty',
       ]
     aliases: []
     added: '1.0.0'
@@ -25422,23 +26740,25 @@ icons:
     category: 'aviation'
     tags:
       [
+        'air',
+        'airline',
         'airplane',
-        'airplanes',
         'airport',
-        'arrival',
-        'arrow',
-        'artificial intelligence',
-        'automation',
-        'clover',
-        'departure',
+        'aviation',
+        'cabin',
+        'class',
+        'comfort',
         'flight',
-        'flights',
         'fly',
-        'flying',
-        'jet',
+        'passenger',
         'plane',
         'planes',
+        'seat',
         'travel',
+        'business',
+        'cool',
+        'vip',
+        'loyalty',
       ]
     aliases: []
     added: '1.0.0'
@@ -25818,6 +27138,189 @@ icons:
         'seat',
         'seating',
         'travel',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  seat-window:
+    category: 'aviation'
+    tags:
+      [
+        'airplane',
+        'aviation',
+        'cabin',
+        'chair',
+        'flight',
+        'passenger',
+        'reservation',
+        'seat',
+        'tourism',
+        'transport',
+        'travel',
+        'trip',
+        'window',
+        'window seat',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  seat-window-circle:
+    category: 'aviation'
+    tags:
+      [
+        'airplane',
+        'aviation',
+        'cabin',
+        'chair',
+        'flight',
+        'passenger',
+        'reservation',
+        'seat',
+        'tourism',
+        'transport',
+        'travel',
+        'trip',
+        'window',
+        'window seat',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  seat-window-square:
+    category: 'aviation'
+    tags:
+      [
+        'airplane',
+        'aviation',
+        'cabin',
+        'chair',
+        'flight',
+        'passenger',
+        'reservation',
+        'seat',
+        'tourism',
+        'transport',
+        'travel',
+        'trip',
+        'window',
+        'window seat',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  security-check:
+    category: 'aviation'
+    tags:
+      [
+        'airplane',
+        'airport',
+        'arrival',
+        'security',
+        'departure',
+        'flight',
+        'flights',
+        'fly',
+        'flying',
+        'jet',
+        'plane',
+        'planes',
+        'travel',
+        'control',
+        'xr',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  security-check-circle:
+    category: 'aviation'
+    tags:
+      [
+        'airplane',
+        'airport',
+        'arrival',
+        'security',
+        'departure',
+        'flight',
+        'flights',
+        'fly',
+        'flying',
+        'jet',
+        'plane',
+        'planes',
+        'travel',
+        'control',
+        'xr',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  security-check-square:
+    category: 'aviation'
+    tags:
+      [
+        'airplane',
+        'airport',
+        'arrival',
+        'security',
+        'departure',
+        'flight',
+        'flights',
+        'fly',
+        'flying',
+        'jet',
+        'plane',
+        'planes',
+        'travel',
+        'control',
+        'xr',
       ]
     aliases: []
     added: '1.0.0'
@@ -29187,6 +30690,30 @@ icons:
       - outlined/rounded
       - outlined/sharp
       - outlined/tk
+  takeoff-rocket:
+    category: 'actions'
+    tags:
+      [
+        'rocket',
+        'launch',
+        'takeoff',
+        'space',
+        'startup',
+        'boost',
+        'ship',
+        'fly',
+      ]
+    aliases: []
+    added: '0.1.1'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
   target:
     category: 'aviation'
     tags:
@@ -29271,6 +30798,105 @@ icons:
         'hit',
         'location',
         'target',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  taxi:
+    category: 'logistic'
+    tags:
+      [
+        'automobile',
+        'booking',
+        'call',
+        'car',
+        'city',
+        'direction',
+        'driver',
+        'drop off',
+        'hire',
+        'local',
+        'passenger',
+        'rent',
+        'street',
+        'taxi',
+        'travel',
+        'uber',
+        'yellow',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  taxi-circle:
+    category: 'logistic'
+    tags:
+      [
+        'automobile',
+        'booking',
+        'call',
+        'car',
+        'city',
+        'direction',
+        'driver',
+        'drop off',
+        'hire',
+        'local',
+        'passenger',
+        'rent',
+        'street',
+        'taxi',
+        'travel',
+        'uber',
+        'yellow',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  taxi-square:
+    category: 'logistic'
+    tags:
+      [
+        'automobile',
+        'booking',
+        'call',
+        'car',
+        'city',
+        'direction',
+        'driver',
+        'drop off',
+        'hire',
+        'local',
+        'passenger',
+        'rent',
+        'street',
+        'taxi',
+        'travel',
+        'uber',
+        'yellow',
       ]
     aliases: []
     added: '1.0.0'
@@ -31575,20 +33201,12 @@ icons:
         'airplane',
         'airplanes',
         'airport',
-        'arrival',
-        'arrow',
-        'artificial intelligence',
-        'automation',
-        'clover',
-        'departure',
         'flight',
-        'flights',
-        'fly',
-        'flying',
-        'jet',
-        'plane',
-        'planes',
-        'travel',
+        'wind',
+        'wind socket',
+        'windsock',
+        'weather',
+        'windy',
       ]
     aliases: []
     added: '1.0.0'
@@ -31608,20 +33226,12 @@ icons:
         'airplane',
         'airplanes',
         'airport',
-        'arrival',
-        'arrow',
-        'artificial intelligence',
-        'automation',
-        'clover',
-        'departure',
         'flight',
-        'flights',
-        'fly',
-        'flying',
-        'jet',
-        'plane',
-        'planes',
-        'travel',
+        'wind',
+        'wind socket',
+        'windsock',
+        'weather',
+        'windy',
       ]
     aliases: []
     added: '1.0.0'
@@ -31641,20 +33251,12 @@ icons:
         'airplane',
         'airplanes',
         'airport',
-        'arrival',
-        'arrow',
-        'artificial intelligence',
-        'automation',
-        'clover',
-        'departure',
         'flight',
-        'flights',
-        'fly',
-        'flying',
-        'jet',
-        'plane',
-        'planes',
-        'travel',
+        'wind',
+        'wind socket',
+        'windsock',
+        'weather',
+        'windy',
       ]
     aliases: []
     added: '1.0.0'
@@ -31817,30 +33419,6 @@ icons:
       ]
     aliases: []
     added: '1.0.0'
-    variants:
-      - filled/bevel
-      - filled/rounded
-      - filled/sharp
-      - filled/tk
-      - outlined/bevel
-      - outlined/rounded
-      - outlined/sharp
-      - outlined/tk
-  takeoff-rocket:
-    category: 'actions'
-    tags:
-      [
-        'rocket',
-        'launch',
-        'takeoff',
-        'space',
-        'startup',
-        'boost',
-        'ship',
-        'fly',
-      ]
-    aliases: []
-    added: '0.1.1'
     variants:
       - filled/bevel
       - filled/rounded

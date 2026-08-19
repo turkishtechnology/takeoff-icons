@@ -853,15 +853,32 @@ function syncMetadata(icons: IconEntry[], report: Report): void {
     path.dirname(METADATA_PATH),
     'categories.yaml',
   );
+  // Labels and descriptions are hand-written, so keep whatever the existing
+  // file already says and only synthesize entries for categories new to Figma.
+  const existing = new Map<string, { label?: string; description?: string }>();
+  if (fs.existsSync(categoriesPath)) {
+    const prev = parse(fs.readFileSync(categoriesPath, 'utf8')) as {
+      categories?: { id: string; label?: string; description?: string }[];
+    };
+    for (const cat of prev.categories ?? []) {
+      existing.set(cat.id, { label: cat.label, description: cat.description });
+    }
+  }
+
   const catLines: string[] = ['categories:'];
   for (const cat of [...categories].sort()) {
-    const label = cat
-      .split('-')
-      .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
-      .join(' ');
+    const prev = existing.get(cat);
+    const label =
+      prev?.label ??
+      cat
+        .split('-')
+        .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+        .join(' ');
     catLines.push(`  - id: ${cat}`);
-    catLines.push(`    label: "${label}"`);
-    catLines.push(`    description: ""`);
+    catLines.push(`    label: ${JSON.stringify(label)}`);
+    catLines.push(
+      `    description: ${JSON.stringify(prev?.description ?? '')}`,
+    );
   }
   fs.writeFileSync(categoriesPath, catLines.join('\n') + '\n', 'utf8');
 }
