@@ -3325,7 +3325,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   battery:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         'bar',
@@ -3355,7 +3355,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   battery-circle:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         'bar',
@@ -3385,7 +3385,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   battery-full:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         'battery',
@@ -3417,7 +3417,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   battery-full-circle:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         'battery',
@@ -3449,7 +3449,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   battery-full-square:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         'battery',
@@ -3481,7 +3481,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   battery-low:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         'low',
@@ -3512,7 +3512,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   battery-low-circle:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         'low',
@@ -3543,7 +3543,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   battery-low-square:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         'low',
@@ -3574,7 +3574,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   battery-square:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         'bar',
@@ -4376,7 +4376,7 @@ icons:
       - outlined/rounded
       - outlined/sharp
   bulb:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         'bulb',
@@ -4402,7 +4402,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   bulb-circle:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         'bulb',
@@ -4428,7 +4428,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   bulb-square:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         'bulb',
@@ -4541,7 +4541,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   cable:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         'cable',
@@ -4573,7 +4573,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   cable-circle:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         'cable',
@@ -4605,7 +4605,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   cable-square:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         'cable',
@@ -5896,7 +5896,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   camera:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         'camera',
@@ -5927,7 +5927,7 @@ icons:
       - outlined/rounded
       - outlined/sharp
   camera-circle:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         'camera',
@@ -5958,7 +5958,7 @@ icons:
       - outlined/rounded
       - outlined/sharp
   camera-off:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         'camera',
@@ -5994,7 +5994,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   camera-off-circle:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         'camera',
@@ -6030,7 +6030,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   camera-off-square:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         'camera',
@@ -6066,7 +6066,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   camera-square:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         'camera',
@@ -7140,7 +7140,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   charging:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         '%',
@@ -7172,7 +7172,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   charging-circle:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         '%',
@@ -7204,7 +7204,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   charging-square:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         '%',
@@ -15035,7 +15035,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   flashlight:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         'bright',
@@ -15062,7 +15062,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   flashlight-circle:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         'bright',
@@ -15089,7 +15089,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   flashlight-square:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         'bright',
@@ -16230,7 +16230,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   gps-signal:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         'device',
@@ -16255,7 +16255,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   gps-signal-circle:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         'device',
@@ -16280,7 +16280,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   gps-signal-square:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         'device',
@@ -17004,7 +17004,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   hard-drive:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         'archive',
@@ -17037,7 +17037,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   hard-drive-circle:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         'archive',
@@ -17070,7 +17070,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   hard-drive-square:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         'archive',
@@ -17103,7 +17103,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   hd:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         'definition',
@@ -17139,7 +17139,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   hd-square:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         'definition',
@@ -17175,7 +17175,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   hdmi:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         'hdmi',
@@ -17197,7 +17197,7 @@ icons:
       - outlined/rounded
       - outlined/sharp
   hdmi-circle:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         'hdmi',
@@ -17219,7 +17219,7 @@ icons:
       - outlined/rounded
       - outlined/sharp
   hdmi-square:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         'hdmi',
@@ -18745,7 +18745,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   laptop:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         'android',
@@ -18777,7 +18777,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   laptop-circle:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         'android',
@@ -18809,7 +18809,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   laptop-square:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         'android',
@@ -20707,7 +20707,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   mobile:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         'android',
@@ -20736,7 +20736,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   mobile-circle:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         'android',
@@ -20765,7 +20765,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   mobile-square:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         'android',
@@ -21058,7 +21058,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   mouse:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         'click',
@@ -21088,7 +21088,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   mouse-circle:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         'click',
@@ -21118,7 +21118,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   mouse-square:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         'click',
@@ -23746,7 +23746,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   pin:
-    category: 'uncategorized'
+    category: 'pin'
     tags:
       [
         'login',
@@ -23774,7 +23774,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   pin-circle:
-    category: 'uncategorized'
+    category: 'pin'
     tags:
       [
         'login',
@@ -23896,7 +23896,7 @@ icons:
       - outlined/rounded
       - outlined/sharp
   pin-square:
-    category: 'uncategorized'
+    category: 'pin'
     tags:
       [
         'login',
@@ -24368,7 +24368,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   plug:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         'adapter',
@@ -24400,7 +24400,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   plug-circle:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         'adapter',
@@ -24432,7 +24432,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   plug-square:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         'adapter',
@@ -27929,7 +27929,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   sim:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         'card',
@@ -27960,7 +27960,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   sim-square:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         'card',
@@ -31751,6 +31751,180 @@ icons:
       - outlined/rounded
       - outlined/sharp
       - outlined/tk
+  traffic-lights:
+    category: 'logistic'
+    tags:
+      [
+        'barrier',
+        'block',
+        'car',
+        'caution',
+        'detour',
+        'direction',
+        'guide',
+        'highway',
+        'light',
+        'road',
+        'safety',
+        'signal',
+        'street',
+        'traffic',
+        'warning',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  traffic-lights-circle:
+    category: 'logistic'
+    tags:
+      [
+        'barrier',
+        'block',
+        'car',
+        'caution',
+        'detour',
+        'direction',
+        'guide',
+        'highway',
+        'light',
+        'road',
+        'safety',
+        'signal',
+        'street',
+        'traffic',
+        'warning',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  traffic-lights-square:
+    category: 'logistic'
+    tags:
+      [
+        'barrier',
+        'block',
+        'car',
+        'caution',
+        'detour',
+        'direction',
+        'guide',
+        'highway',
+        'light',
+        'road',
+        'safety',
+        'signal',
+        'street',
+        'traffic',
+        'warning',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  train:
+    category: 'logistic'
+    tags:
+      [
+        'arrow',
+        'left',
+        'back',
+        'direction',
+        'go back',
+        'history',
+        'navigate',
+        'navigation',
+        'return',
+        'reverse',
+        'undo',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  train-circle:
+    category: 'logistic'
+    tags:
+      [
+        'arrow',
+        'left',
+        'back',
+        'direction',
+        'go back',
+        'history',
+        'navigate',
+        'navigation',
+        'return',
+        'reverse',
+        'undo',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  train-square:
+    category: 'logistic'
+    tags:
+      [
+        'arrow',
+        'left',
+        'back',
+        'direction',
+        'go back',
+        'history',
+        'navigate',
+        'navigation',
+        'return',
+        'reverse',
+        'undo',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
   tram:
     category: 'lifestyle'
     tags:
@@ -32109,8 +32283,50 @@ icons:
       - outlined/bevel
       - outlined/rounded
       - outlined/sharp
+  truck:
+    category: 'logistic'
+    tags: ['transport', 'delivery', 'delivery truck', 'cargo', 'vehicle', 'car']
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  truck-circle:
+    category: 'logistic'
+    tags: ['transport', 'delivery', 'delivery truck', 'cargo', 'vehicle', 'car']
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  truck-square:
+    category: 'logistic'
+    tags: ['transport', 'delivery', 'delivery truck', 'cargo', 'vehicle', 'car']
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
   tv:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         'device',
@@ -32138,7 +32354,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   tv-circle:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         'device',
@@ -32166,7 +32382,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   tv-square:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         'device',
@@ -32470,7 +32686,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   video-camera:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         'aperture',
@@ -32503,7 +32719,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   video-camera-circle:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         'aperture',
@@ -32536,7 +32752,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   video-camera-square:
-    category: 'uncategorized'
+    category: 'devices-hardware'
     tags:
       [
         'aperture',

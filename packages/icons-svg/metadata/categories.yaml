@@ -35,6 +35,9 @@ categories:
   - id: people
     label: 'People'
     description: 'Accounts, persons, groups and contacts.'
+  - id: pin
+    label: 'Pin'
+    description: ''
   - id: security
     label: 'Security'
     description: 'Locks, passwords and encryption.'
