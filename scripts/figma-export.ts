@@ -72,6 +72,8 @@ const UNRESOLVED_REPORT_PATH = path.join(
 );
 
 const BATCH_SIZE = 100;
+const FETCH_ATTEMPTS = 4;
+const FETCH_TIMEOUT_MS = 120_000;
 const CONCURRENT_DOWNLOADS = 10;
 const DOWNLOAD_ATTEMPTS = 3;
 const DOWNLOAD_RETRY_PASSES = 2;
@@ -199,23 +201,56 @@ function getEnvConfig(): EnvConfig {
 
 async function figmaFetch<T>(env: EnvConfig, endpoint: string): Promise<T> {
   const url = `${FIGMA_API}${endpoint}`;
-  const res = await fetch(url, {
-    headers: { 'X-Figma-Token': env.accessToken },
-  });
 
-  if (res.status === 429) {
-    const retryAfter = Number(res.headers.get('retry-after') || 30);
-    logWarn(`Rate limited. Waiting ${retryAfter}s...`);
-    await sleep(retryAfter * 1000);
-    return figmaFetch<T>(env, endpoint);
+  for (let attempt = 1; attempt <= FETCH_ATTEMPTS; attempt++) {
+    // Two failure modes, both fatal without this loop: Figma accepts the
+    // connection and never responds, and undici gives up establishing the TCP
+    // connection after 10s (UND_ERR_CONNECT_TIMEOUT) when the local network is
+    // saturated. The read budget grows per attempt so a genuinely large page
+    // still gets through.
+    const timeout = FETCH_TIMEOUT_MS * attempt;
+
+    let res: Response;
+    try {
+      res = await fetch(url, {
+        headers: { 'X-Figma-Token': env.accessToken },
+        signal: AbortSignal.timeout(timeout),
+      });
+    } catch (err) {
+      const cause = err instanceof Error ? err.cause : undefined;
+      const reason =
+        cause instanceof Error
+          ? `${cause.name}: ${cause.message}`
+          : String(err);
+      if (attempt === FETCH_ATTEMPTS) {
+        throw new Error(
+          `Figma API unreachable after ${FETCH_ATTEMPTS} attempts (${reason}): ${endpoint}`,
+        );
+      }
+      const wait = 5 * attempt;
+      logWarn(
+        `Request failed (${reason}). Retry ${attempt + 1}/${FETCH_ATTEMPTS} in ${wait}s...`,
+      );
+      await sleep(wait * 1000);
+      continue;
+    }
+
+    if (res.status === 429) {
+      const retryAfter = Number(res.headers.get('retry-after') || 30);
+      logWarn(`Rate limited. Waiting ${retryAfter}s...`);
+      await sleep(retryAfter * 1000);
+      return figmaFetch<T>(env, endpoint);
+    }
+
+    if (!res.ok) {
+      const body = await res.text();
+      throw new Error(`Figma API ${res.status}: ${body}`);
+    }
+
+    return res.json() as Promise<T>;
   }
 
-  if (!res.ok) {
-    const body = await res.text();
-    throw new Error(`Figma API ${res.status}: ${body}`);
-  }
-
-  return res.json() as Promise<T>;
+  throw new Error(`Figma API request exhausted retries: ${endpoint}`);
 }
 
 function sleep(ms: number): Promise<void> {
@@ -547,6 +582,19 @@ async function fetchIconEntries(env: EnvConfig): Promise<IconEntry[]> {
     process.exit(1);
   }
 
+  // Partial misses are silent otherwise: a page renamed in Figma (e.g. a new
+  // status prefix) just drops out of the export without a trace.
+  const matchedNames = new Set(matched.map((p) => normalizePageName(p.name)));
+  const unmatched = env.pageNames.filter(
+    (n) => !matchedNames.has(normalizePageName(n)),
+  );
+  if (unmatched.length > 0) {
+    logWarn(`${unmatched.length} requested page(s) not found in the file:`);
+    for (const name of unmatched) logDim(`  "${name}"`);
+    logDim(`Available pages: ${allPages.map((p) => p.name).join(', ')}`);
+    logDim(`Fix: update FIGMA_PAGE_NAME in .env to match Figma byte-exactly`);
+  }
+
   // Fetch all matching pages
   const entries: IconEntry[] = [];
   for (const page of matched) {
@@ -586,7 +634,8 @@ async function exportAndDownload(
   async function downloadSvg(url: string): Promise<string | undefined> {
     for (let attempt = 1; attempt <= DOWNLOAD_ATTEMPTS; attempt++) {
       try {
-        const res = await fetch(url);
+        // Same stall risk as figmaFetch, across 8k+ downloads.
+        const res = await fetch(url, { signal: AbortSignal.timeout(30_000) });
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         return await res.text();
       } catch {
@@ -819,6 +868,16 @@ function syncMetadata(icons: IconEntry[], report: Report): void {
       metadata.icons[name].variants = [...existing].sort();
       if (info.tags.length > 0) {
         metadata.icons[name].tags = tags;
+      }
+      // Category used to be written only on first import, so an icon that
+      // landed in 'uncategorized' before its Figma frame was named stayed
+      // there forever. Fill the blank from Figma, but never overwrite a
+      // category someone curated by hand.
+      if (
+        metadata.icons[name].category === 'uncategorized' &&
+        info.category !== 'uncategorized'
+      ) {
+        metadata.icons[name].category = info.category;
       }
       report.updatedIcons++;
     } else {
@@ -1135,5 +1194,15 @@ async function main() {
 
 main().catch((err) => {
   logErr(String(err));
+  // Node's fetch reports every network failure as a bare "TypeError: fetch
+  // failed" and hides the real reason (ETIMEDOUT, ECONNRESET) in `cause`.
+  let cause: unknown = err instanceof Error ? err.cause : undefined;
+  while (cause instanceof Error) {
+    const code = (cause as NodeJS.ErrnoException).code;
+    logDim(
+      `caused by: ${cause.name}: ${cause.message}${code ? ` (${code})` : ''}`,
+    );
+    cause = cause.cause;
+  }
   process.exit(1);
 });
