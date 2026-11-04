@@ -185,7 +185,9 @@ function getEnvConfig(): EnvConfig {
   const accessToken = process.env.FIGMA_TOKEN;
   const fileId = process.env.FIGMA_FILE_ID ?? 'LVruHwiRP8gFNRCKYaPhod';
   const nodeId = process.env.FIGMA_NODE_ID; // e.g. "38:184"
-  const pageNames = (process.env.FIGMA_PAGE_NAME ?? 'Source')
+  // Unset → every numbered category page ("01 Arrows" … "21 Flags"); see
+  // isCategoryPage. The old "Source" page no longer holds library components.
+  const pageNames = (process.env.FIGMA_PAGE_NAME ?? '')
     .split(',')
     .map((s) => s.trim())
     .filter(Boolean);
@@ -306,6 +308,15 @@ function isExcludedIconName(name: string): boolean {
   return name
     .split(/[/-]/)
     .some((token) => EXCLUDED_ICON_NAME_TOKENS.has(token));
+}
+
+/**
+ * A numbered category page, e.g. "01 Arrows" or "❌ 07 Files & Documents 📑".
+ * Designers prefix pages with status emoji, so only the two-digit number after
+ * any leading symbols is significant; "00 cover" is not a category.
+ */
+function isCategoryPage(name: string): boolean {
+  return /^[^\p{L}\p{N}]*(?!00)\d{2}\s/u.test(normalizePageName(name));
 }
 
 function normalizePageName(name: string): string {
@@ -548,7 +559,8 @@ async function fetchByNodeId(
  *
  * Resolution order:
  *   1. FIGMA_NODE_ID env var    → fetch that specific node
- *   2. FIGMA_PAGE_NAME matches  → fetch matching page subtrees (comma-separated)
+ *   2. FIGMA_PAGE_NAME matches  → fetch matching page subtrees (comma-separated);
+ *      unset → every numbered category page (isCategoryPage)
  *   3. Fail with available page names
  */
 async function fetchIconEntries(env: EnvConfig): Promise<IconEntry[]> {
@@ -561,7 +573,11 @@ async function fetchIconEntries(env: EnvConfig): Promise<IconEntry[]> {
   }
 
   // 2. Find pages by name
-  logDim(`Looking for pages: ${env.pageNames.map((n) => `"${n}"`).join(', ')}`);
+  logDim(
+    env.pageNames.length > 0
+      ? `Looking for pages: ${env.pageNames.map((n) => `"${n}"`).join(', ')}`
+      : 'Looking for numbered category pages',
+  );
 
   const file = await figmaFetch<FigmaFileResponse>(
     env,
@@ -569,6 +585,18 @@ async function fetchIconEntries(env: EnvConfig): Promise<IconEntry[]> {
   );
 
   const allPages = file.document.children ?? [];
+
+  if (env.pageNames.length === 0) {
+    const categoryPages = allPages.filter((p) => isCategoryPage(p.name));
+    if (categoryPages.length === 0) {
+      logErr(`No numbered category pages found.`);
+      logDim(`Available pages: ${allPages.map((p) => p.name).join(', ')}`);
+      logDim(`Fix: set FIGMA_PAGE_NAME or FIGMA_NODE_ID in .env`);
+      process.exit(1);
+    }
+    env.pageNames = categoryPages.map((p) => normalizePageName(p.name));
+  }
+
   const requestedPages = new Set(env.pageNames.map(normalizePageName));
   const matched = allPages.filter((p) =>
     requestedPages.has(normalizePageName(p.name)),
