@@ -1051,6 +1051,14 @@ function printReport(icons: IconEntry[], report: Report): void {
     log(
       `\n  ${c.bold}${c.yellow}Skipped${c.reset}  ${report.skipped.length} duplicates`,
     );
+    // With every category page read in one run, the first page wins on a
+    // duplicate, so name the icons whose drawing depended on page order.
+    const names = [
+      ...new Set(
+        report.skipped.map((s) => s.replace(/^Duplicate: /, '').split('::')[0]),
+      ),
+    ].sort();
+    logDim(`  First occurrence kept for: ${names.join(', ')}`);
   }
 
   log(`\n${c.bold}═══════════════════════════════════════${c.reset}`);
