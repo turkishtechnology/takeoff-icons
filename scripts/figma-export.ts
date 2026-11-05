@@ -1058,7 +1058,9 @@ function printReport(icons: IconEntry[], report: Report): void {
         report.skipped.map((s) => s.replace(/^Duplicate: /, '').split('::')[0]),
       ),
     ].sort();
-    logDim(`  First occurrence kept for: ${names.join(', ')}`);
+    const shown = names.slice(0, 40).join(', ');
+    const more = names.length > 40 ? ` … and ${names.length - 40} more` : '';
+    logDim(`  First occurrence kept for: ${shown}${more}`);
   }
 
   log(`\n${c.bold}═══════════════════════════════════════${c.reset}`);

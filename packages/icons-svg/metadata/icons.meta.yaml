@@ -19063,7 +19063,7 @@ icons:
       - outlined/rounded
       - outlined/sharp
   heart:
-    category: 'people'
+    category: 'actions'
     tags:
       [
         'affection',
@@ -19097,7 +19097,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   heart-circle:
-    category: 'people'
+    category: 'actions'
     tags:
       [
         'affection',
@@ -19132,7 +19132,7 @@ icons:
       - outlined/sharp
       - outlined/tk
   heart-square:
-    category: 'people'
+    category: 'actions'
     tags:
       [
         'affection',
