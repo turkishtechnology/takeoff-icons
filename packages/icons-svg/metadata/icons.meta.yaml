@@ -696,7 +696,7 @@ icons:
         'pen',
         'pencil',
         'star',
-        'promt',
+        'prompt',
       ]
     aliases: []
     added: '1.0.0'
@@ -722,7 +722,7 @@ icons:
         'pen',
         'pencil',
         'star',
-        'promt',
+        'prompt',
       ]
     aliases: []
     added: '1.0.0'
@@ -748,7 +748,7 @@ icons:
         'pen',
         'pencil',
         'star',
-        'promt',
+        'prompt',
       ]
     aliases: []
     added: '1.0.0'
@@ -1112,8 +1112,8 @@ icons:
         'ai edit',
         'ai editing',
         'editing',
-        'promt',
-        'ai promt',
+        'prompt',
+        'ai prompt',
         'ai paragraph',
         'intelligence',
         'artificial intelligence',
@@ -1142,8 +1142,8 @@ icons:
         'ai edit',
         'ai editing',
         'editing',
-        'promt',
-        'ai promt',
+        'prompt',
+        'ai prompt',
         'ai paragraph',
         'intelligence',
         'artificial intelligence',
@@ -1172,8 +1172,8 @@ icons:
         'ai edit',
         'ai editing',
         'editing',
-        'promt',
-        'ai promt',
+        'prompt',
+        'ai prompt',
         'ai paragraph',
         'intelligence',
         'artificial intelligence',

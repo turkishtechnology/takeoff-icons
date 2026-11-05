@@ -26,6 +26,8 @@ import {
   SVG_ROOT,
   ROOT_DIR,
   ensureDir,
+  isCategoryPage,
+  normalizePageName,
   type IconStyle,
   type IconType,
 } from './utils';
@@ -310,26 +312,6 @@ function isExcludedIconName(name: string): boolean {
     .some((token) => EXCLUDED_ICON_NAME_TOKENS.has(token));
 }
 
-/** Library category pages are numbered 01–18; 19+ (Payment, Social, Flags) are not exported. */
-const LAST_CATEGORY_PAGE = 18;
-
-/**
- * A library category page, e.g. "01 Arrows" or "❌ 07 Files & Documents 📑".
- * Designers prefix pages with status emoji, so only the two-digit number after
- * any leading symbols is significant. "00 cover" and pages after
- * LAST_CATEGORY_PAGE are not library categories.
- */
-function isCategoryPage(name: string): boolean {
-  const match = /^[^\p{L}\p{N}]*(\d{2})\s/u.exec(normalizePageName(name));
-  if (!match) return false;
-  const pageNumber = Number(match[1]);
-  return pageNumber >= 1 && pageNumber <= LAST_CATEGORY_PAGE;
-}
-
-function normalizePageName(name: string): string {
-  return name.replace(/\s+/g, ' ').trim();
-}
-
 /**
  * Parses Figma variant component names into the project's style/type system.
  *
@@ -600,6 +582,16 @@ async function fetchIconEntries(env: EnvConfig): Promise<IconEntry[]> {
       logDim(`Available pages: ${allPages.map((p) => p.name).join(', ')}`);
       logDim(`Fix: set FIGMA_PAGE_NAME or FIGMA_NODE_ID in .env`);
       process.exit(1);
+    }
+    // A numbered page outside 01–18 (or "01. Arrows" without the space) is
+    // skipped; name it so a new or renamed library page doesn't vanish silently.
+    const skipped = allPages.filter(
+      (p) => /\d/.test(p.name) && !isCategoryPage(p.name),
+    );
+    if (skipped.length > 0) {
+      logDim(
+        `Skipping numbered pages: ${skipped.map((p) => `"${normalizePageName(p.name)}"`).join(', ')}`,
+      );
     }
     env.pageNames = categoryPages.map((p) => normalizePageName(p.name));
   }
