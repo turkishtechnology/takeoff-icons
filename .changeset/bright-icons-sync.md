@@ -26,9 +26,8 @@ artwork, which mostly fills more of the 24×24 box than before. 26 existing icon
 (e.g. `alarm-off-circle`, `calendar-square`, `clock-circle`) gain `filled/tk` and
 `outlined/tk` variants they did not have before.
 
-`chevron-bottom` and `arrow-top` are mirrored from the redrawn `chevron-top` and
-`arrow-bottom`, so each directional pair keeps one size. Figma's `chevron-bottom` is
-currently drawn pointing up, and `arrow-top` was not redrawn there yet.
+`chevron-bottom` and `arrow-top` use the corrected Figma drawings, so each directional
+pair has one size.
 
 The export now reads the numbered category pages (`01 Arrows` … `21 Flags`); the
 `Source` page no longer holds the library components.
