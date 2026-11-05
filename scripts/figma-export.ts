@@ -185,7 +185,7 @@ function getEnvConfig(): EnvConfig {
   const accessToken = process.env.FIGMA_TOKEN;
   const fileId = process.env.FIGMA_FILE_ID ?? 'LVruHwiRP8gFNRCKYaPhod';
   const nodeId = process.env.FIGMA_NODE_ID; // e.g. "38:184"
-  // Unset → every numbered category page ("01 Arrows" … "21 Flags"); see
+  // Unset → the library category pages ("01 Arrows" … "18 AI Icons"); see
   // isCategoryPage. The old "Source" page no longer holds library components.
   const pageNames = (process.env.FIGMA_PAGE_NAME ?? '')
     .split(',')
@@ -310,13 +310,20 @@ function isExcludedIconName(name: string): boolean {
     .some((token) => EXCLUDED_ICON_NAME_TOKENS.has(token));
 }
 
+/** Library category pages are numbered 01–18; 19+ (Payment, Social, Flags) are not exported. */
+const LAST_CATEGORY_PAGE = 18;
+
 /**
- * A numbered category page, e.g. "01 Arrows" or "❌ 07 Files & Documents 📑".
+ * A library category page, e.g. "01 Arrows" or "❌ 07 Files & Documents 📑".
  * Designers prefix pages with status emoji, so only the two-digit number after
- * any leading symbols is significant; "00 cover" is not a category.
+ * any leading symbols is significant. "00 cover" and pages after
+ * LAST_CATEGORY_PAGE are not library categories.
  */
 function isCategoryPage(name: string): boolean {
-  return /^[^\p{L}\p{N}]*(?!00)\d{2}\s/u.test(normalizePageName(name));
+  const match = /^[^\p{L}\p{N}]*(\d{2})\s/u.exec(normalizePageName(name));
+  if (!match) return false;
+  const pageNumber = Number(match[1]);
+  return pageNumber >= 1 && pageNumber <= LAST_CATEGORY_PAGE;
 }
 
 function normalizePageName(name: string): string {
