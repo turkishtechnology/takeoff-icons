@@ -1,5 +1,34 @@
 # @takeoff-icons/sprite
 
+## 0.5.0
+
+### Minor Changes
+
+- [#11](https://github.com/turkishtechnology/takeoff-icons/pull/11) [`543ad95`](https://github.com/turkishtechnology/takeoff-icons/commit/543ad95068f43fb7beda459513fae4b424f2bf61) Thanks [@pinaryalcinduran](https://github.com/pinaryalcinduran)! - Sync icons from Figma: 124 new icons (1128 → 1252) and 296 redrawn icons. No icon or
+  variant was removed and no existing font codepoint moved, so the icon font stays
+  backwards compatible.
+
+  New icons (with the shapes and style/type variants that Figma has for them;
+  `clock-history`, `fingerprint`, `handshake` and `user-focus` have no `-circle` or
+  `-square` shape, and `bin-circle` has no `filled/tk` yet): `ai`, `ai-brain`,
+  `ai-editing`, `ai-microphone`, `ai-robot`, `ai-search`, `ai-sparkle`, `ai-text`,
+  `ai-voice-generator`, `artificial-intelligence`, `token-1`, `token-2`, `arrow-back`, `arrow-left-right`, `arrow-repeat`, `arrow-return`,
+  `arrow-up-down`, `arrow-up-left`, `chevron-up-down`, `bin`, `link`, `link-off`,
+  `wifi-off`, `clock-history`, `family`, `handshake`, `heart`, `user`, `user-add`,
+  `user-baby`, `user-check`, `user-focus`, `user-group`, `user-hold`, `user-multi`,
+  `user-remove`, `fingerprint`, `lock`, `shield-check`, `shield-cross`, `shield-key`,
+  `shield-profile`, `here` and `here-off`.
+
+  This adds the `ai` category to `CategoryId`. Redrawn icons pick up the new Figma
+  artwork, which mostly fills more of the 24×24 box than before. 26 existing icons
+  (e.g. `alarm-off-circle`, `calendar-square`, `clock-circle`) gain `filled/tk` and
+  `outlined/tk` variants they did not have before.
+
+  `chevron-bottom` and `arrow-top` use the corrected Figma drawings, except the rounded
+  `arrow-top`, which stays mirrored from `arrow-bottom` because the Figma version sits
+  1px off centre. The `notification-*` icons keep their previous drawings: their names
+  are shifted in Figma (for example `notification-unread` is drawn as a slashed bell).
+
 ## 0.4.0
 
 ### Minor Changes
