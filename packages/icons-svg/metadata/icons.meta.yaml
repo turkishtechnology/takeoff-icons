@@ -357,6 +357,7 @@ icons:
         'options',
         'send',
         'social',
+        'actions',
       ]
     aliases: []
     added: '1.0.0'
@@ -537,6 +538,720 @@ icons:
         'plus',
         'actions',
         'square',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  ai:
+    category: 'ai'
+    tags:
+      [
+        'star',
+        'shape',
+        'curve',
+        'ai',
+        'artificial intelligence',
+        'intelligence',
+        'technology',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  ai-brain:
+    category: 'ai'
+    tags:
+      [
+        'ai',
+        'brain',
+        'think',
+        'thinking',
+        'mind',
+        'ai think',
+        'ai brain',
+        'ai idea',
+        'idea',
+        'insight',
+        'smart',
+        'intelligence',
+        'artificial intelligence',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  ai-brain-circle:
+    category: 'ai'
+    tags:
+      [
+        'ai',
+        'brain',
+        'think',
+        'thinking',
+        'mind',
+        'ai think',
+        'ai brain',
+        'ai idea',
+        'idea',
+        'insight',
+        'smart',
+        'intelligence',
+        'artificial intelligence',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  ai-brain-square:
+    category: 'ai'
+    tags:
+      [
+        'ai',
+        'brain',
+        'think',
+        'thinking',
+        'mind',
+        'ai think',
+        'ai brain',
+        'ai idea',
+        'idea',
+        'insight',
+        'smart',
+        'intelligence',
+        'artificial intelligence',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  ai-circle:
+    category: 'ai'
+    tags:
+      [
+        'star',
+        'shape',
+        'curve',
+        'ai',
+        'artificial intelligence',
+        'intelligence',
+        'technology',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  ai-editing:
+    category: 'ai'
+    tags:
+      [
+        'ai',
+        'edit',
+        'artificial intelligence',
+        'intelligence',
+        'editable',
+        'editing',
+        'pen',
+        'pencil',
+        'star',
+        'prompt',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  ai-editing-circle:
+    category: 'ai'
+    tags:
+      [
+        'ai',
+        'edit',
+        'artificial intelligence',
+        'intelligence',
+        'editable',
+        'editing',
+        'pen',
+        'pencil',
+        'star',
+        'prompt',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  ai-editing-square:
+    category: 'ai'
+    tags:
+      [
+        'ai',
+        'edit',
+        'artificial intelligence',
+        'intelligence',
+        'editable',
+        'editing',
+        'pen',
+        'pencil',
+        'star',
+        'prompt',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  ai-microphone:
+    category: 'ai'
+    tags:
+      [
+        'ai',
+        'microphone',
+        'sound',
+        'robot sound',
+        'ai sound',
+        'ai mic',
+        'mic',
+        'star mic',
+        'artificial intelligence',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  ai-microphone-circle:
+    category: 'ai'
+    tags:
+      [
+        'ai',
+        'microphone',
+        'sound',
+        'robot sound',
+        'ai sound',
+        'ai mic',
+        'mic',
+        'star mic',
+        'artificial intelligence',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  ai-microphone-square:
+    category: 'ai'
+    tags:
+      [
+        'ai',
+        'microphone',
+        'sound',
+        'robot sound',
+        'ai sound',
+        'ai mic',
+        'mic',
+        'star mic',
+        'artificial intelligence',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  ai-robot:
+    category: 'ai'
+    tags:
+      [
+        'ai',
+        'android',
+        'artificial intelligence',
+        'assistant',
+        'bot',
+        'character',
+        'chatbot',
+        'computer',
+        'intelligence',
+        'machine',
+        'robot',
+        'smart',
+        'tech',
+        'technology',
+        'virtual assistant',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  ai-robot-circle:
+    category: 'ai'
+    tags:
+      [
+        'ai',
+        'android',
+        'artificial intelligence',
+        'assistant',
+        'bot',
+        'character',
+        'chatbot',
+        'computer',
+        'intelligence',
+        'machine',
+        'robot',
+        'smart',
+        'tech',
+        'technology',
+        'virtual assistant',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  ai-robot-square:
+    category: 'ai'
+    tags:
+      [
+        'ai',
+        'android',
+        'artificial intelligence',
+        'assistant',
+        'bot',
+        'character',
+        'chatbot',
+        'computer',
+        'intelligence',
+        'machine',
+        'robot',
+        'smart',
+        'tech',
+        'technology',
+        'virtual assistant',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  ai-search:
+    category: 'ai'
+    tags:
+      [
+        'ai search',
+        'search',
+        'explore',
+        'ai explore',
+        'ai glass',
+        'magnify',
+        'ai zoom',
+        'ai view',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  ai-search-circle:
+    category: 'ai'
+    tags:
+      [
+        'ai search',
+        'search',
+        'explore',
+        'ai explore',
+        'ai glass',
+        'magnify',
+        'ai zoom',
+        'ai view',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  ai-search-square:
+    category: 'ai'
+    tags:
+      [
+        'ai search',
+        'search',
+        'explore',
+        'ai explore',
+        'ai glass',
+        'magnify',
+        'ai zoom',
+        'ai view',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  ai-sparkle:
+    category: 'ai'
+    tags:
+      [
+        'ai',
+        'sparkle',
+        'effect',
+        'filter',
+        'night',
+        'magic',
+        'star',
+        'intelligence',
+        'artificial intelligence',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  ai-sparkle-circle:
+    category: 'ai'
+    tags:
+      [
+        'ai',
+        'sparkle',
+        'effect',
+        'filter',
+        'night',
+        'magic',
+        'star',
+        'intelligence',
+        'artificial intelligence',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  ai-sparkle-square:
+    category: 'ai'
+    tags:
+      [
+        'ai',
+        'sparkle',
+        'effect',
+        'filter',
+        'night',
+        'magic',
+        'star',
+        'intelligence',
+        'artificial intelligence',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  ai-square:
+    category: 'ai'
+    tags:
+      [
+        'star',
+        'shape',
+        'curve',
+        'ai',
+        'artificial intelligence',
+        'intelligence',
+        'technology',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  ai-text:
+    category: 'ai'
+    tags:
+      [
+        'ai text',
+        'text',
+        'font',
+        'ai font',
+        'ai',
+        'edit',
+        'ai edit',
+        'ai editing',
+        'editing',
+        'prompt',
+        'ai prompt',
+        'ai paragraph',
+        'intelligence',
+        'artificial intelligence',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  ai-text-circle:
+    category: 'ai'
+    tags:
+      [
+        'ai text',
+        'text',
+        'font',
+        'ai font',
+        'ai',
+        'edit',
+        'ai edit',
+        'ai editing',
+        'editing',
+        'prompt',
+        'ai prompt',
+        'ai paragraph',
+        'intelligence',
+        'artificial intelligence',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  ai-text-square:
+    category: 'ai'
+    tags:
+      [
+        'ai text',
+        'text',
+        'font',
+        'ai font',
+        'ai',
+        'edit',
+        'ai edit',
+        'ai editing',
+        'editing',
+        'prompt',
+        'ai prompt',
+        'ai paragraph',
+        'intelligence',
+        'artificial intelligence',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  ai-voice-generator:
+    category: 'ai'
+    tags:
+      [
+        'ai voice generator',
+        'ai',
+        'voice',
+        'sound',
+        'ai sound',
+        'noise',
+        'music',
+        'ai music',
+        'waves',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  ai-voice-generator-circle:
+    category: 'ai'
+    tags:
+      [
+        'ai voice generator',
+        'ai',
+        'voice',
+        'sound',
+        'ai sound',
+        'noise',
+        'music',
+        'ai music',
+        'waves',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  ai-voice-generator-square:
+    category: 'ai'
+    tags:
+      [
+        'ai voice generator',
+        'ai',
+        'voice',
+        'sound',
+        'ai sound',
+        'noise',
+        'music',
+        'ai music',
+        'waves',
       ]
     aliases: []
     added: '1.0.0'
@@ -1065,9 +1780,11 @@ icons:
       - filled/bevel
       - filled/rounded
       - filled/sharp
+      - filled/tk
       - outlined/bevel
       - outlined/rounded
       - outlined/sharp
+      - outlined/tk
   alarm-off:
     category: 'shapes-ui-elements'
     tags:
@@ -1127,9 +1844,11 @@ icons:
       - filled/bevel
       - filled/rounded
       - filled/sharp
+      - filled/tk
       - outlined/bevel
       - outlined/rounded
       - outlined/sharp
+      - outlined/tk
   alert:
     category: 'actions'
     tags:
@@ -1904,6 +2623,102 @@ icons:
       - outlined/bevel
       - outlined/rounded
       - outlined/sharp
+  arrow-back:
+    category: 'arrow'
+    tags:
+      [
+        'arrow',
+        'arrows',
+        'browser',
+        'cycle',
+        'direction',
+        'in progress',
+        'loop',
+        'process',
+        'refresh',
+        'reload',
+        'repeat',
+        'sync',
+        'synchronize',
+        'turn back',
+        'turn',
+        'back',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-back-circle:
+    category: 'arrow'
+    tags:
+      [
+        'arrow',
+        'arrows',
+        'browser',
+        'cycle',
+        'direction',
+        'in progress',
+        'loop',
+        'process',
+        'refresh',
+        'reload',
+        'repeat',
+        'sync',
+        'synchronize',
+        'turn back',
+        'turn',
+        'back',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-back-square:
+    category: 'arrow'
+    tags:
+      [
+        'arrow',
+        'arrows',
+        'browser',
+        'cycle',
+        'direction',
+        'in progress',
+        'loop',
+        'process',
+        'refresh',
+        'reload',
+        'repeat',
+        'sync',
+        'synchronize',
+        'turn back',
+        'turn',
+        'back',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
   arrow-bottom:
     category: 'arrow'
     tags:
@@ -1942,7 +2757,6 @@ icons:
         'scroll',
         'scroll down',
         'south',
-        'circle',
       ]
     aliases: []
     added: '1.0.0'
@@ -1968,7 +2782,6 @@ icons:
         'scroll',
         'scroll down',
         'south',
-        'square',
       ]
     aliases: []
     added: '1.0.0'
@@ -2176,6 +2989,11 @@ icons:
         'return',
         'reverse',
         'undo',
+        'line',
+        'route',
+        'position',
+        'back',
+        'first',
       ]
     aliases: []
     added: '1.0.0'
@@ -2203,6 +3021,112 @@ icons:
         'return',
         'reverse',
         'undo',
+        'line',
+        'route',
+        'position',
+        'back',
+        'first',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-left-right:
+    category: 'arrow'
+    tags:
+      [
+        'alternate',
+        'arrow',
+        'arrows',
+        'back',
+        'change',
+        'data transfer',
+        'direction',
+        'exchange',
+        'forward',
+        'horizontal swap',
+        'replace',
+        'shift',
+        'swap',
+        'switch',
+        'transaction',
+        'transfer',
+        'transform',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-left-right-circle:
+    category: 'arrow'
+    tags:
+      [
+        'alternate',
+        'arrow',
+        'arrows',
+        'back',
+        'change',
+        'data transfer',
+        'direction',
+        'exchange',
+        'forward',
+        'horizontal swap',
+        'replace',
+        'shift',
+        'swap',
+        'switch',
+        'transaction',
+        'transfer',
+        'transform',
+        'circle',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-left-right-square:
+    category: 'arrow'
+    tags:
+      [
+        'alternate',
+        'arrow',
+        'arrows',
+        'back',
+        'change',
+        'data transfer',
+        'direction',
+        'exchange',
+        'forward',
+        'horizontal swap',
+        'replace',
+        'shift',
+        'swap',
+        'switch',
+        'transaction',
+        'transfer',
+        'transform',
+        'square',
       ]
     aliases: []
     added: '1.0.0'
@@ -2230,6 +3154,11 @@ icons:
         'return',
         'reverse',
         'undo',
+        'line',
+        'route',
+        'position',
+        'back',
+        'first',
       ]
     aliases: []
     added: '1.0.0'
@@ -2270,9 +3199,204 @@ icons:
       - outlined/rounded
       - outlined/sharp
       - outlined/tk
+  arrow-repeat:
+    category: 'arrow'
+    tags:
+      [
+        'arrow',
+        'continuous',
+        'loop',
+        'media',
+        'media control',
+        'multimedia',
+        'music',
+        'play again',
+        'playback',
+        'refresh',
+        'repeat',
+        'replay',
+        'video',
+        'video player',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-repeat-circle:
+    category: 'arrow'
+    tags:
+      [
+        'arrow',
+        'continuous',
+        'loop',
+        'media',
+        'media control',
+        'multimedia',
+        'music',
+        'play again',
+        'playback',
+        'refresh',
+        'repeat',
+        'replay',
+        'video',
+        'video player',
+        'circle',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-repeat-square:
+    category: 'arrow'
+    tags:
+      [
+        'arrow',
+        'continuous',
+        'loop',
+        'media',
+        'media control',
+        'multimedia',
+        'music',
+        'play again',
+        'playback',
+        'refresh',
+        'repeat',
+        'replay',
+        'video',
+        'video player',
+        'square',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-return:
+    category: 'arrow'
+    tags:
+      [
+        'arrow',
+        'back',
+        'bend',
+        'break line',
+        'command',
+        'computer key',
+        'curved arrow',
+        'down arrow',
+        'enter key',
+        'left',
+        'return',
+        'return key',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-return-circle:
+    category: 'arrow'
+    tags:
+      [
+        'arrow',
+        'back',
+        'bend',
+        'break line',
+        'command',
+        'computer key',
+        'curved arrow',
+        'down arrow',
+        'enter key',
+        'left',
+        'return',
+        'return key',
+        'circle',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-return-square:
+    category: 'arrow'
+    tags:
+      [
+        'arrow',
+        'back',
+        'bend',
+        'break line',
+        'command',
+        'computer key',
+        'curved arrow',
+        'down arrow',
+        'enter key',
+        'left',
+        'return',
+        'return key',
+        'square',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
   arrow-right:
     category: 'arrow'
-    tags: ['arrow', 'right']
+    tags:
+      [
+        'arrow',
+        'right',
+        'continue',
+        'direction',
+        'enter',
+        'expand',
+        'follow',
+        'forward',
+        'go',
+        'learn more',
+        'link',
+        'move',
+        'navigation',
+        'next',
+        'read more',
+      ]
     aliases: []
     added: '1.0.0'
     variants:
@@ -2286,7 +3410,24 @@ icons:
       - outlined/tk
   arrow-right-circle:
     category: 'arrow'
-    tags: ['arrow', 'right', 'circle']
+    tags:
+      [
+        'arrow',
+        'right',
+        'continue',
+        'direction',
+        'enter',
+        'expand',
+        'follow',
+        'forward',
+        'go',
+        'learn more',
+        'link',
+        'move',
+        'navigation',
+        'next',
+        'read more',
+      ]
     aliases: []
     added: '1.0.0'
     variants:
@@ -2300,7 +3441,24 @@ icons:
       - outlined/tk
   arrow-right-square:
     category: 'arrow'
-    tags: ['arrow', 'right', 'square']
+    tags:
+      [
+        'arrow',
+        'right',
+        'continue',
+        'direction',
+        'enter',
+        'expand',
+        'follow',
+        'forward',
+        'go',
+        'learn more',
+        'link',
+        'move',
+        'navigation',
+        'next',
+        'read more',
+      ]
     aliases: []
     added: '1.0.0'
     variants:
@@ -2559,6 +3717,251 @@ icons:
       - outlined/rounded
       - outlined/sharp
       - outlined/tk
+  arrow-up-down:
+    category: 'arrow'
+    tags:
+      [
+        'arrow',
+        'connection',
+        'data',
+        'change',
+        'document',
+        'down',
+        'exchange',
+        'flow',
+        'sort',
+        'sorting',
+        'swap',
+        'switch',
+        'sync',
+        'synchronize',
+        'transaction',
+        'transfer',
+        'up down',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-up-down-circle:
+    category: 'arrow'
+    tags:
+      [
+        'arrow',
+        'connection',
+        'data',
+        'change',
+        'document',
+        'down',
+        'exchange',
+        'flow',
+        'sort',
+        'sorting',
+        'swap',
+        'switch',
+        'sync',
+        'synchronize',
+        'transaction',
+        'transfer',
+        'up down',
+        'circle',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-up-down-square:
+    category: 'arrow'
+    tags:
+      [
+        'alternate',
+        'arrow',
+        'arrows',
+        'back',
+        'change',
+        'data transfer',
+        'direction',
+        'exchange',
+        'forward',
+        'horizontal swap',
+        'replace',
+        'shift',
+        'swap',
+        'switch',
+        'transaction',
+        'transfer',
+        'transform',
+        'square',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-up-left:
+    category: 'arrow'
+    tags:
+      [
+        'arrow',
+        'bottom',
+        'down',
+        'download',
+        'below',
+        'move down',
+        'scroll',
+        'scroll down',
+        'south',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-up-left-circle:
+    category: 'arrow'
+    tags:
+      [
+        'arrow',
+        'bottom',
+        'down',
+        'download',
+        'below',
+        'move down',
+        'scroll',
+        'scroll down',
+        'south',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  arrow-up-left-square:
+    category: 'arrow'
+    tags:
+      [
+        'arrow',
+        'bottom',
+        'down',
+        'download',
+        'below',
+        'move down',
+        'scroll',
+        'scroll down',
+        'south',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  artificial-intelligence:
+    category: 'ai'
+    tags:
+      [
+        'star',
+        'shape',
+        'curve',
+        'ai',
+        'artificial intelligence',
+        'intelligence',
+        'technology',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  artificial-intelligence-circle:
+    category: 'ai'
+    tags:
+      [
+        'star',
+        'shape',
+        'curve',
+        'ai',
+        'artificial intelligence',
+        'intelligence',
+        'technology',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  artificial-intelligence-square:
+    category: 'ai'
+    tags:
+      [
+        'star',
+        'shape',
+        'curve',
+        'ai',
+        'artificial intelligence',
+        'intelligence',
+        'technology',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
   atm:
     category: 'commerce'
     tags:
@@ -2706,9 +4109,11 @@ icons:
       - filled/bevel
       - filled/rounded
       - filled/sharp
+      - filled/tk
       - outlined/bevel
       - outlined/rounded
       - outlined/sharp
+      - outlined/tk
   attach-square:
     category: 'actions'
     tags:
@@ -3681,6 +5086,97 @@ icons:
         'public',
         'vespa',
         'wheels',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  bin:
+    category: 'actions'
+    tags:
+      [
+        'bin',
+        'cancel',
+        'clear',
+        'delete',
+        'discard',
+        'empty',
+        'erase',
+        'file',
+        'garbage',
+        'option',
+        'remove',
+        'storage',
+        'trash',
+        'actions',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  bin-circle:
+    category: 'actions'
+    tags:
+      [
+        'bin',
+        'cancel',
+        'clear',
+        'delete',
+        'discard',
+        'empty',
+        'erase',
+        'file',
+        'garbage',
+        'option',
+        'remove',
+        'storage',
+        'trash',
+        'actions',
+        'circle',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  bin-square:
+    category: 'actions'
+    tags:
+      [
+        'bin',
+        'cancel',
+        'clear',
+        'delete',
+        'discard',
+        'empty',
+        'erase',
+        'file',
+        'garbage',
+        'option',
+        'remove',
+        'storage',
+        'trash',
+        'actions',
+        'square',
       ]
     aliases: []
     added: '1.0.0'
@@ -4771,9 +6267,11 @@ icons:
       - filled/bevel
       - filled/rounded
       - filled/sharp
+      - filled/tk
       - outlined/bevel
       - outlined/rounded
       - outlined/sharp
+      - outlined/tk
   calendar-square:
     category: 'shapes-ui-elements'
     tags:
@@ -4803,9 +6301,11 @@ icons:
       - filled/bevel
       - filled/rounded
       - filled/sharp
+      - filled/tk
       - outlined/bevel
       - outlined/rounded
       - outlined/sharp
+      - outlined/tk
   call-add:
     category: 'actions'
     tags:
@@ -6545,7 +8045,6 @@ icons:
         'progress',
         'triangle',
         'arrow',
-        'circle',
       ]
     aliases: []
     added: '1.0.0'
@@ -6579,7 +8078,6 @@ icons:
         'progress',
         'triangle',
         'arrow',
-        'square',
       ]
     aliases: []
     added: '1.0.0'
@@ -6698,18 +8196,23 @@ icons:
     tags:
       [
         'caret',
-        'top',
+        'left',
         'arrow',
-        'caret up',
+        'continuation',
         'direction',
-        'drop',
-        'drop up',
-        'hide',
-        'sort button',
-        'sort up',
+        'enter',
+        'exit',
+        'forward',
+        'before',
+        'back',
+        'move',
+        'navigation',
+        'next',
+        'proceed',
+        'progress',
         'triangle',
-        'triangle up',
-        'arrow',
+        'top',
+        'up',
       ]
     aliases: []
     added: '1.0.0'
@@ -6727,19 +8230,23 @@ icons:
     tags:
       [
         'caret',
-        'top',
+        'left',
         'arrow',
-        'caret up',
+        'continuation',
         'direction',
-        'drop',
-        'drop up',
-        'hide',
-        'sort button',
-        'sort up',
+        'enter',
+        'exit',
+        'forward',
+        'before',
+        'back',
+        'move',
+        'navigation',
+        'next',
+        'proceed',
+        'progress',
         'triangle',
-        'triangle up',
-        'arrow',
-        'circle',
+        'top',
+        'up',
       ]
     aliases: []
     added: '1.0.0'
@@ -6757,19 +8264,23 @@ icons:
     tags:
       [
         'caret',
-        'top',
+        'left',
         'arrow',
-        'caret up',
+        'continuation',
         'direction',
-        'drop',
-        'drop up',
-        'hide',
-        'sort button',
-        'sort up',
+        'enter',
+        'exit',
+        'forward',
+        'before',
+        'back',
+        'move',
+        'navigation',
+        'next',
+        'proceed',
+        'progress',
         'triangle',
-        'triangle up',
-        'arrow',
-        'square',
+        'top',
+        'up',
       ]
     aliases: []
     added: '1.0.0'
@@ -7996,6 +9507,7 @@ icons:
     category: 'actions'
     tags:
       [
+        'balloon of',
         'chat',
         'chat off',
         'off',
@@ -8373,7 +9885,7 @@ icons:
     category: 'arrow'
     tags:
       [
-        'chevton',
+        'chevron',
         'directional',
         'pointer',
         'pointing',
@@ -8381,6 +9893,12 @@ icons:
         'down',
         'download',
         'arrow',
+        'upload',
+        'list',
+        'close list',
+        'more',
+        'triangle',
+        'more',
       ]
     aliases: []
     added: '1.0.0'
@@ -8397,7 +9915,7 @@ icons:
     category: 'arrow'
     tags:
       [
-        'chevton',
+        'chevron',
         'directional',
         'pointer',
         'pointing',
@@ -8405,7 +9923,12 @@ icons:
         'down',
         'download',
         'arrow',
-        'circle',
+        'upload',
+        'list',
+        'close list',
+        'more',
+        'triangle',
+        'more',
       ]
     aliases: []
     added: '1.0.0'
@@ -8422,7 +9945,7 @@ icons:
     category: 'arrow'
     tags:
       [
-        'chevton',
+        'chevron',
         'directional',
         'pointer',
         'pointing',
@@ -8430,7 +9953,12 @@ icons:
         'down',
         'download',
         'arrow',
-        'square',
+        'upload',
+        'list',
+        'close list',
+        'more',
+        'triangle',
+        'more',
       ]
     aliases: []
     added: '1.0.0'
@@ -8603,6 +10131,8 @@ icons:
         'right',
         'simple',
         'triangle',
+        'right',
+        'chevron right',
       ]
     aliases: []
     added: '1.0.0'
@@ -8641,7 +10171,8 @@ icons:
         'right',
         'simple',
         'triangle',
-        'circle',
+        'right',
+        'chevron right',
       ]
     aliases: []
     added: '1.0.0'
@@ -8680,7 +10211,8 @@ icons:
         'right',
         'simple',
         'triangle',
-        'square',
+        'right',
+        'chevron right',
       ]
     aliases: []
     added: '1.0.0'
@@ -8789,6 +10321,105 @@ icons:
         'up',
         'up arrow',
         'upward',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  chevron-up-down:
+    category: 'arrow'
+    tags:
+      [
+        'chevron',
+        'directional',
+        'pointer',
+        'pointing',
+        'arrowhead',
+        'down',
+        'download',
+        'arrow',
+        'upload',
+        'list',
+        'close list',
+        'more',
+        'triangle',
+        'more',
+        'up',
+        'down',
+        'up down',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  chevron-up-down-circle:
+    category: 'arrow'
+    tags:
+      [
+        'chevron',
+        'directional',
+        'pointer',
+        'pointing',
+        'arrowhead',
+        'down',
+        'download',
+        'arrow',
+        'upload',
+        'list',
+        'close list',
+        'more',
+        'triangle',
+        'more',
+        'up',
+        'down',
+        'up down',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  chevron-up-down-square:
+    category: 'arrow'
+    tags:
+      [
+        'chevron',
+        'directional',
+        'pointer',
+        'pointing',
+        'arrowhead',
+        'down',
+        'download',
+        'arrow',
+        'upload',
+        'list',
+        'close list',
+        'more',
+        'triangle',
+        'more',
+        'up',
+        'down',
+        'up down',
       ]
     aliases: []
     added: '1.0.0'
@@ -9025,9 +10656,11 @@ icons:
       - filled/bevel
       - filled/rounded
       - filled/sharp
+      - filled/tk
       - outlined/bevel
       - outlined/rounded
       - outlined/sharp
+      - outlined/tk
   clock-circle:
     category: 'shapes-ui-elements'
     tags:
@@ -9056,9 +10689,44 @@ icons:
       - filled/bevel
       - filled/rounded
       - filled/sharp
+      - filled/tk
       - outlined/bevel
       - outlined/rounded
       - outlined/sharp
+      - outlined/tk
+  clock-history:
+    category: 'shapes-ui-elements'
+    tags:
+      [
+        'alarm',
+        'calendar',
+        'circle',
+        'clock',
+        'control',
+        'countdown',
+        'date',
+        'deadline',
+        'history',
+        'notification',
+        'reminder',
+        'schedule',
+        'setting',
+        'time',
+        'clock',
+        'timer',
+        'time',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
   close:
     category: 'actions'
     tags:
@@ -13053,9 +14721,11 @@ icons:
       - filled/bevel
       - filled/rounded
       - filled/sharp
+      - filled/tk
       - outlined/bevel
       - outlined/rounded
       - outlined/sharp
+      - outlined/tk
   earth-off-circle:
     category: 'arrow'
     tags:
@@ -13088,9 +14758,11 @@ icons:
       - filled/bevel
       - filled/rounded
       - filled/sharp
+      - filled/tk
       - outlined/bevel
       - outlined/rounded
       - outlined/sharp
+      - outlined/tk
   earth-off-square:
     category: 'arrow'
     tags:
@@ -13123,9 +14795,11 @@ icons:
       - filled/bevel
       - filled/rounded
       - filled/sharp
+      - filled/tk
       - outlined/bevel
       - outlined/rounded
       - outlined/sharp
+      - outlined/tk
   edit:
     category: 'actions'
     tags:
@@ -13647,6 +15321,96 @@ icons:
         'see',
         'show',
         'view',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  family:
+    category: 'people'
+    tags:
+      [
+        'users',
+        'child',
+        'parents',
+        'parent',
+        'children',
+        'family',
+        'father',
+        'mother',
+        'dad',
+        'mom',
+        'kids',
+        'person',
+        'social',
+        'human',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  family-circle:
+    category: 'people'
+    tags:
+      [
+        'users',
+        'child',
+        'parents',
+        'parent',
+        'children',
+        'family',
+        'father',
+        'mother',
+        'dad',
+        'mom',
+        'kids',
+        'person',
+        'social',
+        'human',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  family-square:
+    category: 'people'
+    tags:
+      [
+        'users',
+        'child',
+        'parents',
+        'parent',
+        'children',
+        'family',
+        'father',
+        'mother',
+        'dad',
+        'mom',
+        'kids',
+        'person',
+        'social',
+        'human',
       ]
     aliases: []
     added: '1.0.0'
@@ -14784,6 +16548,31 @@ icons:
   filters-square:
     category: 'actions'
     tags: ['filters', 'square']
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  fingerprint:
+    category: 'security'
+    tags:
+      [
+        'finger',
+        'fingerprint',
+        'thumbprint',
+        'id',
+        'identification',
+        'identity',
+        'print',
+        'reader',
+        'verification',
+      ]
     aliases: []
     added: '1.0.0'
     variants:
@@ -17003,6 +18792,39 @@ icons:
       - outlined/rounded
       - outlined/sharp
       - outlined/tk
+  handshake:
+    category: 'people'
+    tags:
+      [
+        'add to favorite',
+        'best',
+        'bookmark',
+        'border',
+        'favorite',
+        'five points',
+        'grade',
+        'highlight',
+        'important',
+        'mark',
+        'ranking',
+        'rate',
+        'rating',
+        'rating symbol',
+        'save',
+        'shape',
+        'star',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
   hard-drive:
     category: 'devices-hardware'
     tags:
@@ -17240,6 +19062,110 @@ icons:
       - outlined/bevel
       - outlined/rounded
       - outlined/sharp
+  heart:
+    category: 'actions'
+    tags:
+      [
+        'affection',
+        'appreciate',
+        'appreciation',
+        'bookmark',
+        'border',
+        'button',
+        'collection',
+        'favorite',
+        'feedback',
+        'full',
+        'heart',
+        'icon',
+        'interest',
+        'item',
+        'like',
+        'love',
+        'rating',
+        'save',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  heart-circle:
+    category: 'actions'
+    tags:
+      [
+        'affection',
+        'appreciate',
+        'appreciation',
+        'bookmark',
+        'border',
+        'button',
+        'collection',
+        'favorite',
+        'feedback',
+        'full',
+        'heart',
+        'icon',
+        'interest',
+        'item',
+        'like',
+        'love',
+        'rating',
+        'save',
+        'circle',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  heart-square:
+    category: 'actions'
+    tags:
+      [
+        'affection',
+        'appreciate',
+        'appreciation',
+        'bookmark',
+        'border',
+        'button',
+        'collection',
+        'favorite',
+        'feedback',
+        'full',
+        'heart',
+        'icon',
+        'interest',
+        'item',
+        'like',
+        'love',
+        'rating',
+        'save',
+        'square',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
   helicopter:
     category: 'aviation'
     tags:
@@ -17360,6 +19286,189 @@ icons:
         'relax',
         'restaurant',
         'tea',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  here:
+    category: 'pin'
+    tags:
+      [
+        'destination',
+        'diagonal line',
+        'direction',
+        'location',
+        'map',
+        'maps',
+        'marker',
+        'navigation',
+        'pin',
+        'pinpoint',
+        'place',
+        'pointer',
+        'satellite',
+        'slash',
+        'stop',
+        'tracking',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  here-circle:
+    category: 'pin'
+    tags:
+      [
+        'destination',
+        'diagonal line',
+        'direction',
+        'location',
+        'map',
+        'maps',
+        'marker',
+        'navigation',
+        'pin',
+        'pinpoint',
+        'place',
+        'pointer',
+        'satellite',
+        'slash',
+        'stop',
+        'tracking',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  here-off:
+    category: 'pin'
+    tags:
+      [
+        'address',
+        'destination',
+        'direction',
+        'disabled gps',
+        'disabled location',
+        'gps off',
+        'location',
+        'location disabled',
+        'location off',
+        'pin',
+        'position',
+        'route',
+        'travel',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  here-off-circle:
+    category: 'pin'
+    tags:
+      [
+        'address',
+        'destination',
+        'direction',
+        'disabled gps',
+        'disabled location',
+        'gps off',
+        'location',
+        'location disabled',
+        'location off',
+        'pin',
+        'position',
+        'route',
+        'travel',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  here-off-square:
+    category: 'pin'
+    tags:
+      [
+        'address',
+        'destination',
+        'direction',
+        'disabled gps',
+        'disabled location',
+        'gps off',
+        'location',
+        'location disabled',
+        'location off',
+        'pin',
+        'position',
+        'route',
+        'travel',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  here-square:
+    category: 'pin'
+    tags:
+      [
+        'destination',
+        'diagonal line',
+        'direction',
+        'location',
+        'map',
+        'maps',
+        'marker',
+        'navigation',
+        'pin',
+        'pinpoint',
+        'place',
+        'pointer',
+        'satellite',
+        'slash',
+        'stop',
+        'tracking',
       ]
     aliases: []
     added: '1.0.0'
@@ -17567,9 +19676,11 @@ icons:
       - filled/bevel
       - filled/rounded
       - filled/sharp
+      - filled/tk
       - outlined/bevel
       - outlined/rounded
       - outlined/sharp
+      - outlined/tk
   hourglass-circle:
     category: 'shapes-ui-elements'
     tags:
@@ -17598,9 +19709,11 @@ icons:
       - filled/bevel
       - filled/rounded
       - filled/sharp
+      - filled/tk
       - outlined/bevel
       - outlined/rounded
       - outlined/sharp
+      - outlined/tk
   hourglass-off:
     category: 'shapes-ui-elements'
     tags:
@@ -17630,9 +19743,11 @@ icons:
       - filled/bevel
       - filled/rounded
       - filled/sharp
+      - filled/tk
       - outlined/bevel
       - outlined/rounded
       - outlined/sharp
+      - outlined/tk
   hourglass-off-circle:
     category: 'shapes-ui-elements'
     tags:
@@ -17662,9 +19777,11 @@ icons:
       - filled/bevel
       - filled/rounded
       - filled/sharp
+      - filled/tk
       - outlined/bevel
       - outlined/rounded
       - outlined/sharp
+      - outlined/tk
   hourglass-off-square:
     category: 'shapes-ui-elements'
     tags:
@@ -17694,9 +19811,11 @@ icons:
       - filled/bevel
       - filled/rounded
       - filled/sharp
+      - filled/tk
       - outlined/bevel
       - outlined/rounded
       - outlined/sharp
+      - outlined/tk
   hourglass-square:
     category: 'shapes-ui-elements'
     tags:
@@ -17725,9 +19844,11 @@ icons:
       - filled/bevel
       - filled/rounded
       - filled/sharp
+      - filled/tk
       - outlined/bevel
       - outlined/rounded
       - outlined/sharp
+      - outlined/tk
   ice-cream:
     category: 'lifestyle'
     tags:
@@ -18934,6 +21055,168 @@ icons:
       - outlined/rounded
       - outlined/sharp
       - outlined/tk
+  link:
+    category: 'actions'
+    tags:
+      [
+        'add',
+        'add link',
+        'attach',
+        'connect',
+        'hyperlink',
+        'link',
+        'share',
+        'url',
+        'web',
+        'website',
+        'actions',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  link-circle:
+    category: 'actions'
+    tags:
+      [
+        'add',
+        'add link',
+        'attach',
+        'connect',
+        'hyperlink',
+        'link',
+        'share',
+        'url',
+        'web',
+        'website',
+        'actions',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  link-off:
+    category: 'actions'
+    tags:
+      [
+        'add',
+        'add link off',
+        'attach',
+        'connect off',
+        'no connect',
+        'link off',
+        'share',
+        'url',
+        'web',
+        'website',
+        'off',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  link-off-circle:
+    category: 'actions'
+    tags:
+      [
+        'add',
+        'add link off',
+        'attach',
+        'connect off',
+        'no connect',
+        'link off',
+        'share',
+        'url',
+        'web',
+        'website',
+        'off',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  link-off-square:
+    category: 'actions'
+    tags:
+      [
+        'add',
+        'add link off',
+        'attach',
+        'connect off',
+        'no connect',
+        'link off',
+        'share',
+        'url',
+        'web',
+        'website',
+        'off',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  link-square:
+    category: 'actions'
+    tags:
+      [
+        'add',
+        'add link',
+        'attach',
+        'connect',
+        'hyperlink',
+        'link',
+        'share',
+        'url',
+        'web',
+        'website',
+        'actions',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
   lira:
     category: 'commerce'
     tags:
@@ -19211,6 +21494,56 @@ icons:
       - outlined/rounded
       - outlined/sharp
       - outlined/tk
+  lock:
+    category: 'security'
+    tags:
+      [
+        'lock',
+        'locked',
+        'password',
+        'privacy',
+        'private',
+        'protection',
+        'safety',
+        'secure',
+        'security',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  lock-circle:
+    category: 'security'
+    tags:
+      [
+        'lock',
+        'locked',
+        'password',
+        'privacy',
+        'private',
+        'protection',
+        'safety',
+        'secure',
+        'security',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
   lock-open:
     category: 'security'
     tags:
@@ -19454,6 +21787,31 @@ icons:
         'security open',
         'lock',
         'square',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  lock-square:
+    category: 'security'
+    tags:
+      [
+        'lock',
+        'locked',
+        'password',
+        'privacy',
+        'private',
+        'protection',
+        'safety',
+        'secure',
+        'security',
       ]
     aliases: []
     added: '1.0.0'
@@ -19813,9 +22171,11 @@ icons:
       - filled/bevel
       - filled/rounded
       - filled/sharp
+      - filled/tk
       - outlined/bevel
       - outlined/rounded
       - outlined/sharp
+      - outlined/tk
   map-off:
     category: 'arrow'
     tags:
@@ -19983,6 +22343,7 @@ icons:
       - filled/bevel
       - filled/rounded
       - filled/sharp
+      - filled/tk
       - outlined/bevel
       - outlined/rounded
       - outlined/sharp
@@ -20048,9 +22409,11 @@ icons:
       - filled/bevel
       - filled/rounded
       - filled/sharp
+      - filled/tk
       - outlined/bevel
       - outlined/rounded
       - outlined/sharp
+      - outlined/tk
   map-pin-square:
     category: 'arrow'
     tags:
@@ -21172,9 +23535,11 @@ icons:
       - filled/bevel
       - filled/rounded
       - filled/sharp
+      - filled/tk
       - outlined/bevel
       - outlined/rounded
       - outlined/sharp
+      - outlined/tk
   museum-circle:
     category: 'arrow'
     tags:
@@ -21200,9 +23565,11 @@ icons:
       - filled/bevel
       - filled/rounded
       - filled/sharp
+      - filled/tk
       - outlined/bevel
       - outlined/rounded
       - outlined/sharp
+      - outlined/tk
   museum-square:
     category: 'arrow'
     tags:
@@ -21228,9 +23595,11 @@ icons:
       - filled/bevel
       - filled/rounded
       - filled/sharp
+      - filled/tk
       - outlined/bevel
       - outlined/rounded
       - outlined/sharp
+      - outlined/tk
   my-location:
     category: 'arrow'
     tags:
@@ -21458,9 +23827,11 @@ icons:
       - filled/bevel
       - filled/rounded
       - filled/sharp
+      - filled/tk
       - outlined/bevel
       - outlined/rounded
       - outlined/sharp
+      - outlined/tk
   near-me-circle:
     category: 'arrow'
     tags:
@@ -21490,9 +23861,11 @@ icons:
       - filled/bevel
       - filled/rounded
       - filled/sharp
+      - filled/tk
       - outlined/bevel
       - outlined/rounded
       - outlined/sharp
+      - outlined/tk
   near-me-square:
     category: 'arrow'
     tags:
@@ -25032,7 +27405,7 @@ icons:
         'browser',
         'cycle',
         'direction',
-        'inprogress',
+        'in progress',
         'load',
         'loading',
         'loop',
@@ -25045,7 +27418,6 @@ icons:
         'turn',
         'upload',
         'waiting',
-        'circle',
       ]
     aliases: []
     added: '1.0.0'
@@ -25133,7 +27505,7 @@ icons:
         'browser',
         'cycle',
         'direction',
-        'inprogress',
+        'in progress',
         'load',
         'loading',
         'loop',
@@ -25167,7 +27539,7 @@ icons:
         'browser',
         'cycle',
         'direction',
-        'inprogress',
+        'in progress',
         'load',
         'loading',
         'loop',
@@ -25180,7 +27552,6 @@ icons:
         'turn',
         'upload',
         'waiting',
-        'square',
       ]
     aliases: []
     added: '1.0.0'
@@ -27628,6 +29999,384 @@ icons:
         'options',
         'send',
         'social',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  shield-check:
+    category: 'security'
+    tags:
+      [
+        'certified',
+        'privacy',
+        'private',
+        'protect',
+        'security',
+        'shield',
+        'verified',
+        'key',
+        'offline',
+        'password',
+        'safe',
+        'safety',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  shield-check-circle:
+    category: 'security'
+    tags:
+      [
+        'certified',
+        'privacy',
+        'private',
+        'protect',
+        'security',
+        'shield',
+        'verified',
+        'key',
+        'offline',
+        'password',
+        'safe',
+        'safety',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  shield-check-square:
+    category: 'security'
+    tags:
+      [
+        'certified',
+        'privacy',
+        'private',
+        'protect',
+        'security',
+        'shield',
+        'verified',
+        'key',
+        'offline',
+        'password',
+        'safe',
+        'safety',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  shield-cross:
+    category: 'security'
+    tags:
+      [
+        'certified',
+        'privacy',
+        'private',
+        'protect',
+        'security',
+        'shield',
+        'verified',
+        'key',
+        'blocked',
+        'closed',
+        'key lock',
+        'locked',
+        'off',
+        'offline',
+        'password',
+        'unlock',
+        'cross',
+        'shield cross',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  shield-cross-circle:
+    category: 'security'
+    tags:
+      [
+        'certified',
+        'privacy',
+        'private',
+        'protect',
+        'security',
+        'shield',
+        'verified',
+        'key',
+        'blocked',
+        'closed',
+        'key lock',
+        'locked',
+        'off',
+        'offline',
+        'password',
+        'unlock',
+        'cross',
+        'shield cross',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  shield-cross-square:
+    category: 'security'
+    tags:
+      [
+        'certified',
+        'privacy',
+        'private',
+        'protect',
+        'security',
+        'shield',
+        'verified',
+        'key',
+        'blocked',
+        'closed',
+        'key lock',
+        'locked',
+        'off',
+        'offline',
+        'password',
+        'unlock',
+        'cross',
+        'shield cross',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  shield-key:
+    category: 'security'
+    tags:
+      [
+        'certified',
+        'privacy',
+        'private',
+        'protect',
+        'security',
+        'shield',
+        'verified',
+        'key',
+        'blocked',
+        'closed',
+        'key lock',
+        'locked',
+        'off',
+        'offline',
+        'password',
+        'unlock',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  shield-key-circle:
+    category: 'security'
+    tags:
+      [
+        'certified',
+        'privacy',
+        'private',
+        'protect',
+        'security',
+        'shield',
+        'verified',
+        'key',
+        'blocked',
+        'closed',
+        'key lock',
+        'locked',
+        'off',
+        'offline',
+        'password',
+        'unlock',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  shield-key-square:
+    category: 'security'
+    tags:
+      [
+        'certified',
+        'privacy',
+        'private',
+        'protect',
+        'security',
+        'shield',
+        'verified',
+        'key',
+        'blocked',
+        'closed',
+        'key lock',
+        'locked',
+        'off',
+        'offline',
+        'password',
+        'unlock',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  shield-profile:
+    category: 'security'
+    tags:
+      [
+        'certified',
+        'privacy',
+        'private',
+        'protect',
+        'security',
+        'shield',
+        'verified',
+        'key',
+        'offline',
+        'password',
+        'safe',
+        'safety',
+        'profile',
+        'shield',
+        'profile privacy',
+        'profile private',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  shield-profile-circle:
+    category: 'security'
+    tags:
+      [
+        'certified',
+        'privacy',
+        'private',
+        'protect',
+        'security',
+        'shield',
+        'verified',
+        'key',
+        'offline',
+        'password',
+        'safe',
+        'safety',
+        'profile',
+        'shield',
+        'profile privacy',
+        'profile private',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  shield-profile-square:
+    category: 'security'
+    tags:
+      [
+        'certified',
+        'privacy',
+        'private',
+        'protect',
+        'security',
+        'shield',
+        'verified',
+        'key',
+        'offline',
+        'password',
+        'safe',
+        'safety',
+        'profile',
+        'shield',
+        'profile privacy',
+        'profile private',
       ]
     aliases: []
     added: '1.0.0'
@@ -31367,9 +34116,11 @@ icons:
       - filled/bevel
       - filled/rounded
       - filled/sharp
+      - filled/tk
       - outlined/bevel
       - outlined/rounded
       - outlined/sharp
+      - outlined/tk
   toggle-off:
     category: 'shapes-ui-elements'
     tags:
@@ -31568,6 +34319,174 @@ icons:
         'ui',
         'ux',
         'web',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  token-1:
+    category: 'ai'
+    tags:
+      [
+        'access',
+        'access token',
+        'account',
+        'approval',
+        'authentication',
+        'authentication token',
+        'password',
+        'symbol',
+        'token',
+        'user',
+        'ai token',
+        'artificial intelligence',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  token-1-circle:
+    category: 'ai'
+    tags:
+      [
+        'access',
+        'access token',
+        'account',
+        'approval',
+        'authentication',
+        'authentication token',
+        'password',
+        'symbol',
+        'token',
+        'user',
+        'ai token',
+        'artificial intelligence',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  token-1-square:
+    category: 'ai'
+    tags:
+      [
+        'access',
+        'access token',
+        'account',
+        'approval',
+        'authentication',
+        'authentication token',
+        'password',
+        'symbol',
+        'token',
+        'user',
+        'ai token',
+        'artificial intelligence',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  token-2:
+    category: 'ai'
+    tags:
+      [
+        'access',
+        'access token',
+        'account',
+        'approval',
+        'authentication',
+        'authentication token',
+        'password',
+        'symbol',
+        'token',
+        'user',
+        'ai token',
+        'artificial intelligence',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  token-2-circle:
+    category: 'ai'
+    tags:
+      [
+        'access',
+        'access token',
+        'account',
+        'approval',
+        'authentication',
+        'authentication token',
+        'password',
+        'symbol',
+        'token',
+        'user',
+        'ai token',
+        'artificial intelligence',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  token-2-square:
+    category: 'ai'
+    tags:
+      [
+        'access',
+        'access token',
+        'account',
+        'approval',
+        'authentication',
+        'authentication token',
+        'password',
+        'symbol',
+        'token',
+        'user',
+        'ai token',
+        'artificial intelligence',
       ]
     aliases: []
     added: '1.0.0'
@@ -32504,27 +35423,772 @@ icons:
       - outlined/rounded
       - outlined/sharp
       - outlined/tk
+  user:
+    category: 'people'
+    tags:
+      [
+        'user',
+        'user baby',
+        'human',
+        'face',
+        'people',
+        'person',
+        'profile',
+        'family',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  user-add:
+    category: 'people'
+    tags:
+      [
+        '+',
+        'account',
+        'add',
+        'add person',
+        'add user',
+        'avatar',
+        'contact',
+        'create',
+        'face',
+        'friend',
+        'human',
+        'invite',
+        'invite friend',
+        'people',
+        'person',
+        'plus',
+        'plus sign',
+        'profile',
+        'user',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  user-add-circle:
+    category: 'people'
+    tags:
+      [
+        '+',
+        'account',
+        'add',
+        'add person',
+        'add user',
+        'avatar',
+        'contact',
+        'create',
+        'face',
+        'friend',
+        'human',
+        'invite',
+        'invite friend',
+        'people',
+        'person',
+        'plus',
+        'plus sign',
+        'profile',
+        'user',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  user-add-square:
+    category: 'people'
+    tags:
+      [
+        '+',
+        'account',
+        'add',
+        'add person',
+        'add user',
+        'avatar',
+        'contact',
+        'create',
+        'face',
+        'friend',
+        'human',
+        'invite',
+        'invite friend',
+        'people',
+        'person',
+        'plus',
+        'plus sign',
+        'profile',
+        'user',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  user-baby:
+    category: 'people'
+    tags:
+      [
+        'user',
+        'baby',
+        'user baby',
+        'human',
+        'face',
+        'people',
+        'person',
+        'profile',
+        'family',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  user-baby-circle:
+    category: 'people'
+    tags:
+      [
+        'user',
+        'baby',
+        'user baby',
+        'human',
+        'face',
+        'people',
+        'person',
+        'profile',
+        'family',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  user-baby-square:
+    category: 'people'
+    tags:
+      [
+        'user',
+        'baby',
+        'user baby',
+        'human',
+        'face',
+        'people',
+        'person',
+        'profile',
+        'family',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  user-check:
+    category: 'people'
+    tags:
+      [
+        'account',
+        'add',
+        'approve',
+        'check',
+        'checkmark',
+        'complete',
+        'done',
+        'face',
+        'human',
+        'mark',
+        'ok',
+        'people',
+        'person',
+        'plus',
+        'profile',
+        'select',
+        'tick',
+        'user',
+        'validate',
+        'verified',
+        'yes',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  user-check-circle:
+    category: 'people'
+    tags:
+      [
+        'account',
+        'add',
+        'approve',
+        'check',
+        'checkmark',
+        'complete',
+        'done',
+        'face',
+        'human',
+        'mark',
+        'ok',
+        'people',
+        'person',
+        'plus',
+        'profile',
+        'select',
+        'tick',
+        'user',
+        'validate',
+        'verified',
+        'yes',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  user-check-square:
+    category: 'people'
+    tags:
+      [
+        'account',
+        'add',
+        'approve',
+        'check',
+        'checkmark',
+        'complete',
+        'done',
+        'face',
+        'human',
+        'mark',
+        'ok',
+        'people',
+        'person',
+        'plus',
+        'profile',
+        'select',
+        'tick',
+        'user',
+        'validate',
+        'verified',
+        'yes',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  user-circle:
+    category: 'people'
+    tags:
+      [
+        'user',
+        'user baby',
+        'human',
+        'face',
+        'people',
+        'person',
+        'profile',
+        'family',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  user-focus:
+    category: 'people'
+    tags:
+      [
+        'account',
+        'focus',
+        'user focus',
+        'face',
+        'human',
+        'mark',
+        'ok',
+        'people',
+        'person',
+        'plus',
+        'profile',
+        'select',
+        'user',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  user-group:
+    category: 'people'
+    tags:
+      [
+        'accounts',
+        'audience',
+        'community',
+        'contacts',
+        'group',
+        'heads',
+        'humans',
+        'members',
+        'network',
+        'people',
+        'persons',
+        'profile',
+        'profiles',
+        'social',
+        'staff',
+        'team',
+        'users',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  user-group-circle:
+    category: 'people'
+    tags:
+      [
+        'accounts',
+        'audience',
+        'community',
+        'contacts',
+        'group',
+        'heads',
+        'humans',
+        'members',
+        'network',
+        'people',
+        'persons',
+        'profile',
+        'profiles',
+        'social',
+        'staff',
+        'team',
+        'users',
+        'circle',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  user-group-square:
+    category: 'people'
+    tags:
+      [
+        'accounts',
+        'audience',
+        'community',
+        'contacts',
+        'group',
+        'heads',
+        'humans',
+        'members',
+        'network',
+        'people',
+        'persons',
+        'profile',
+        'profiles',
+        'social',
+        'staff',
+        'team',
+        'users',
+        'square',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  user-hold:
+    category: 'people'
+    tags:
+      [
+        'account',
+        'hold',
+        'user hold',
+        'face',
+        'human',
+        'mark',
+        'ok',
+        'people',
+        'person',
+        'plus',
+        'profile',
+        'select',
+        'wait',
+        'user',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  user-hold-circle:
+    category: 'people'
+    tags:
+      [
+        'account',
+        'hold',
+        'user hold',
+        'face',
+        'human',
+        'mark',
+        'ok',
+        'people',
+        'person',
+        'plus',
+        'profile',
+        'select',
+        'wait',
+        'user',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  user-hold-square:
+    category: 'people'
+    tags:
+      [
+        'account',
+        'hold',
+        'user hold',
+        'face',
+        'human',
+        'mark',
+        'ok',
+        'people',
+        'person',
+        'plus',
+        'profile',
+        'select',
+        'wait',
+        'user',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  user-multi:
+    category: 'people'
+    tags:
+      [
+        'body',
+        'club',
+        'collaboration',
+        'crowd',
+        'gathering',
+        'teams',
+        'groups',
+        'human',
+        'meeting',
+        'people',
+        'person',
+        'social',
+        'multi',
+        'users',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  user-multi-circle:
+    category: 'people'
+    tags:
+      [
+        'body',
+        'club',
+        'collaboration',
+        'crowd',
+        'gathering',
+        'teams',
+        'groups',
+        'human',
+        'meeting',
+        'people',
+        'person',
+        'social',
+        'multi',
+        'users',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  user-multi-square:
+    category: 'people'
+    tags:
+      [
+        'body',
+        'club',
+        'collaboration',
+        'crowd',
+        'gathering',
+        'teams',
+        'groups',
+        'human',
+        'meeting',
+        'people',
+        'person',
+        'social',
+        'multi',
+        'users',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  user-remove:
+    category: 'people'
+    tags:
+      [
+        'ban',
+        'blacklist',
+        'block',
+        'cancellation',
+        'contact',
+        'delete',
+        'depart',
+        'friend',
+        'human',
+        'minus',
+        'person',
+        'profile',
+        'prohibition',
+        'refusal',
+        'rejection',
+        'remove',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  user-remove-circle:
+    category: 'people'
+    tags:
+      [
+        'ban',
+        'blacklist',
+        'block',
+        'cancellation',
+        'contact',
+        'delete',
+        'depart',
+        'friend',
+        'human',
+        'minus',
+        'person',
+        'profile',
+        'prohibition',
+        'refusal',
+        'rejection',
+        'remove',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  user-remove-square:
+    category: 'people'
+    tags:
+      [
+        'ban',
+        'blacklist',
+        'block',
+        'cancellation',
+        'contact',
+        'delete',
+        'depart',
+        'friend',
+        'human',
+        'minus',
+        'person',
+        'profile',
+        'prohibition',
+        'refusal',
+        'rejection',
+        'remove',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
   user-settings:
     category: 'system-settings'
     tags:
       [
+        'account',
+        'application',
+        'avatar',
+        'custom',
+        'details',
+        'face',
         'gear',
-        'cog',
-        'edit',
-        'preferences',
-        'system',
-        'change',
-        'cogwheel',
-        'wheel',
-        'modify',
+        'human',
+        'information',
         'options',
-        'panel',
-        'tools',
-        'setting',
-        'settings',
+        'people',
+        'personal',
+        'preferences',
+        'profile',
+        'service',
+        'thumbnail',
         'user',
-        'user setting',
-        'user settings',
       ]
     aliases: []
     added: '1.0.0'
@@ -32541,23 +36205,23 @@ icons:
     category: 'system-settings'
     tags:
       [
+        'account',
+        'application',
+        'avatar',
+        'custom',
+        'details',
+        'face',
         'gear',
-        'cog',
-        'edit',
-        'preferences',
-        'system',
-        'change',
-        'cogwheel',
-        'wheel',
-        'modify',
+        'human',
+        'information',
         'options',
-        'panel',
-        'tools',
-        'setting',
-        'settings',
+        'people',
+        'personal',
+        'preferences',
+        'profile',
+        'service',
+        'thumbnail',
         'user',
-        'user setting',
-        'user settings',
       ]
     aliases: []
     added: '1.0.0'
@@ -32574,23 +36238,23 @@ icons:
     category: 'system-settings'
     tags:
       [
+        'account',
+        'application',
+        'avatar',
+        'custom',
+        'details',
+        'face',
         'gear',
-        'cog',
-        'edit',
-        'preferences',
-        'system',
-        'change',
-        'cogwheel',
-        'wheel',
-        'modify',
+        'human',
+        'information',
         'options',
-        'panel',
-        'tools',
-        'setting',
-        'settings',
+        'people',
+        'personal',
+        'preferences',
+        'profile',
+        'service',
+        'thumbnail',
         'user',
-        'user setting',
-        'user settings',
       ]
     aliases: []
     added: '1.0.0'
@@ -32598,9 +36262,35 @@ icons:
       - filled/bevel
       - filled/rounded
       - filled/sharp
+      - filled/tk
       - outlined/bevel
       - outlined/rounded
       - outlined/sharp
+      - outlined/tk
+  user-square:
+    category: 'people'
+    tags:
+      [
+        'user',
+        'user baby',
+        'human',
+        'face',
+        'people',
+        'person',
+        'profile',
+        'family',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
   utensils:
     category: 'lifestyle'
     tags:
@@ -33372,6 +37062,99 @@ icons:
         'wireless',
         'actions',
         'circle',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  wifi-off:
+    category: 'actions'
+    tags:
+      [
+        'computer',
+        'connection',
+        'internet',
+        'network',
+        'online',
+        'signal',
+        'wifi',
+        'wireless',
+        'actions',
+        'no connect',
+        'no wifi',
+        'wifi off',
+        'signal off',
+        'internet off',
+        'offline',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  wifi-off-circle:
+    category: 'actions'
+    tags:
+      [
+        'computer',
+        'connection',
+        'internet',
+        'network',
+        'online',
+        'signal',
+        'wifi',
+        'wireless',
+        'actions',
+        'no connect',
+        'no wifi',
+        'wifi off',
+        'signal off',
+        'internet off',
+        'offline',
+      ]
+    aliases: []
+    added: '1.0.0'
+    variants:
+      - filled/bevel
+      - filled/rounded
+      - filled/sharp
+      - filled/tk
+      - outlined/bevel
+      - outlined/rounded
+      - outlined/sharp
+      - outlined/tk
+  wifi-off-square:
+    category: 'actions'
+    tags:
+      [
+        'computer',
+        'connection',
+        'internet',
+        'network',
+        'online',
+        'signal',
+        'wifi',
+        'wireless',
+        'actions',
+        'no connect',
+        'no wifi',
+        'wifi off',
+        'signal off',
+        'internet off',
+        'offline',
       ]
     aliases: []
     added: '1.0.0'

@@ -2,6 +2,9 @@ categories:
   - id: actions
     label: 'Actions'
     description: 'General-purpose action and control icons.'
+  - id: ai
+    label: 'AI'
+    description: 'Artificial intelligence, assistants and generation.'
   - id: arrow
     label: 'Arrow'
     description: 'Directional arrows, carets and chevrons.'
