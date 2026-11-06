@@ -150,25 +150,3 @@ function isIconType(value: string): value is IconType {
     value === 'tk'
   );
 }
-
-// ─── Figma pages ───
-
-/** Library category pages are numbered 01–18; 19+ (Payment, Social, Flags) are not exported. */
-export const LAST_CATEGORY_PAGE = 18;
-
-/**
- * A library category page, e.g. "01 Arrows" or "❌ 07 Files & Documents 📑".
- * Designers prefix pages with status emoji, so only the two-digit number after
- * any leading symbols is significant. "00 cover" and pages after
- * LAST_CATEGORY_PAGE are not library categories.
- */
-export function isCategoryPage(name: string): boolean {
-  const match = /^[^\p{L}\p{N}]*(\d{2})\s/u.exec(normalizePageName(name));
-  if (!match) return false;
-  const pageNumber = Number(match[1]);
-  return pageNumber >= 1 && pageNumber <= LAST_CATEGORY_PAGE;
-}
-
-export function normalizePageName(name: string): string {
-  return name.replace(/\s+/g, ' ').trim();
-}

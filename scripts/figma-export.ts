@@ -26,8 +26,6 @@ import {
   SVG_ROOT,
   ROOT_DIR,
   ensureDir,
-  isCategoryPage,
-  normalizePageName,
   type IconStyle,
   type IconType,
 } from './utils';
@@ -187,9 +185,7 @@ function getEnvConfig(): EnvConfig {
   const accessToken = process.env.FIGMA_TOKEN;
   const fileId = process.env.FIGMA_FILE_ID ?? 'LVruHwiRP8gFNRCKYaPhod';
   const nodeId = process.env.FIGMA_NODE_ID; // e.g. "38:184"
-  // Unset → the library category pages ("01 Arrows" … "18 AI Icons"); see
-  // isCategoryPage. The old "Source" page no longer holds library components.
-  const pageNames = (process.env.FIGMA_PAGE_NAME ?? '')
+  const pageNames = (process.env.FIGMA_PAGE_NAME ?? 'Source')
     .split(',')
     .map((s) => s.trim())
     .filter(Boolean);
@@ -310,6 +306,10 @@ function isExcludedIconName(name: string): boolean {
   return name
     .split(/[/-]/)
     .some((token) => EXCLUDED_ICON_NAME_TOKENS.has(token));
+}
+
+function normalizePageName(name: string): string {
+  return name.replace(/\s+/g, ' ').trim();
 }
 
 /**
@@ -548,8 +548,7 @@ async function fetchByNodeId(
  *
  * Resolution order:
  *   1. FIGMA_NODE_ID env var    → fetch that specific node
- *   2. FIGMA_PAGE_NAME matches  → fetch matching page subtrees (comma-separated);
- *      unset → every numbered category page (isCategoryPage)
+ *   2. FIGMA_PAGE_NAME matches  → fetch matching page subtrees (comma-separated)
  *   3. Fail with available page names
  */
 async function fetchIconEntries(env: EnvConfig): Promise<IconEntry[]> {
@@ -562,11 +561,7 @@ async function fetchIconEntries(env: EnvConfig): Promise<IconEntry[]> {
   }
 
   // 2. Find pages by name
-  logDim(
-    env.pageNames.length > 0
-      ? `Looking for pages: ${env.pageNames.map((n) => `"${n}"`).join(', ')}`
-      : 'Looking for numbered category pages',
-  );
+  logDim(`Looking for pages: ${env.pageNames.map((n) => `"${n}"`).join(', ')}`);
 
   const file = await figmaFetch<FigmaFileResponse>(
     env,
@@ -574,28 +569,6 @@ async function fetchIconEntries(env: EnvConfig): Promise<IconEntry[]> {
   );
 
   const allPages = file.document.children ?? [];
-
-  if (env.pageNames.length === 0) {
-    const categoryPages = allPages.filter((p) => isCategoryPage(p.name));
-    if (categoryPages.length === 0) {
-      logErr(`No numbered category pages found.`);
-      logDim(`Available pages: ${allPages.map((p) => p.name).join(', ')}`);
-      logDim(`Fix: set FIGMA_PAGE_NAME or FIGMA_NODE_ID in .env`);
-      process.exit(1);
-    }
-    // A numbered page outside 01–18 (or "01. Arrows" without the space) is
-    // skipped; name it so a new or renamed library page doesn't vanish silently.
-    const skipped = allPages.filter(
-      (p) => /\d/.test(p.name) && !isCategoryPage(p.name),
-    );
-    if (skipped.length > 0) {
-      logDim(
-        `Skipping numbered pages: ${skipped.map((p) => `"${normalizePageName(p.name)}"`).join(', ')}`,
-      );
-    }
-    env.pageNames = categoryPages.map((p) => normalizePageName(p.name));
-  }
-
   const requestedPages = new Set(env.pageNames.map(normalizePageName));
   const matched = allPages.filter((p) =>
     requestedPages.has(normalizePageName(p.name)),
@@ -1050,16 +1023,6 @@ function printReport(icons: IconEntry[], report: Report): void {
     log(
       `\n  ${c.bold}${c.yellow}Skipped${c.reset}  ${report.skipped.length} duplicates`,
     );
-    // With every category page read in one run, the first page wins on a
-    // duplicate, so name the icons whose drawing depended on page order.
-    const names = [
-      ...new Set(
-        report.skipped.map((s) => s.replace(/^Duplicate: /, '').split('::')[0]),
-      ),
-    ].sort();
-    const shown = names.slice(0, 40).join(', ');
-    const more = names.length > 40 ? ` … and ${names.length - 40} more` : '';
-    logDim(`  First occurrence kept for: ${shown}${more}`);
   }
 
   log(`\n${c.bold}═══════════════════════════════════════${c.reset}`);

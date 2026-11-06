@@ -28,6 +28,3 @@ artwork, which mostly fills more of the 24×24 box than before. 26 existing icon
 
 `chevron-bottom` and `arrow-top` use the corrected Figma drawings, so each directional
 pair has one size.
-
-The export now reads the numbered category pages (`01 Arrows` … `18 AI Icons`; 19 Payment, 20 Social and 21 Flags are left out); the
-`Source` page no longer holds the library components.
