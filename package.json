@@ -37,7 +37,7 @@
     "clean": "turbo run clean && rimraf node_modules",
     "verify:publish": "tsx scripts/verify-publish.ts",
     "changeset": "changeset",
-    "version-packages": "changeset version",
+    "version-packages": "changeset version && tsx scripts/stamp-added.ts",
     "release": "pnpm verify:publish && changeset publish",
     "prepare": "husky"
   },

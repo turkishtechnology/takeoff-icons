@@ -33,6 +33,7 @@ export interface IconMeta {
   category: string;
   tags: string[];
   aliases: string[];
+  /** The @takeoff-icons version that first shipped this icon, e.g. `'0.5.0'`. */
   added: string;
   deprecated: boolean;
   variants: IconVariant[];

@@ -17,6 +17,7 @@ interface IconMetaYaml {
     string,
     {
       category?: string;
+      added?: string;
       variants?: string[];
     }
   >;
@@ -69,9 +70,19 @@ function checkIconName(name: string, source: string): void {
   }
 }
 
+// `added` is the release that first shipped the icon, or `unreleased` until the
+// version PR stamps it (scripts/stamp-added.ts).
+const ADDED_PATTERN = /^(\d+\.\d+\.\d+|unreleased)$/;
+
 const metadataNames = Object.keys(metadata.icons ?? {});
 for (const name of metadataNames) {
   checkIconName(name, 'metadata');
+  const added = metadata.icons[name].added;
+  if (!ADDED_PATTERN.test(String(added))) {
+    errors.push(
+      `Icon "${name}" has added "${added}"; expected a release version like 0.5.0 or "unreleased"`,
+    );
+  }
   const category = metadata.icons[name].category;
   if (category && !categoryIds.has(category)) {
     errors.push(`Icon "${name}" references undeclared category "${category}"`);
