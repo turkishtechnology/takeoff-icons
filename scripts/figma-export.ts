@@ -886,7 +886,9 @@ function syncMetadata(icons: IconEntry[], report: Report): void {
         category: info.category,
         tags,
         aliases: [],
-        added: '1.0.0',
+        // The release version is not known yet; `version-packages` stamps it
+        // (scripts/stamp-added.ts) when the version PR is cut.
+        added: 'unreleased',
         variants: sortedVariants,
       };
       report.newIcons++;
