@@ -1,5 +1,12 @@
 # @takeoff-icons/wc
 
+## 0.5.1
+
+### Patch Changes
+
+- Updated dependencies [[`94a4398`](https://github.com/turkishtechnology/takeoff-icons/commit/94a4398064054527c4579173e4a1e2ae3e20bc7a)]:
+  - @takeoff-icons/core@0.5.1
+
 ## 0.5.0
 
 ### Minor Changes

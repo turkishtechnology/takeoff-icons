@@ -1,5 +1,15 @@
 # @takeoff-icons/core
 
+## 0.5.1
+
+### Patch Changes
+
+- [#13](https://github.com/turkishtechnology/takeoff-icons/pull/13) [`94a4398`](https://github.com/turkishtechnology/takeoff-icons/commit/94a4398064054527c4579173e4a1e2ae3e20bc7a) Thanks [@harun-demir](https://github.com/harun-demir)! - Each icon's `added` metadata is now the version that first shipped it. Before,
+  every icon except `takeoff-rocket` reported `1.0.0`, a version that was never
+  released. The values come from the published packages: 617 icons were added in
+  0.1.0, 1 in 0.1.1, 448 in 0.2.0, 53 in 0.3.0, 9 in 0.4.0 and 124 in 0.5.0. New
+  icons get the version of the release that ships them.
+
 ## 0.5.0
 
 ### Minor Changes
